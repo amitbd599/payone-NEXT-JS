@@ -1,0 +1,25 @@
+.features-two-link::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 4px;
+    left: 4px;
+    border-radius: 0.5rem;
+    background: #104042;
+    transition: .4s;
+}
+.features-two-link:hover {
+    &::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        top: -4px;
+        left: -4px;
+        border-radius: 0.5rem;
+        background: #104042;
+    }
+}
