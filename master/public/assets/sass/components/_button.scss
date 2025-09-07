@@ -53,8 +53,7 @@
     border: 0;
     color: hsl(var(--white));
     line-height: 1;
-    padding-inline: 32px;
-    padding-block: 18px;
+    padding: 18px 32px;
     position: relative;
     overflow: hidden;
     border-radius: 6px;
@@ -72,27 +71,7 @@
                 border-color: transparent;
             }
         }
-    }
-    &-main-two {
-        background-color: var(--main-two-600) !important;
-        color: hsl(var(--white)) !important;
-        &.button--stroke {
-            &::after {
-                border-color: transparent;
-            }
-        }
-    }
-    &-white {
-        background-color: hsl(var(--white)) !important;
-        color: var(--heading-color) !important;
-        &:hover {
-            color: hsl(var(--white)) !important;
-        }
-        &.button--stroke {
-            &::after {
-                border-color: transparent;
-            }
-        }
+    
     }
 }
 
@@ -108,26 +87,12 @@
         }
         .button__flair {
             &::before {
-                background-color: var(--main-two-600);
+                background-color: red;
             }
         }
     }
     &-two {
         &:hover, &:active {
-            &.button--stroke {
-                &::after {
-                    border-color: transparent;
-                }
-            }
-        }
-        .button__flair {
-            &::before {
-                background-color: var(--main-600);
-            }
-        }
-    }
-    &-three {
-        &:hover, &:active {
             color: var(--main-two-600) !important;
             &.button--stroke {
                 &::after {
@@ -137,29 +102,9 @@
         }
         .button__flair {
             &::before {
-                background-color: #fff;
+                background-color: hsl(var(--white));
             }
         }
     }
-    &-five {
-        &:hover, &:active {
-            color: var(--main-two-600) !important;
-            &.button--stroke {
-                &::after {
-                    border-color: transparent;
-                }
-            }
-        }
-        .button__flair {
-            &::before {
-                background-color: hsl(var(--orange));
-            }
-        }
-    }
-}
-
-.btn-orange-outline {
-    border: 1px solid hsl(var(--orange));
-    color: hsl(var(--orange));
 }
 /* =========================== Button Css End =================== */

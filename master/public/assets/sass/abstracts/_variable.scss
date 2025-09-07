@@ -1,142 +1,94 @@
 /* Font Family*/
-@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Vidaloka&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Wendy+One&family=Zen+Maru+Gothic&display=swap');
 
 $colors: (
   "main": (
-    "50":
-      hsl(
-        var(--main-h),
-        var(--main-s),
-        calc(var(--main-l) + (100% - var(--main-l)) * 0.9)
-      ),
-    "100":
-      hsl(
-        var(--main-h),
-        var(--main-s),
-        calc(var(--main-l) + (100% - var(--main-l)) * 0.8)
-      ),
-    "200":
-      hsl(
-        var(--main-h),
-        var(--main-s),
-        calc(var(--main-l) + (100% - var(--main-l)) * 0.7)
-      ),
-    "300":
-      hsl(
-        var(--main-h),
-        var(--main-s),
-        calc(var(--main-l) + (100% - var(--main-l)) * 0.6)
-      ),
-    "400":
-      hsl(
-        var(--main-h),
-        var(--main-s),
-        calc(var(--main-l) + (100% - var(--main-l)) * 0.5)
-      ),
-    "500":
-      hsl(
-        var(--main-h),
-        var(--main-s),
-        calc(var(--main-l) + (100% - var(--main-l)) * 0.4)
-      ),
-    "600": hsl(var(--main-h), var(--main-s), var(--main-l)),
-    // main theme color
-    "700":
-      hsl(
-        var(--main-h),
-        var(--main-s),
-        calc(var(--main-l) - var(--main-l) * 0.1)
-      ),
-    "800":
-      hsl(
-        var(--main-h),
-        var(--main-s),
-        calc(var(--main-l) - var(--main-l) * 0.2)
-      ),
-    "900":
-      hsl(
-        var(--main-h),
-        var(--main-s),
-        calc(var(--main-l) - var(--main-l) * 0.3)
-      ),
-  ),
-  "main-two": (
-    "50":
-      hsl(
-        var(--main-two-h),
-        var(--main-two-s),
-        calc(var(--main-two-l) + (100% - var(--main-two-l)) * 0.9)
-      ),
-    "100":
-      hsl(
-        var(--main-two-h),
-        var(--main-two-s),
-        calc(var(--main-two-l) + (100% - var(--main-two-l)) * 0.8)
-      ),
-    "200":
-      hsl(
-        var(--main-two-h),
-        var(--main-two-s),
-        calc(var(--main-two-l) + (100% - var(--main-two-l)) * 0.7)
-      ),
-    "300":
-      hsl(
-        var(--main-two-h),
-        var(--main-two-s),
-        calc(var(--main-two-l) + (100% - var(--main-two-l)) * 0.6)
-      ),
-    "400":
-      hsl(
-        var(--main-two-h),
-        var(--main-two-s),
-        calc(var(--main-two-l) + (100% - var(--main-two-l)) * 0.5)
-      ),
-    "500":
-      hsl(
-        var(--main-two-h),
-        var(--main-two-s),
-        calc(var(--main-two-l) + (100% - var(--main-two-l)) * 0.4)
-      ),
-    "600": hsl(var(--main-two-h), var(--main-two-s), var(--main-two-l)),
-    // main-two theme color
-    "700":
-      hsl(
-        var(--main-two-h),
-        var(--main-two-s),
-        calc(var(--main-two-l) - var(--main-two-l) * 0.1)
-      ),
-    "800":
-      hsl(
-        var(--main-two-h),
-        var(--main-two-s),
-        calc(var(--main-two-l) - var(--main-two-l) * 0.2)
-      ),
-    "900":
-      hsl(
-        var(--main-two-h),
-        var(--main-two-s),
-        calc(var(--main-two-l) - var(--main-two-l) * 0.3)
-      ),
+    "50": hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.9)),
+    "100": hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.8)),
+    "200": hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.7)),
+    "300": hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.6)),
+    "400": hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.5)),
+    "500": hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.4)),
+    "600": hsl(var(--main-h), var(--main-s), var(--main-l)), // main theme color
+    "700": hsl(var(--main-h), var(--main-s), calc(var(--main-l) - var(--main-l) * 0.1)),
+    "800": hsl(var(--main-h), var(--main-s), calc(var(--main-l) - var(--main-l) * 0.2)),
+    "900": hsl(var(--main-h), var(--main-s), calc(var(--main-l) - var(--main-l) * 0.3))
   ),
 
+  "base-two": (
+    "10": #1040421A,
+    "100": #12121299,
+    "200": #00998B0D,
+    "300": #10404299,
+    "600": #104042,
+  ),
+  "primary": (
+    "05": #5D69F40D,
+    "50": #101010,
+    "100": #4A91A7,
+    "400": #3386ff,
+    "500": #2557EC,
+    "600": #0000DF,
+  ),
+  
+  "dark": (
+    "100":#9d99990f,
+    "500": #242424,
+    "600": #121212,
+    "700": #0D042C,
+    "800": #171717,
+    "900": #181818,
+  ),
   "neutral": (
-    "50": #f9fafb,
-    "100": #f3f4f6,
-    "200": #e5e7eb,
-    "300": #d1d5db,
-    "400": #9ca3af,
-    "500": #6b7280,
-    "600": #4b5563,
-    "700": #374151,
-    "800": #1f2937,
-    "900": #111827,
-    "950": #030712,
+    "05": #C4C5C0,
+    "10": #F5F9FC,
+    "15": #FFFFFF26,
+    "20": #f2f2f2ed,
+    "25":#D9D9D9,
+    "30":#FFFFFF4D,
+    "35":#E4F4EF,
+    "40":#C7D4D7,
+    "50":#C4C5C04D,
+    "100":#C4C5C099,
+    "200":#7585A5,
+    "300":#667797,
+
+    
+  ),
+  "warning": (
+    "5": #F376390D,  
+    "30": #F376390D,  
+    "50": #FEFCE8,  
+    "100": #FEF9C3,
+    "200": #FEF08A,
+    "300": #FDE047,
+    "400": #FACC15,
+    "500": #FFD200,
+    "600": #FF9F29,
+    "700": #f39016,
+    "800": #e58209,
+    "900": #d77907
+  ),
+  "danger": (
+    "05": #FF61610D,  
+    "30": #F376390D,  
+    "50": #FEFCE8,  
+    "100": #FEF9C3,
+    "200": #FEF08A,
+    "300": #FDE047,
+    "400": #FACC15,
+    "500": #FFD200,
+    "600": #ED0000,
+    "700": #f39016,
+    "800": #e58209,
+    "900": #d77907
   ),
 );
 
 // Space
 $spaces: (
-  "05": #{rem(2px)},
+  "005": #{rem(1px)}, 
+  "05": #{rem(2px)}, 
   "1": #{rem(4px)},
   "105": #{rem(6px)},
   "2": #{rem(8px)},
@@ -152,12 +104,16 @@ $spaces: (
   "7": #{rem(28px)},
   "705": #{rem(30px)},
   "8": #{rem(32px)},
+  "805": #{rem(34px)},
   "9": #{rem(36px)},
+  "905": #{rem(38px)},
   "10": #{rem(40px)},
   "11": #{rem(44px)},
   "12": #{rem(48px)},
+  "1205": #{rem(50px)},
   "13": #{rem(52px)},
   "14": #{rem(56px)},
+  "1405": #{rem(58px)},
   "15": #{rem(60px)},
   "16": #{rem(64px)},
   "17": #{rem(68px)},
@@ -174,268 +130,51 @@ $font-sizes: (
 );
 
 /* ========================= Variable Css Start ======================== */
-:root {
+:root {    
   /* Font Family Variable */
-  --heading-font: "Satoshi", sans-serif;
-  --body-font: "Satoshi", sans-serif;
+  --heading-font: "Wendy One", sans-serif;
+  --body-font: "Zen Maru Gothic", serif;
+  
+  /* Font Size Variable Start */
+  --heading-one: clamp(1.75rem, 0.5948rem + 2.4067vw, 3rem); // Min:28px - Max:48px
+  --heading-two: clamp(1.5rem, 0.5758rem + 1.9254vw, 2.5rem); // Min: 24px - Max: 40px
+  --heading-three: clamp(1.5rem, 1.0379rem + 0.9627vw, 2rem); // Min: 24px - Max: 32px
+  --heading-four: clamp(1.25rem, 0.9518rem + 0.8565vw, 1.5rem); // Min: 20px - Max: 24px
+  --heading-five: clamp(1.125rem, 1.0095rem + 0.2407vw, 1.25rem); // Min: 18px - Max: 20px
+  --heading-six: clamp(1rem, 1rem + 0vw, 1rem); // Min: 16px - Max-16px
+  /* Font Size End */ 
 
   /* Font Size Variable Start */
-  --heading-one: clamp(
-    2.125rem,
-    -0.0733rem + 5.5vw,
-    4.4375rem
-  ); // Min:34px - Max: 72px
-  --heading-two: clamp(
-    1.875rem,
-    0.7133rem + 2.8846vw,
-    3.75rem
-  ); // Min: 30px - Max: 60px
-  --heading-three: clamp(
-    1.75rem,
-    0.3353rem + 2.1661vw,
-    3rem
-  ); // Min: 28px - Max: 48px
-  --heading-four: clamp(
-    1.5rem,
-    0.5569rem + 1.444vw,
-    1.875rem
-  ); // Min: 24px - Max: 30px
-  --heading-five: clamp(
-    1.125rem,
-    1.2rem + 0.722vw,
-    1.5rem
-  ); // Min: 18px - Max: 24px
-  --heading-six: clamp(
-    1rem,
-    0.769rem + 0.6813vw,
-    1.25rem
-  ); // Min: 16px - Max-20px
+  --display-one: clamp(2.5rem, -6.4095rem + 18.5615vw, 7.5rem); // Min:40px - Max: 120px
+  --display-two: clamp(2.25rem, -2.6502rem + 10.2088vw, 5rem);// Min: 36px - Max: 80px
+  --display-three: clamp(1.875rem, 0.1421rem + 3.6101vw, 3.75rem); // Min: 30px - Max: 60px
+  --display-four: clamp(1.75rem, -1.3683rem + 6.4965vw, 3.5rem); // Min: 28px - Max: 56px
   /* Font Size End */
 
+
+
   /* template main color */
-  --main-h: 221;
-  --main-s: 84%;
-  --main-l: 46%;
+  --main-h: 81;
+  --main-s: 100%;
+  --main-l: 55%;
   --main: var(--main-h) var(--main-s) var(--main-l);
 
-  --main-two-h: 249;
-  --main-two-s: 63%;
-  --main-two-l: 15%;
-  --main-two: var(--main-two-h) var(--main-two-s) var(--main-two-l);
-
-  --yellow-h: 40;
-  --yellow-s: 100%;
-  --yellow-l: 54%;
-  --yellow: var(--yellow-h) var(--yellow-s) var(--yellow-l);
-
-  --spring-green-h: 144;
-  --spring-green-s: 80%;
-  --spring-green-l: 55%;
-  --spring-green: var(--spring-green-h) var(--spring-green-s)
-    var(--spring-green-l);
-
-  --app-landing-h: 184;
-  --app-landing-s: 84%;
-  --app-landing-l: 30%;
-  --app-landing: var(--app-landing-h) var(--app-landing-s) var(--app-landing-l);
-
-  /* White Color */
+   /* White Color */
   --white: 0 0% 100%;
-  --black: 249 63% 15%;
+  --black: 0 0% 0%;
   --body: 0 0% 43%;
-  --orange: 18 100% 55%;
-
+  
   --heading-color: var(--black);
-  --blue-color: #1351d8;
+  --body-color: var(--body);
 
-  --translate-x-50: translateX(-50%);
-  --translate-y-50: translateY(-50%);
-
-  // home two
-  --urbanist_home-two: "Urbanist", serif;
-  --dm-serif_home-two: "DM Serif Display", serif;
-
-  --heading-one_home-two: clamp(
-    2.125rem,
-    -0.0733rem + 5.5vw,
-    4.375rem
-  ); // Min:34px - Max: 70px
-  --heading-two_home-two: clamp(
-    1.875rem,
-    0.7133rem + 2.8846vw,
-    3.125rem
-  ); // Min: 30px - Max: 50px
-  --heading-three_home-two: clamp(
-    1.75rem,
-    0.3353rem + 2.1661vw,
-    1.875rem
-  ); // Min: 28px - Max: 36px
-  --heading-four_home-two: clamp(
-    1.5rem,
-    0.5569rem + 1.444vw,
-    1.875rem
-  ); // Min: 24px - Max: 30px
-  --heading-five_home-two: clamp(
-    1.125rem,
-    1.2rem + 0.722vw,
-    1.5rem
-  ); // Min: 18px - Max: 24px
-  --heading-six_home-two: clamp(
-    1rem,
-    0.769rem + 0.6813vw,
-    1.25rem
-  ); // Min: 16px - Max-20px
-
-  --purple-h_home-two: 255;
-  --purple-s_home-two: 77%;
-  --purple-l-home-two: 57%;
-  --purple-home-two: var(--purple-h_home-two) var(--purple-s_home-two)
-    var(--purple-l-home-two);
-
-  --heading-color_home-two: #150e3d;
-
-  // Home 3
-  --heading-one_home-three: clamp(
-    2.125rem,
-    -0.0733rem + 5.5vw,
-    4.4375rem
-  ); // Min:34px - Max: 72px
-  --heading-two_home-three: clamp(
-    2rem,
-    0.3353rem + 2.1661vw,
-    3.5rem
-  ); // Min: 32px - Max: 56px
-  --heading-three_home-three: clamp(
-    1.875rem,
-    0.7133rem + 2.8846vw,
-    3.125rem
-  ); // Min: 30px - Max: 50px
-  --heading-four_home-three: clamp(
-    1.5rem,
-    0.5569rem + 1.444vw,
-    1.875rem
-  ); // Min: 24px - Max: 30px
-  --heading-five_home-three: clamp(
-    1.125rem,
-    1.2rem + 0.722vw,
-    1.5rem
-  ); // Min: 18px - Max: 24px
-  --heading-six_home-three: clamp(
-    1rem,
-    0.769rem + 0.6813vw,
-    1.25rem
-  ); // Min: 16px - Max-20px
-
-  --heading-color_home-three: #000000;
-  --bg-main-green_home-three: #06766e;
-
-  // home crm
-  --heading-one_home-crm: clamp(
-    2.25rem,
-    -0.0733rem + 5.5vw,
-    5.625rem
-  ); // Min:36px - Max: 90px
-  --heading-two_home-crm: clamp(
-    2rem,
-    0.3353rem + 2.1661vw,
-    3.5rem
-  ); // Min: 32px - Max: 56px
-  --heading-three_home-crm: clamp(
-    1.5rem,
-    0.7133rem + 2.8846vw,
-    1.75rem
-  ); // Min: 24px - Max: 28px
-  --heading-four_home-crm: clamp(
-    1.25rem,
-    1.2rem + 0.722vw,
-    1.5rem
-  ); // Min: 20px - Max: 24px
-  --heading-five_home-crm: clamp(
-    1.125rem,
-    0.769rem + 0.6813vw,
-    1.25rem
-  ); // Min: 18px - Max-20px
-  --heading-six_home-crm: clamp(
-    1rem,
-    0.769rem + 0.6813vw,
-    1.125rem
-  ); // Min: 16px - Max-18px
-
-  /* template main color */
-  --main-h_home-crm: 40;
-  --main-s_home-crm: 100%;
-  --main-l_home-crm: 54%;
-  --main_home-crm: var(--main-h_home-crm) var(--main-s_home-crm)
-    var(--main-l_home-crm);
-
-  /* template main two color */
-  --main-two-h_home-crm: 205;
-  --main-two-s_home-crm: 75%;
-  --main-two-l_home-crm: 11%;
-  --main-two_home-crm: var(--main-two-h_home-crm) var(--main-two-s_home-crm)
-    var(--main-two-l_home-crm);
-
-  --heading-color_home-crm: #072032;
-  --crm-color_home-crm: #256bfe;
-  --blue-color_home-crm: #1351d8;
-
-  --font-caveat_home-crm: "Caveat", cursive;
-  --font-montserrat-alternates_home-crm: "Montserrat Alternates", sans-serif;
-
-  // home five
-  --heading-one_home-five: clamp(
-    2.125rem,
-    -0.0733rem + 5.5vw,
-    4.375rem
-  ); // Min:34px - Max: 70px
-  --heading-two_home-five: clamp(
-    2rem,
-    0.3353rem + 2.1661vw,
-    3.5rem
-  ); // Min: 32px - Max: 56px
-  --heading-three_home-five: clamp(
-    1.5rem,
-    0.7133rem + 2.8846vw,
-    1.75rem
-  ); // Min: 24px - Max: 28px
-  --heading-four_home-five: clamp(
-    1.25rem,
-    1.2rem + 0.722vw,
-    1.5rem
-  ); // Min: 20px - Max: 24px
-  --heading-five_home-five: clamp(
-    1.125rem,
-    0.769rem + 0.6813vw,
-    1.25rem
-  ); // Min: 18px - Max-20px
-  --heading-six_home-five: clamp(
-    1rem,
-    0.769rem + 0.6813vw,
-    1.125rem
-  ); // Min: 16px - Max-18px
-
-  /* template main color */
-  --main-h_home-five: 184;
-  --main-s_home-five: 84%;
-  --main-l_home-five: 30%;
-  --main_home-five: var(--main-h_home-five) var(--main-s_home-five)
-    var(--main-l_home-five);
-  --main-600_home-five: #0c848d;
-
-  /* template main two color */
-  --main-two-h_home-five: 205;
-  --main-two-s_home-five: 75%;
-  --main-two-l_home-five: 11%;
-  --main-two_home-five: var(--main-two-h_home-five) var(--main-two-s_home-five)
-    var(--main-two-l_home-five);
-
-  --heading-color_home-five: #072032;
-
+  --translate-x-50: translateX(-50%); 
+  --translate-y-50: translateY(-50%); 
+    
   // spacing
   @each $property, $value in $spaces {
     --size-#{$property}: #{$value};
   }
-
+  
   // Colors
   @each $color, $shades in $colors {
     @each $shade, $value in $shades {
@@ -446,6 +185,17 @@ $font-sizes: (
   // font sizes
   @each $property, $value in $font-sizes {
     --font-#{$property}: #{$value};
-  }
+  }  
 }
+
+
+
+/*===================== Gap Csss Start========================*/ 
+.gap-24px{
+  gap: 24px !important;
+}
+/*===================== Gap Csss End========================*/ 
+
+
+
 /* ========================= Variable Css End ======================== */

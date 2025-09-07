@@ -1,22 +1,8 @@
 import type { Metadata } from "next";
 import React from "react";
-import dynamic from "next/dynamic";
+import Preloader from "../helper/Preloader";
 import TopHeaderOne from "../components/TopHeaderOne";
 import HeaderOne from "../components/HeaderOne";
-import BannerOne from "../components/BannerOne";
-import OurFeatureOne from "../components/OurFeatureOne";
-import PaynoneOne from "../components/PaynoneOne";
-import ServicesOne from "../components/ServicesOne";
-import RequestSectionOne from "../components/RequestSectionOne";
-import WorkingSectionOne from "../components/WorkingSectionOne";
-import MobileSectionOne from "../components/MobileSectionOne";
-import TestimonialsOne from "../components/TestimonialsOne";
-import FAQOne from "../components/FAQOne";
-import PaymentMethodOne from "../components/PaymentMethodOne";
-import BlogOne from "../components/BlogOne";
-import NewsletterOne from "../components/NewsletterOne";
-import FooterOne from "../components/FooterOne";
-import Preloader from "../helper/Preloader";
 
 // const BrandSliderOne = dynamic(() => import("../components/BrandSliderOne"));
 // const ShowCaseOne = dynamic(() => import("../components/ShowCaseOne"));
@@ -51,10 +37,10 @@ const Page: React.FC = () => {
       <Preloader />
 
       {/* TopHeaderOne */}
-      {/* <TopHeaderOne /> */}
+      <TopHeaderOne />
 
       {/* HeaderOne */}
-      {/* <HeaderOne /> */}
+      <HeaderOne />
 
       {/* BannerOne */}
       {/* <BannerOne /> */}

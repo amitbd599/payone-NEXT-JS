@@ -14,7 +14,7 @@
       border-radius: 0.5rem; /* 8px */
    }
    &-xl {
-      border-radius: 0.75rem !important; /* 12px */
+      border-radius: 0.75rem; /* 12px */
    }
    &-2xl {
       border-radius: 1rem; /* 16px */
@@ -22,24 +22,17 @@
    &-3xl {
       border-radius: 1.5rem; /* 24px */
    }
-   &-28-px {
-      border-radius: 28px;
-   }
-   &-40-px {
-      border-radius: 40px;
-   }
-   &-50-px {
-      border-radius: 50px;
-   }
 }
-
-.rounded-top-45-px {
-   border-top-left-radius: 45px;
-   border-top-right-radius: 45px;
+.border-bottom-left-36-px {
+   border-bottom-left-radius: 36px;
 }
-
-.rounded-top-30-px {
-   border-top-left-radius: 30px;
-   border-top-right-radius: 30px;
+.border-top-left-24-px {
+   border-top-left-radius: 24px;
+}
+.border-top-left-80-px {
+   border-top-left-radius: 80px;
+}
+.border-bottom-right-24-px {
+   border-bottom-right-radius: 24px;
 }
 /* Border Radius Css End */

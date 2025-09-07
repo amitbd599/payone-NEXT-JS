@@ -1,3 +1,5 @@
+'use client'
+
 // CustomCursor.js
 import  { useEffect, useRef } from "react";
 import { gsap } from "gsap";

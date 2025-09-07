@@ -1,6 +1,6 @@
 // import "bootstrap/dist/js/bootstrap.js";
-import PhosphorIconsLoader from "../helper/PhosphorIconsLoader";
-import RouteScrollToTop from "../helper/RouteScrollToTop";
+// import PhosphorIconsLoader from "../helper/PhosphorIconsLoader";
+// import RouteScrollToTop from "../helper/RouteScrollToTop";
 import { Jost } from "next/font/google";
 import { Poppins } from "next/font/google";
 import { Vidaloka } from "next/font/google";
@@ -11,6 +11,7 @@ import { Montserrat_Alternates } from "next/font/google";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./globals.css";
+import InitData from "../helper/InitData";
 
 const jost = Jost({
   subsets: ["latin"],
@@ -90,8 +91,7 @@ export default function RootLayout({
       `}
     >
       <body suppressHydrationWarning={true}>
-        <RouteScrollToTop />
-        <PhosphorIconsLoader />
+       <InitData />
 
         {children}
       </body>

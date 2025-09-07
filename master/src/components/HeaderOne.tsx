@@ -1,9 +1,10 @@
+'use client'
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import { useLocation } from "react-router-dom";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const HeaderOne = () => {
-  const { pathname } = useLocation();
+  let pathname = usePathname();
   const [scroll, setScroll] = useState(false);
   let [mobileMenu, setMobileMenu] = useState(false);
   let MENU = [
@@ -91,7 +92,7 @@ const HeaderOne = () => {
           <nav className='d-flex align-items-center justify-content-between'>
             {/* Logo Start */}
             <div className='logo'>
-              <Link to='/' className='link'>
+              <Link href='/' className='link'>
                 <img
                   src='assets/images/logo/logo.png'
                   alt='img'
@@ -116,14 +117,14 @@ const HeaderOne = () => {
                     >
                       {item.children ? (
                         <Link
-                          to='#'
+                          href='#'
                           className='nav-menu__link tw-pe-5 text-white tw-py-9 fw-semibold w-100'
                         >
                           {item.label}
                         </Link>
                       ) : (
                         <Link
-                          to={item.to}
+                          href={item.to}
                           className='nav-menu__link text-white tw-py-9 fw-semibold w-100'
                         >
                           {item.label}
@@ -140,7 +141,7 @@ const HeaderOne = () => {
                               }`}
                             >
                               <Link
-                                to={sub.to}
+                                href={sub.to}
                                 className='nav-submenu__link hover-bg-neutral-100 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded hover-bg-main-100'
                               >
                                 {sub.label}
@@ -161,14 +162,14 @@ const HeaderOne = () => {
               <div className='d-sm-block d-none'>
                 <div className='d-flex align-items-center tw-gap-605 flex-wrap'>
                   <Link
-                    to='/log-in'
+                    href='/log-in'
                     className='text-white fw-semibold tw-text-lg hover-text-main-600 tw-duration-500'
                   >
                     LOGIN
                   </Link>
                   <div className='position-relative z-1'>
                     <Link
-                      to='/sign-up'
+                      href='/sign-up'
                       className='header-item-link text-dark-600 fw-semibold tw-text-lg tw-px-4 tw-py-2 bg-main-600 border-two-px-solid rounded-2 hover-text-dark-600'
                     >
                       SIGN IN
@@ -202,7 +203,7 @@ const HeaderOne = () => {
           <i className='ph ph-x' />
         </button>
         <div className='mobile-menu__inner'>
-          <Link to='/' className='mobile-menu__logo'>
+          <Link href='/' className='mobile-menu__logo'>
             <img src='assets/images/logo/logo.png' alt='Logo' />
           </Link>
           <div className='mobile-menu__menu'>
@@ -230,7 +231,7 @@ const HeaderOne = () => {
                       </button>
                     ) : (
                       <Link
-                        to={item.to}
+                        href={item.to}
                         className='nav-menu__link text-heading tw-py-9 fw-semibold w-100 text-white'
                       >
                         {item.label}
@@ -252,7 +253,7 @@ const HeaderOne = () => {
                             }`}
                           >
                             <Link
-                              to={sub.to}
+                              href={sub.to}
                               className='nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded'
                             >
                               {sub.label}
