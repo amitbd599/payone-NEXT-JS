@@ -1,7 +1,4 @@
 
-//  animation
-@import "animation";
-
 //  Typography
 @import "typography";
 
@@ -17,8 +14,6 @@
 @import "colors-hover";
 // cursor
 @import "cursor";
-// focus
-@import "focus";
 // outline
 @import "outline";
 
@@ -35,14 +30,10 @@
 @import "gap";
 // group
 @import "group";
-// grid
-@import "grid";
 // inset
 @import "inset";
 // line clamp
 @import "line-clamp";
-// line height
-@import "line-height";
 //  margin
 @import "margin";
 // max Height
@@ -53,6 +44,8 @@
 @import "overlay";
 //  padding
 @import "padding";
+//  placeholder
+@import "placeholder";
 // rounded
 @import "rounded";
 // rotate
@@ -65,8 +58,6 @@
 @import "scrollbar";
 // shadow 
 @import "shadow";
-// size 
-@import "size";
 // transition
 @import "transition";
 // duration
@@ -79,7 +70,9 @@
  @import "width";
 // Z index
  @import "z-index";
-// radient text
- @import "gradient-text";
-//clip path
- @import "clip-path";
+// line height
+ @import "line-height";
+// aspect
+ @import "aspect";
+// grid
+ @import "grid";

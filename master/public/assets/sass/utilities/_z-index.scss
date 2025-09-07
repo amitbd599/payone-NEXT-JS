@@ -9,11 +9,15 @@
     &-999 {
         z-index: 999;
     }
+    &-9999 {
+        z-index: 9999;
+    }
 }
-.tw-z-9 {
-    z-index: 9 !important;
-}
-.tw-hover-z-2:hover {
-    z-index: 2;
+.tw-hover-z {
+    &-9 {
+        &:hover {
+            z-index: 9;
+        }
+    }
 }
 /* Z index css End */

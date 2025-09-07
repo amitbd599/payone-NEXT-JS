@@ -41,24 +41,11 @@
             transform: scale(1.08);
         }
     }
-    &-2 {
+    &-14 {
         &:hover {
-            transform: scale(1.2);
+            transform: scale(1.4);
         }
     }
-    &-20 {
-        &:hover {
-            transform: scale(2);
-        }
-    }
-    &-30 {
-        &:hover {
-            transform: scale(3);
-        }
-    }
-}
-.transform-scale-09 {
-    transform: scaleX(-0.9);
 }
 /* Hover Scale Css End */
 

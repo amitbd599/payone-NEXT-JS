@@ -6,10 +6,24 @@
     }
 }
 
-.tw-leading {
-    &-none {
-        line-height: 1;
+.container {
+    max-width: 1400px;
+}
+
+.position-lg-absolute {
+    @media (min-width: 992px) {
+        position: absolute;
     }
+}
+
+.overflow-x-max-lg-auto {
+    @media (max-width: 991px) {
+        overflow-x: auto;
+    }
+}
+
+.transition-timing-linear {
+    transition-timing-function: linear;
 }
 
 .opacity-05 {
@@ -19,4 +33,14 @@
 .opacity-1 {
     opacity: .1;
 }
+
+.g-32-px, .gy-32-px {
+    --bs-gutter-y: 32px;
+}
+.g-32-px, .gx-32-px {
+    --bs-gutter-x: 32px;
+}
 /* ================================= Classes Css End =========================== */
+
+
+

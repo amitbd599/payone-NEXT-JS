@@ -7,20 +7,9 @@
     transform: translateX(-100%);
 }
 
-.tw--translate-middle {
-    transform: var(--translate-x-50) var(--translate-y-50);
-}
-
 /* Translate Y */
 .tw--translate-y-50 {
     transform: var(--translate-y-50);
-}
-
-.active--translate-y-scale-9 {
-    &:active {
-        transform: translateY(-4px) scale(.94);
-        transition: .06s;
-    }
 }
 
 .hover--translate-y {
@@ -38,6 +27,13 @@
         &:hover {
             transform: translateY(-8px);
         }
+    }
+}
+
+.active--translate-y-scale-9 {
+    &:active {
+        transform: translateY(-4px) scale(.94);
+        transition: .06s;
     }
 }
 
@@ -62,6 +58,11 @@
             transform: translateX(-2px);
         }
     }
+    &-05 {
+        &:hover {
+            transform: translateX(-2px);
+        }
+    }
     &-1 {
         &:hover {
             transform: translateX(-4px);
@@ -73,7 +74,8 @@
         }
     }
 }
-.tw-transform-x--1 {
-    transform: scaleX(-1);
+
+.translate-x-100-16 {
+    transform: translateX(calc(100% + 16px));
 }
 /*================================== Translate Css End  ==================================*/

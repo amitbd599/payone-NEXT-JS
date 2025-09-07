@@ -4,10 +4,9 @@
 @import "components/index";
 // utilities
 @import "utilities/index";
-// layout
+// Layout
 @import "layout/index";
-// rtl
-@import "rtl";
+// Partials
+@import "partials/index";
 
-// extra
-@import "extra";
+@import "extra.scss";

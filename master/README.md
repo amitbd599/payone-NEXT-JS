@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# SassTech - Saas Software and IT Solution Multipurpose NEXT JS Template
 
-## Getting Started
+Thank you for purchasing SassTech - Saas Software and IT Solution Multipurpose NEXT JS Template If you have any questions that are beyond the scope of this help file, please feel free to email, via my user page contact form or put a ticket at Support Center .
+Thank you so much!
 
-First, run the development server:
+## All Pages
+
+- Home one
+- Home two
+- Home three
+- Home four
+- Home five
+- Pricing-plan
+- About
+- App Integration
+- Intigration-details
+- Policy-privacy
+- Faq
+- Project Details
+- Service Details
+- Shop
+- Shop Details
+- Cart
+- Checkout
+- Blog
+- blog Details
+- Contact
+- Sign In
+- Sign Up
+
+## Installation
+
+- Install recommended version of NodeJS.
+- Use this command line on the terminal to navigate to the project root directory.
+- Run those flowing commands.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  npm install
+  npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- You will now see the website live.
+- Build the project using this command.
+- Run those flowing commands.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Demo
 
-## Learn More
+Insert gif or link to demo
 
-To learn more about Next.js, take a look at the following resources:
+https://nextjs.sasstech.webnextpro.com/
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- TypeScript support.
+- Latest NEXT & React version.
+- 100% pixel perfect design
+- Clean and Simple Style
+- Cross Browser Optimization.
+- Google font.
+- Compatible Browsers – IE9+, Chrome, Safari, Opera, Firefox
+- Documentation – Yes
+- License – GPL
+- Version – 1.0.0
+- Columns – 4
+- Files Included -html, JSX, scss
+- User Friendly Code
+- Easy to customize
+- W3C Validation
+- Clean & Modern Design
+- CSS3 animations
+- Full Responsive
+- SEO friendly code
 
-## Deploy on Vercel
+## Support
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have any queries, please feel free to contact us at Support Center. mrsen007@gmail.com
