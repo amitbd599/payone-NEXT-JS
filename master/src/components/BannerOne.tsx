@@ -1,23 +1,30 @@
+"use client";
 import { useInView } from "react-intersection-observer";
 import CountUp from "react-countup";
 import Popup from "reactjs-popup";
 
 import Marquee from "react-fast-marquee";
+import type React from "react";
+import Image from "next/image";
 
-const BannerOne = () => {
+const BannerOne: React.FC = () => {
   const { ref, inView } = useInView({
     threshold: 0,
   });
   return (
     <>
       <section className='pt-120 bg-base-two-600 z-1 position-relative overflow-hidden'>
-        <img
-          src='assets/images/shape/banner-scroll-img1.png'
+        <Image
+          src='/assets/images/shape/banner-scroll-img1.png'
+          width={54}
+          height={325}
           alt='img'
           className='position-absolute inset-block-end-80px inset-inline-start-7-persent d-lg-block d-none animation-moveTopBottom__two'
         />
-        <img
-          src='assets/images/shape/circle-shape-img1.png'
+        <Image
+          src='/assets/images/shape/circle-shape-img1.png'
+          width={55}
+          height={53}
           alt='img'
           className='position-absolute inset-block-start-79px inset-inline-start-7-persent d-lg-block d-none animation-rotation__two'
         />
@@ -32,7 +39,12 @@ const BannerOne = () => {
                       data-aos='fade-up'
                       data-aos-duration={800}
                     >
-                      <img src='assets/images/icon/star-icon1.png' alt='star' />
+                      <Image
+                        src='/assets/images/icon/star-icon1.png'
+                        alt='star'
+                        width={30}
+                        height={30}
+                      />
                       <span className='fw-normal tw-text-xl text-neutral-10 cursor-big'>
                         EASY PAYMENT
                       </span>
@@ -45,8 +57,10 @@ const BannerOne = () => {
                       <h2 className='banner-item-title text-neutral-10 fw-normal tw-mb-3 tw-text-15 cursor-big h1'>
                         Fast, Secure, &amp; Easy Transactions.
                       </h2>
-                      <img
-                        src='assets/images/shape/line-shape1.png'
+                      <Image
+                        src='/assets/images/shape/line-shape1.png'
+                        width={413}
+                        height={20}
                         alt='Image'
                         className='banner-shape-one position-absolute max-w-411-px z-n1 inset-block-start-62px inset-inline-end--30px d-lg-block d-none'
                       />
@@ -92,10 +106,9 @@ const BannerOne = () => {
                               height='315'
                               src='https://www.youtube.com/embed/_qZI6i21jB4?si=B3DKJleTi_2wA48l'
                               title='YouTube video player'
-                              frameborder='0'
                               allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-                              referrerpolicy='strict-origin-when-cross-origin'
-                              allowfullscreen
+                              referrerPolicy='strict-origin-when-cross-origin'
+                              allowFullScreen
                             ></iframe>
                           </div>
                         </Popup>
@@ -110,8 +123,10 @@ const BannerOne = () => {
                   data-aos='fade-up'
                   data-aos-duration={1500}
                 >
-                  <img
-                    src='assets/images/thumbs/banner-img1.png'
+                  <Image
+                    width={544}
+                    height={684}
+                    src='/assets/images/thumbs/banner-img1.png'
                     alt='img'
                     className='margin-top--40px'
                   />
@@ -121,14 +136,23 @@ const BannerOne = () => {
             <div className='banner-item' ref={ref}>
               <div className='bg-white tw-py-5 tw-px-5 rounded-3 d-inline-flex align-items-center tw-gap-3 position-absolute inset-block-start-70-persent inset-inline-start-42-persent z-1 max-w-263 animation-Updowm__two'>
                 <div className='d-flex align-items-center '>
-                  <img src='assets/images/thumbs/banner-img4.png' alt='img' />
-                  <img
-                    src='assets/images/thumbs/banner-img3.png'
+                  <Image
+                    src='/assets/images/thumbs/banner-img4.png'
+                    alt='img'
+                    width={48}
+                    height={49}
+                  />
+                  <Image
+                    src='/assets/images/thumbs/banner-img3.png'
+                    width={48}
+                    height={49}
                     alt='img'
                     className='margin-left--16px'
                   />
-                  <img
-                    src='assets/images/thumbs/banner-img2.png'
+                  <Image
+                    src='/assets/images/thumbs/banner-img2.png'
+                    width={48}
+                    height={49}
                     alt='img'
                     className='margin-left--16px'
                   />
@@ -148,18 +172,24 @@ const BannerOne = () => {
                 </div>
               </div>
             </div>
-            <img
-              src='assets/images/shape/banner-shape-1.png'
+            <Image
+              src='/assets/images/shape/banner-shape-1.png'
+              width={36}
+              height={54}
               alt='igm'
               className='position-absolute inset-block-start-44-persent inset-inline-start-50-persent z-n1 d-lg-block d-none animation-pulse__two'
             />
-            <img
-              src='assets/images/shape/arrow-shape1.png'
+            <Image
+              src='/assets/images/shape/arrow-shape1.png'
+              width={224}
+              height={221}
               alt='img'
               className='arrow-shape-one position-absolute inset-inline-start-44-persent inset-block-start--10-persent z-n1 d-lg-block d-none animate-wobble__two'
             />
-            <img
-              src='assets/images/shape/banner-shape2.png'
+            <Image
+              src='/assets/images/shape/banner-shape2.png'
+              width={78}
+              height={78}
               alt='img'
               className='banner-shape-two position-absolute inset-inline-end--120px inset-block-end-120px z-n1 d-lg-block d-none animation-rotation__two'
             />
@@ -214,50 +244,66 @@ const BannerOne = () => {
               <div className='swiper-wrapper d-flex align-items-center w-100'>
                 <Marquee>
                   <div className='px-4'>
-                    <img
-                      src='assets/images/logo/banner-slider-img1.png'
+                    <Image
+                      src='/assets/images/logo/banner-slider-img1.png'
+                      width={146}
+                      height={60}
                       alt='Image'
                     />
                   </div>
                   <div className='px-4'>
-                    <img
-                      src='assets/images/logo/banner-slider-img2.png'
+                    <Image
+                      src='/assets/images/logo/banner-slider-img2.png'
+                      width={150}
+                      height={60}
                       alt='Image'
                     />
                   </div>
                   <div className='px-4'>
-                    <img
-                      src='assets/images/logo/banner-slider-img3.png'
+                    <Image
+                      src='/assets/images/logo/banner-slider-img3.png'
+                      width={168}
+                      height={60}
                       alt='Image'
                     />
                   </div>
                   <div className='px-4'>
-                    <img
-                      src='assets/images/logo/banner-slider-img4.png'
+                    <Image
+                      src='/assets/images/logo/banner-slider-img4.png'
+                      width={157}
+                      height={60}
                       alt='Image'
                     />
                   </div>
                   <div className='px-4'>
-                    <img
-                      src='assets/images/logo/banner-slider-img5.png'
+                    <Image
+                      src='/assets/images/logo/banner-slider-img5.png'
+                      width={148}
+                      height={60}
                       alt='Image'
                     />
                   </div>
                   <div className='px-4'>
-                    <img
-                      src='assets/images/logo/banner-slider-img6.png'
+                    <Image
+                      src='/assets/images/logo/banner-slider-img6.png'
+                      width={168}
+                      height={60}
                       alt='Image'
                     />
                   </div>
                   <div className='px-4'>
-                    <img
-                      src='assets/images/logo/banner-slider-img7.png'
+                    <Image
+                      src='/assets/images/logo/banner-slider-img7.png'
+                      width={168}
+                      height={60}
                       alt='Image'
                     />
                   </div>
                   <div className='px-4'>
-                    <img
-                      src='assets/images/logo/banner-slider-img4.png'
+                    <Image
+                      src='/assets/images/logo/banner-slider-img4.png'
+                      width={157}
+                      height={60}
                       alt='Image'
                     />
                   </div>

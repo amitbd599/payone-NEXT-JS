@@ -1,4 +1,7 @@
-const DashboardFooter = () => {
+import type React from "react";
+import { Link } from "react-router-dom";
+
+const DashboardFooter: React.FC = () => {
   return (
     <div className='tw-py-6'>
       <div className='container'>
@@ -9,45 +12,45 @@ const DashboardFooter = () => {
           </p>
           <ul className='d-flex align-items-center tw-gap-2 flex-wrap'>
             <li>
-              <a
-                href='https://www.facebook.com'
+              <Link
+                to='https://www.facebook.com'
                 className='w-11 h-11 bg-base-two-10 tw-text-xl text-dark-600 rounded-circle hover-bg-base-two-600 hover-text-white tw-duration-400 d-flex align-items-center justify-content-center'
               >
                 <i className='ph ph-facebook-logo' />
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href='https://www.instagram.com/accounts/login'
+              <Link
+                to='https://www.instagram.com/accounts/login'
                 className='w-11 h-11 bg-base-two-10 tw-text-xl text-dark-600 rounded-circle hover-bg-base-two-600 hover-text-white tw-duration-400 d-flex align-items-center justify-content-center'
               >
                 <i className='ph ph-instagram-logo' />
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href='https://twitter-cl.vercel.app/login'
+              <Link
+                to='https://twitter-cl.vercel.app/login'
                 className='w-11 h-11 bg-base-two-10 tw-text-xl text-dark-600 rounded-circle hover-bg-base-two-600 hover-text-white tw-duration-400 d-flex align-items-center justify-content-center'
               >
                 <i className='ph ph-twitter-logo' />
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href='https://www.linkedin.com'
+              <Link
+                to='https://www.linkedin.com'
                 className='w-11 h-11 bg-base-two-10 tw-text-xl text-dark-600 rounded-circle hover-bg-base-two-600 hover-text-white tw-duration-400 d-flex align-items-center justify-content-center'
               >
                 <i className='ph ph-linkedin-logo' />
-              </a>
+              </Link>
             </li>
           </ul>
           <div className='d-flex align-items-center tw-gap-6 flex-wrap'>
-            <a href='#' className='fw-normal tw-text-lg text-dark-500'>
+            <Link to='#' className='fw-normal tw-text-lg text-dark-500'>
               Privacy policy
-            </a>
-            <a href='#' className='fw-normal tw-text-lg text-dark-500'>
+            </Link>
+            <Link to='#' className='fw-normal tw-text-lg text-dark-500'>
               Terms of condition
-            </a>
+            </Link>
           </div>
         </div>
       </div>

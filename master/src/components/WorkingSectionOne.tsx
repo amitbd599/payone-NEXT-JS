@@ -1,4 +1,6 @@
-const WorkingSectionOne = () => {
+import type React from "react";
+
+const WorkingSectionOne: React.FC = () => {
   return (
     <section className='py-140 z-1 bg-neutral-10 margin-top--311px overflow-hidden'>
       <div className='container'>

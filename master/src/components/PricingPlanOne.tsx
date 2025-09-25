@@ -1,6 +1,7 @@
+import type React from "react";
 import { Link } from "react-router-dom";
 
-const PricingPlanOne = () => {
+const PricingPlanOne: React.FC = () => {
   return (
     <section className='py-140 overflow-hidden'>
       <div className='container'>
@@ -37,7 +38,7 @@ const PricingPlanOne = () => {
                   type='checkbox'
                   role='switch'
                   id='switchCheckChecked'
-                  defaultChecked=''
+                  defaultChecked={false}
                 />
               </div>
               <span className='fw-medium tw-text-lg text-dark-600'>

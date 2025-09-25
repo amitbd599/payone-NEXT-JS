@@ -1,4 +1,6 @@
-const OurPlatformOne = () => {
+import type React from "react";
+
+const OurPlatformOne: React.FC = () => {
   return (
     <section className='py-140 overflow-hidden'>
       <div className='container'>

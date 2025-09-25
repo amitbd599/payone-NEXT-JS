@@ -1,6 +1,7 @@
+import type React from "react";
 import { Link } from "react-router-dom";
 
-const FooterThree = () => {
+const FooterThree: React.FC = () => {
   return (
     <footer className='tw-pt-250px bg-dark-600 z-1 overflow-hidden'>
       <div className='container'>

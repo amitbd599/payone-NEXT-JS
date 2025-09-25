@@ -1,7 +1,8 @@
+import type React from "react";
 import { Link } from "react-router-dom";
 
-const SignUpInner = () => {
-  const handleSubmit = (e) => {
+const SignUpInner: React.FC = () => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault(); // Prevent page reload
     const formData = new FormData(e.currentTarget);
     const email = formData.get("email");
@@ -9,8 +10,11 @@ const SignUpInner = () => {
     const password = formData.get("password");
     const terms = formData.get("terms");
 
-    // Handle the form submission logic here
-    console.log("Data Submitted:", { email, firstName, password, terms });
+    // Production-safe: mark as intentionally unused
+    void email;
+    void firstName;
+    void password;
+    void terms;
   };
   return (
     <section className='position-relative'>

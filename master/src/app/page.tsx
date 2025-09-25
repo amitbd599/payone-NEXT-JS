@@ -1,38 +1,36 @@
 import type { Metadata } from "next";
-import React from "react";
-import Preloader from "../helper/Preloader";
-import TopHeaderOne from "../components/TopHeaderOne";
-import HeaderOne from "../components/HeaderOne";
-
-// const BrandSliderOne = dynamic(() => import("../components/BrandSliderOne"));
-// const ShowCaseOne = dynamic(() => import("../components/ShowCaseOne"));
+import TopHeaderOne from "@/components/TopHeaderOne";
+import Preloader from "@/helper/Preloader";
+import HeaderOne from "@/components/HeaderOne";
+import BannerOne from "@/components/BannerOne";
+import AOSWrap from "@/helper/AOSWrap";
 
 export const generateMetadata = async (): Promise<Metadata> => {
   return {
-    title: "About | SassTech - Saas Software and IT Solution",
+    title: "Home | PayOne Money Exchange React JS Template",
     description:
-      "Learn more about our SaaS software, team, features, and IT solutions.",
+      "PayOne is a professional React JS template for online money exchange, remittance, and digital payment services. Clean design, responsive layout, and modern UI components included.",
     openGraph: {
-      title: "Home | SassTech",
+      title: "Home | PayOne",
       description:
-        "Learn more about our SaaS software, team, features, and IT solutions.",
-      url: "https://nextjs.sasstech.webnextpro.com/about",
+        "PayOne is a professional React JS template for online money exchange, remittance, and digital payment services. Clean design, responsive layout, and modern UI components included.",
+      url: "https://nextjs.payone.webnextpro.com/about",
       type: "website",
       images: [
         {
-          url: "https://nextjs.sasstech.webnextpro.com/images/about-og.jpg",
+          url: "https://nextjs.payone.webnextpro.com/images/meta.png",
           width: 1200,
           height: 630,
-          alt: "About SassTech",
+          alt: "PayOne",
         },
       ],
     },
   };
 };
 
-const Page: React.FC = () => {
+export default function Home() {
   return (
-    <>
+    <AOSWrap>
       {/* <Preloader /> */}
       <Preloader />
 
@@ -43,45 +41,32 @@ const Page: React.FC = () => {
       <HeaderOne />
 
       {/* BannerOne */}
-      {/* <BannerOne /> */}
+      <BannerOne />
 
       {/* OurFeatureOne */}
       {/* <OurFeatureOne /> */}
-
       {/* PaynoneOne */}
       {/* <PaynoneOne /> */}
-
       {/* ServicesOne */}
       {/* <ServicesOne /> */}
-
       {/* RequestSectionOne */}
       {/* <RequestSectionOne /> */}
-
       {/* WorkingSectionOne */}
       {/* <WorkingSectionOne /> */}
-
       {/* MobileSectionOne */}
       {/* <MobileSectionOne /> */}
-
       {/* TestimonialsOne */}
       {/* <TestimonialsOne /> */}
-
       {/* FAQOne */}
       {/* <FAQOne /> */}
-
       {/* PaymentMethodOne */}
       {/* <PaymentMethodOne /> */}
-
       {/* BlogOne */}
       {/* <BlogOne /> */}
-
       {/* NewsletterOne */}
       {/* <NewsletterOne /> */}
-
       {/* FooterOne */}
       {/* <FooterOne /> */}
-    </>
+    </AOSWrap>
   );
-};
-
-export default Page;
+}

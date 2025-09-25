@@ -1,6 +1,7 @@
+import type React from "react";
 import { Link } from "react-router-dom";
 
-const TeamMemberOne = () => {
+const TeamMemberOne: React.FC = () => {
   return (
     <section className='py-140 bg-neutral-10 overflow-hidden'>
       <div className='container'>

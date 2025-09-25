@@ -1,6 +1,7 @@
+import type React from "react";
 import Marquee from "react-fast-marquee";
 
-const BrandSliderOne = () => {
+const BrandSliderOne: React.FC = () => {
   return (
     <section className='pt-80 pb-140'>
       <div className='container'>

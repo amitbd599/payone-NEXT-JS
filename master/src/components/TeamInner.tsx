@@ -1,4 +1,6 @@
-const TeamInner = () => {
+import type React from "react";
+
+const TeamInner: React.FC = () => {
   return (
     <section className='bg-neutral-10 py-140'>
       <div className='container'>

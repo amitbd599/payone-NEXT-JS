@@ -1,15 +1,20 @@
+import type React from "react";
 import CountryDropdown from "../helper/CountryDropdown";
 
-const RequestSectionOne = () => {
-  const handleSubmit = (e) => {
+const RequestSectionOne: React.FC = () => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault(); // Prevent page reload
     const formData = new FormData(e.currentTarget);
     const name = formData.get("name");
     const email = formData.get("email");
     const country = formData.get("country");
     const amount = formData.get("amount");
-    // Handle the form submission logic here
-    console.log("Name Submitted:", { name, email, country, amount });
+
+    // Production-safe: mark as intentionally unused
+    void name;
+    void email;
+    void country;
+    void amount;
   };
 
   return (

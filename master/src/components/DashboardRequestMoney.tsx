@@ -1,7 +1,8 @@
+import type React from "react";
 import CountryDropdown from "../helper/CountryDropdown";
 
-const DashboardRequestMoney = () => {
-  const handleSubmitPersonalDetails = (e) => {
+const DashboardRequestMoney: React.FC = () => {
+  const handleSubmitPersonalDetails = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault(); // Prevent page reload
     const formData = new FormData(e.currentTarget);
     const name = formData.get("name");
@@ -10,13 +11,18 @@ const DashboardRequestMoney = () => {
     const description = formData.get("description");
     const date = formData.get("date");
 
-    // Handle the form submission logic here
-    console.log("Data Submitted:", { name, email, country, description, date });
+
+    // Production-safe: mark as intentionally unused
+    void name;
+    void email;
+    void country;
+    void description;
+    void date;
+
   };
   return (
     <div className='flex-grow-1 position-relative z-1'>
       <div className='bg-white tw-px-10 rounded-3 tw-py-8 w-100 tw-mb-6'>
-
         <div className='row gy-4'>
           <div className='col-lg-6'>
             <div className='bg-neutral-10 tw-pt-11 rounded-3 w-100 h-100'>

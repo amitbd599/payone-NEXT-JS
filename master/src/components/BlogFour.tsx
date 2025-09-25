@@ -1,6 +1,7 @@
+import type React from "react";
 import { Link } from "react-router-dom";
 
-const BlogFour = () => {
+const BlogFour: React.FC = () => {
   return (
     <section className='py-140 z-1 bg-neutral-10'>
       <div className='container'>

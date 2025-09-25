@@ -1,8 +1,9 @@
 import { useInView } from "react-intersection-observer";
 import CountUp from "react-countup";
 import Popup from "reactjs-popup";
+import type React from "react";
 
-const JoinSectionOne = () => {
+const JoinSectionOne: React.FC = () => {
   const { ref, inView } = useInView({
     threshold: 0,
   });
@@ -103,10 +104,9 @@ const JoinSectionOne = () => {
                     height='550'
                     src='https://www.youtube.com/embed/_qZI6i21jB4?si=wIfHbzECyIGTfp6z'
                     title='YouTube video player'
-                    frameborder='0'
                     allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-                    referrerpolicy='strict-origin-when-cross-origin'
-                    allowfullscreen
+                    referrerPolicy='strict-origin-when-cross-origin'
+                    allowFullScreen
                   ></iframe>
                 </div>
               </Popup>

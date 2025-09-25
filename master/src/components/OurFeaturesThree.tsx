@@ -1,4 +1,6 @@
-const OurFeaturesThree = () => {
+import type React from "react";
+
+const OurFeaturesThree: React.FC = () => {
   return (
     <section className='py-140 bg-neutral-10 overflow-hidden'>
       <div className='container'>

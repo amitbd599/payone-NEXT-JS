@@ -1,5 +1,7 @@
-const ContactInner = () => {
-  const handleSubmit = (e) => {
+import type React from "react";
+
+const ContactInner: React.FC = () => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault(); // Prevent page reload
     const formData = new FormData(e.currentTarget);
     const email = formData.get("email");
@@ -8,8 +10,12 @@ const ContactInner = () => {
     const number = formData.get("number");
     const subject = formData.get("subject");
 
-    // Handle the form submission logic here
-    console.log("Data Submitted:", { name, email, message, number, subject });
+    // Production-safe: mark as intentionally unused
+    void email;
+    void message;
+    void name;
+    void number;
+    void subject;
   };
   return (
     <section className='bg-neutral-10 py-140 '>

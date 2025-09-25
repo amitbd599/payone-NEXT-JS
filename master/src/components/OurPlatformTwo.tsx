@@ -1,8 +1,8 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-const OurPlatformTwo = () => {
-  let [activeTab, setActiveTab] = useState(1);
+const OurPlatformTwo: React.FC = () => {
+  const [activeTab, setActiveTab] = useState<number>(1);
 
   return (
     <section className='bg-base-two-600 py-140 position-relative z-1 overflow-hidden'>

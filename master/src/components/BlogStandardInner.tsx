@@ -1,6 +1,7 @@
+import type React from "react";
 import { Link } from "react-router-dom";
 
-const BlogStandardInner = () => {
+const BlogStandardInner: React.FC = () => {
   return (
     <section className='py-140 bg-neutral-10'>
       <div className='container'>
@@ -77,7 +78,7 @@ const BlogStandardInner = () => {
                   </div>
                   <h3 className=''>
                     <Link
-                      href='#'
+                      to='#'
                       className='fw-normal text-dark-600 tw-mb-10 line-clamp-2 cursor-big'
                     >
                       The Future of Digital Payments: Fast, Secure &amp;

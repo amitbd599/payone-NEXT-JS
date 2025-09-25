@@ -1,16 +1,19 @@
-'use client'
+"use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-export default function InitializeAOS() {
+const InitializeAOS: React.FC = () => {
+  const [isClient, setIsClient] = useState(false);
   useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
+    AOS.init({ once: true });
+    setIsClient(true);
   }, []);
 
+  if (!isClient) return null;
+
   return null;
-}
+};
+
+export default InitializeAOS;

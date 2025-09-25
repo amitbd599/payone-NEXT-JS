@@ -1,4 +1,6 @@
-const PaynoneOne = () => {
+import type React from "react";
+
+const PaynoneOne: React.FC = () => {
   return (
     <section className='z-1 bg-neutral-10 py-140 position-relative overflow-hidden'>
       <div className='container'>

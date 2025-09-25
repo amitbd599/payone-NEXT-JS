@@ -1,7 +1,8 @@
+import type React from "react";
 import { Link } from "react-router-dom";
-import Slider from "react-slick/lib/slider";
+import Slider from "react-slick";
 
-const OurServicesOne = () => {
+const OurServicesOne: React.FC = () => {
   const settings = {
     infinite: true,
     slidesToScroll: 1,

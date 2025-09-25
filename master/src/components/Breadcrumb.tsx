@@ -1,6 +1,12 @@
+import type React from "react";
 import { Link } from "react-router-dom";
 
-const Breadcrumb = ({ title }) => {
+
+interface BreadcrumbProps {
+  title: string;
+}
+
+const Breadcrumb: React.FC<BreadcrumbProps> = ({ title }) => {
   return (
     <div className='tw-h-333-px bg-base-two-600 position-relative z-1 py-120'>
       <img

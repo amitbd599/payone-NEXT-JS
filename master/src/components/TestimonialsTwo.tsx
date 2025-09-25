@@ -1,7 +1,7 @@
-import { useRef } from "react";
+import React, { useRef } from "react";
 import Slider from "react-slick";
-const TestimonialsTwo = () => {
-  const sliderRef = useRef(null);
+const TestimonialsTwo: React.FC = () => {
+const sliderRef = useRef<Slider | null>(null);
   const settings = {
     infinite: true,
     slidesToShow: 2,

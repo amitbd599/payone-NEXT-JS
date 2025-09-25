@@ -1,7 +1,7 @@
-import { useRef } from "react";
+import React, { useRef } from "react";
 import Slider from "react-slick";
-const TestimonialsThree = () => {
-  const sliderRef = useRef(null);
+const TestimonialsThree: React.FC = () => {
+  const sliderRef = useRef<Slider | null>(null);
   const settings = {
     infinite: true,
     slidesToShow: 3,
@@ -84,7 +84,7 @@ const TestimonialsThree = () => {
               data-aos-duration={1000}
             >
               <button
-                onClick={() => sliderRef.current.slickPrev()}
+                onClick={() => sliderRef.current?.slickPrev()}
                 type='button'
                 className='testimonial-button-prev w-12 h-12 border-base-two-600 border rounded-circle d-flex align-items-center justify-content-center tw-text-6 hover-bg-base-two-600 tw-transition-04-secend hover-text-white'
               >

@@ -1,8 +1,9 @@
 import { useInView } from "react-intersection-observer";
 import CountUp from "react-countup";
 import { Link } from "react-router-dom";
+import type React from "react";
 
-const BannerFour = () => {
+const BannerFour: React.FC = () => {
   const { ref, inView } = useInView({
     threshold: 0,
   });

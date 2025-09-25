@@ -1,9 +1,9 @@
-import { useRef } from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
 
-const PaymentOne = () => {
-  const sliderRef = useRef(null);
+const PaymentOne: React.FC = () => {
+  const sliderRef = useRef<Slider | null>(null);
   const settings = {
     infinite: true,
     slidesToShow: 5,

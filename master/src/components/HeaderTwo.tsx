@@ -1,12 +1,10 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
-const HeaderTwo = () => {
+const HeaderTwo: React.FC = () => {
   const { pathname } = useLocation();
-  const [scroll, setScroll] = useState(false);
-  let [mobileMenu, setMobileMenu] = useState(false);
-  let MENU = [
+  const MENU = [
     {
       label: "HOME",
       children: [
@@ -56,27 +54,41 @@ const HeaderTwo = () => {
     { label: "CONTACT", to: "/contact" },
   ];
 
+  const [scroll, setScroll] = useState<boolean>(false);
+  const [mobileMenu, setMobileMenu] = useState<boolean>(false);
+
   useEffect(() => {
-    window.onscroll = () => {
+    const handleScroll = () => {
       if (window.pageYOffset < 150) {
         setScroll(false);
-      } else if (window.pageYOffset > 150) {
+      } else {
         setScroll(true);
       }
-      return () => (window.onscroll = null);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // cleanup to avoid memory leaks
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
-  const handleMobileMenu = () => {
-    setMobileMenu(!mobileMenu);
+  const handleMobileMenu = (): void => {
+    setMobileMenu((prev) => !prev);
   };
 
-  const [openIndex, setOpenIndex] = useState(-1);
+  const [openIndex, setOpenIndex] = useState<number>(-1);
 
-  const isItemActive = (item) =>
+  interface NavItem {
+    to?: string;
+    children?: NavItem[];
+  }
+
+  const isItemActive = (item: NavItem): boolean =>
     item.to
       ? item.to === pathname
-      : item.children?.some((c) => c.to === pathname);
+      : item.children?.some((c) => c.to === pathname) ?? false;
 
   return (
     <>

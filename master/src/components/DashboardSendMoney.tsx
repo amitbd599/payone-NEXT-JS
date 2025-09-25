@@ -1,28 +1,29 @@
 import CountryDropdown from "../helper/CountryDropdown";
 
-const DashboardSendMoney = () => {
-  const handleSubmitPersonalDetails = (e) => {
+const DashboardSendMoney: React.FC = () => {
+  const handleSubmitPersonalDetails = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault(); // Prevent page reload
     const formData = new FormData(e.currentTarget);
     const address = formData.get("address");
     const send_amount = formData.get("send_amount");
     const recipient_amount = formData.get("recipient_amount");
 
-    // Handle the form submission logic here
-    console.log("Data Submitted:", { address, send_amount, recipient_amount });
+    // Production-safe: mark as intentionally unused
+    void address;
+    void send_amount;
+    void recipient_amount;
   };
-  const handleSubmitConfirmations = (e) => {
+  const handleSubmitConfirmations = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault(); // Prevent page reload
     const formData = new FormData(e.currentTarget);
     const description = formData.get("description");
 
-    // Handle the form submission logic here
-    console.log("Data Submitted:", { description });
+    // Production-safe: mark as intentionally unused
+    void description;
   };
   return (
     <div className='flex-grow-1 position-relative z-1'>
       <div className='bg-white tw-px-10 rounded-3 tw-py-8 w-100 tw-mb-6'>
-
         <div className='row gy-4'>
           <div className='col-lg-6'>
             <div className='bg-neutral-10 tw-pt-11 rounded-3 w-100 h-100'>

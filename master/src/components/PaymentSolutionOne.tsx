@@ -1,4 +1,6 @@
-const PaymentSolutionOne = () => {
+import type React from "react";
+
+const PaymentSolutionOne: React.FC = () => {
   return (
     <section className='py-140 bg-neutral-10'>
       <div className='container'>

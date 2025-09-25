@@ -1,15 +1,18 @@
+import type React from "react";
 import { Link } from "react-router-dom";
 
-const LoginInInner = () => {
-  const handleSubmit = (e) => {
+const LoginInInner: React.FC = () => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault(); // Prevent page reload
     const formData = new FormData(e.currentTarget);
     const email = formData.get("email");
     const password = formData.get("password");
     const rememberMe = formData.get("rememberMe");
 
-    // Handle the form submission logic here
-    console.log("Data Submitted:", { email, password, rememberMe });
+    // Production-safe: mark as intentionally unused
+    void email;
+    void password;
+    void rememberMe;
   };
   return (
     <section className='position-relative'>

@@ -1,6 +1,7 @@
+import type React from "react";
 import { Link } from "react-router-dom";
 
-const NewsletterOne = () => {
+const NewsletterOne: React.FC = () => {
   return (
     <div
       className='margin-block-end--162px z-2 overflow-hidden'

@@ -1,7 +1,8 @@
-const DashboardNotifications = () => {
+import type React from "react";
+
+const DashboardNotifications: React.FC = () => {
   return (
     <div className='bg-white tw-rounded-xl w-100 tw-px-15 tw-py-15 h-100 position-relative z-1'>
-
       <div className='tw-mb-15'>
         <h4 className='fw-normal text-dark-600 tw-mb-3'>Notifications</h4>
         <p className='fw-normal tw-text-lg text-dark-500'>
@@ -28,7 +29,7 @@ const DashboardNotifications = () => {
               type='checkbox'
               role='switch'
               id='switchCheckChecked'
-              defaultChecked=''
+              defaultChecked={false}
             />
           </div>
         </div>
@@ -47,7 +48,7 @@ const DashboardNotifications = () => {
               type='checkbox'
               role='switch'
               id='switchCheckCheckedd'
-              defaultChecked=''
+              defaultChecked={false}
             />
           </div>
         </div>
@@ -84,7 +85,7 @@ const DashboardNotifications = () => {
               type='checkbox'
               role='switch'
               id='switchCheckCheckeddd'
-              defaultChecked=''
+              defaultChecked={false}
             />
           </div>
         </div>
@@ -121,7 +122,7 @@ const DashboardNotifications = () => {
               type='checkbox'
               role='switch'
               id='switchCheckCheckedddd'
-              defaultChecked=''
+              defaultChecked={false}
             />
           </div>
         </div>

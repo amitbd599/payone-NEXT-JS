@@ -1,10 +1,17 @@
 import { useState } from "react";
+import type { ReactNode } from "react";
 import { Link, useLocation } from "react-router-dom";
 
-const DashboardProfileSection = ({ children }) => {
-  let { pathname } = useLocation();
+interface DashboardProfileProps {
+  children: ReactNode;
+}
 
-  let [active, setActive] = useState(false);
+const DashboardProfileSection: React.FC<DashboardProfileProps> = ({
+  children,
+}) => {
+  const { pathname } = useLocation();
+
+  const [active, setActive] = useState(false);
 
   return (
     <section className='bg-neutral-10 z-1 '>

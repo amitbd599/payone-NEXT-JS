@@ -1,23 +1,26 @@
+import type React from "react";
 import CountryDropdown from "../helper/CountryDropdown";
 
-const DashboardDepositMoney = () => {
-  const handleSubmitPayerDetails = (e) => {
+
+const DashboardDepositMoney: React.FC = () => {
+  const handleSubmitPayerDetails = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault(); // Prevent page reload
     const formData = new FormData(e.currentTarget);
     const amount = formData.get("amount");
     const payment = formData.get("payment");
 
-    // Handle the form submission logic here
-    console.log("Data Submitted:", { amount, payment });
+    // Production-safe: mark as intentionally unused
+    void amount;
+    void payment;
   };
-  const handleSubmitPayerDetails_2 = (e) => {
+  const handleSubmitPayerDetails_2 = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault(); // Prevent page reload
     const formData = new FormData(e.currentTarget);
 
     const payment = formData.get("payment");
 
-    // Handle the form submission logic here
-    console.log("Data Submitted:", { payment });
+    // Production-safe: mark as intentionally unused
+    void payment;
   };
   return (
     <div className='flex-grow-1 position-relative z-1'>

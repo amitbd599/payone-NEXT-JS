@@ -1,8 +1,8 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-const WhyChooseUsTwo = () => {
-  let [active, setActive] = useState(1);
+const WhyChooseUsTwo: React.FC = () => {
+  const [active, setActive] = useState<number>(1);
   return (
     <section className='py-140 z-1 overflow-hidden'>
       <div className='container'>

@@ -1,5 +1,7 @@
-const DashboardMyProfile = () => {
-  const handleSubmit = (e) => {
+import type React from "react";
+
+const DashboardMyProfile: React.FC = () => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault(); // Prevent page reload
     const formData = new FormData(e.currentTarget);
     const firstName = formData.get("firstName");
@@ -9,16 +11,16 @@ const DashboardMyProfile = () => {
     const state = formData.get("state");
     const postcode = formData.get("postcode");
     const country = formData.get("country");
-    // Handle the form submission logic here
-    console.log("Data Submitted:", {
-      firstName,
-      lastName,
-      phoneNumber,
-      email,
-      state,
-      postcode,
-      country,
-    });
+
+
+    // Production-safe: mark as intentionally unused
+    void firstName;
+    void lastName;
+    void phoneNumber;
+    void email;
+    void postcode;
+    void state;
+    void country;
   };
   return (
     <div className='flex-grow-1 position-relative z-1'>
@@ -253,7 +255,7 @@ const DashboardMyProfile = () => {
                       <input
                         name='postcode'
                         type='text'
-                        placeholder={310005}
+                        placeholder={"310005"}
                         className='text-dark-500 fw-normal tw-text-4 tw-px-3 tw-py-3 rounded-3 border-neutral-50 border w-100 focus-visible-border-main-600'
                       />
                     </div>
@@ -452,8 +454,8 @@ const DashboardMyProfile = () => {
                       className='form-check-input w-10 h-6'
                       type='checkbox'
                       role='switch'
-                      id='switchCheckCheckeddfhfd'
-                      defaultChecked=''
+                      id='switchCheck_5'
+                      defaultChecked={false}
                     />
                   </div>
                 </div>
@@ -471,8 +473,8 @@ const DashboardMyProfile = () => {
                       className='form-check-input w-10 h-6'
                       type='checkbox'
                       role='switch'
-                      id='switchCheckCheckedd'
-                      defaultChecked=''
+                      id='switchCheck_4'
+                      defaultChecked={false}
                     />
                   </div>
                 </div>
@@ -490,7 +492,7 @@ const DashboardMyProfile = () => {
                       className='form-check-input w-10 h-6'
                       type='checkbox'
                       role='switch'
-                      id='switchCheckDefaultt'
+                      id='switchCheck_0'
                     />
                   </div>
                 </div>
@@ -508,8 +510,8 @@ const DashboardMyProfile = () => {
                       className='form-check-input w-10 h-6'
                       type='checkbox'
                       role='switch'
-                      id='switchCheckCheckeddd'
-                      defaultChecked=''
+                      id='switchCheck_1'
+                 defaultChecked={false}
                     />
                   </div>
                 </div>
@@ -527,7 +529,7 @@ const DashboardMyProfile = () => {
                       className='form-check-input w-10 h-6'
                       type='checkbox'
                       role='switch'
-                      id='switchCheckDefaulttt'
+                      id='switchCheck_2'
                     />
                   </div>
                 </div>
@@ -545,8 +547,8 @@ const DashboardMyProfile = () => {
                       className='form-check-input w-10 h-6'
                       type='checkbox'
                       role='switch'
-                      id='switchCheckCheckedddd'
-                      defaultChecked=''
+                      id='switchCheck_3'
+                   defaultChecked={false}
                     />
                   </div>
                 </div>

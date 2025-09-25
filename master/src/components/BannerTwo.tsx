@@ -1,17 +1,21 @@
 import { Link } from "react-router-dom";
+import type React from "react";
 import CountryDropdown from "../helper/CountryDropdown";
 
-const BannerTwo = () => {
-  const handleSubmit = (e) => {
+const BannerTwo: React.FC = () => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault(); // Prevent page reload
     const formData = new FormData(e.currentTarget);
     const send = formData.get("send");
-    const getss = formData.get("getss");
+    const gets = formData.get("gets");
     const deliver = formData.get("deliver");
     const paywith = formData.get("paywith");
 
-    // Handle the form submission logic here
-    console.log("Data Submitted:", { send, getss, deliver, paywith });
+    // Production-safe: mark as intentionally unused
+    void send;
+    void gets;
+    void deliver;
+    void paywith;
   };
   return (
     <section className='bg-base-two-600 py-120 position-relative z-1 overflow-hidden'>
@@ -148,7 +152,7 @@ const BannerTwo = () => {
                   </div>
                   <div className=''>
                     <label
-                      htmlFor='getss'
+                      htmlFor='gets'
                       className='fw-normal tw-text-4 text-dark-600 tw-mb-2'
                     >
                       Recipient Gets*
@@ -156,9 +160,9 @@ const BannerTwo = () => {
                     <div className='position-relative'>
                       <input
                         type='text'
-                        name='getss'
+                        name='gets'
                         placeholder='$14,250.00'
-                        id='getss'
+                        id='gets'
                         className='tw-px-3 tw-py-3 w-100 fw-semibold tw-text-4 text-dark-600 rounded-3 border-neutral-50 focus-visible-border-main-600'
                       />
                       {/* CountryDropdown */}

@@ -1,26 +1,33 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-const DashboardHeader = () => {
-  const [scroll, setScroll] = useState(false);
+const DashboardHeader: React.FC = () => {
+   const [scroll, setScroll] = useState<boolean>(false);
 
   useEffect(() => {
-    window.onscroll = () => {
+    const handleScroll = () => {
       if (window.pageYOffset < 150) {
         setScroll(false);
-      } else if (window.pageYOffset > 150) {
+      } else {
         setScroll(true);
       }
-      return () => (window.onscroll = null);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // cleanup to avoid memory leaks
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  const handleSubmit = (e) => {
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault(); // Prevent page reload
     const formData = new FormData(e.currentTarget);
-    const search = formData.get("search");
+    const search = formData.get("search") as string; // cast to string
 
-    // Handle the form submission logic here
-    console.log("Data Submitted:", { search });
+     // Production-safe: mark as intentionally unused
+    void search;
   };
 
   return (

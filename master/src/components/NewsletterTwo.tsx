@@ -1,13 +1,14 @@
+import type React from "react";
 import { Link } from "react-router-dom";
 
-const NewsletterTwo = () => {
-  const handleSubmit = (e) => {
+const NewsletterTwo: React.FC = () => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault(); // Prevent page reload
     const formData = new FormData(e.currentTarget);
     const email = formData.get("email");
 
-    // Handle the form submission logic here
-    console.log("Data Submitted:", { email });
+    // Production-safe: mark as intentionally unused
+    void email;
   };
   return (
     <div

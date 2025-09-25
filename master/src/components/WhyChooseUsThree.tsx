@@ -1,4 +1,6 @@
-const WhyChooseUsThree = () => {
+import type React from "react";
+
+const WhyChooseUsThree: React.FC = () => {
   return (
     <section className='py-140 '>
       <div className='container'>

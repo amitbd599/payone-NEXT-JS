@@ -1,21 +1,25 @@
-const ServicesDetailsInner = () => {
-  const handleSubmitSearch = (e) => {
+import type React from "react";
+
+const ServicesDetailsInner: React.FC = () => {
+  const handleSubmitSearch = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault(); // Prevent page reload
     const formData = new FormData(e.currentTarget);
     const search = formData.get("search");
 
-    // Handle the form submission logic here
-    console.log("Data Submitted:", { search });
+    // Production-safe: mark as intentionally unused
+    void search;
   };
-  const handleSubmitContact = (e) => {
+  const handleSubmitContact = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault(); // Prevent page reload
     const formData = new FormData(e.currentTarget);
     const name = formData.get("name");
     const email = formData.get("email");
     const message = formData.get("message");
 
-    // Handle the form submission logic here
-    console.log("Data Submitted:", { name, email, message });
+    // Production-safe: mark as intentionally unused
+    void name;
+    void email;
+    void message;
   };
 
   return (

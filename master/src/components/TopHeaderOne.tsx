@@ -1,4 +1,7 @@
-const TopHeaderOne = () => {
+import Link from "next/link";
+import type React from "react";
+
+const TopHeaderOne: React.FC = () => {
   return (
     <div className='bg-main-600 tw-py-205 z-1 '>
       <div className='container'>
@@ -27,36 +30,36 @@ const TopHeaderOne = () => {
             <div>
               <ul className='d-flex align-items-center tw-gap-5 flex-wrap'>
                 <li>
-                  <a
+                  <Link
                     href='https://twitter-cl.vercel.app/login'
                     className='tw-text-xl text-dark-600'
                   >
                     <i className='ph-fill ph-twitter-logo' />
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href='https://www.facebook.com'
                     className='tw-text-xl text-dark-600'
                   >
                     <i className='ph-bold ph-facebook-logo' />
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href='https://www.linkedin.com/login'
                     className='tw-text-xl text-dark-600'
                   >
                     <i className='ph-bold ph-linkedin-logo' />
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href='https://www.behance.net'
                     className='tw-text-xl text-dark-600'
                   >
                     <i className='ph-bold ph-behance-logo' />
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

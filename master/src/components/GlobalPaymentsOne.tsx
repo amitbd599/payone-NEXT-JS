@@ -1,4 +1,6 @@
-const GlobalPaymentsOne = () => {
+import type React from "react";
+
+const GlobalPaymentsOne: React.FC = () => {
   return (
     <section className='py-140 bg-neutral-10 overflow-hidden'>
       <div className='container'>

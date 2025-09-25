@@ -1,13 +1,14 @@
+import type React from "react";
 import { Link } from "react-router-dom";
 
-const BlogListInner = () => {
-  const handleSubmit = (e) => {
+const BlogListInner: React.FC = () => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault(); // Prevent page reload
     const formData = new FormData(e.currentTarget);
     const search = formData.get("search");
 
-    // Handle the form submission logic here
-    console.log("Data Submitted:", { search });
+        // Production-safe: mark as intentionally unused
+        void search;
   };
   return (
     <section className='py-140 bg-neutral-10 z-1'>

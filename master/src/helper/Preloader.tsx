@@ -1,13 +1,16 @@
 'use client'
+import React, { useEffect, useState } from "react";
 
-import { useEffect, useState } from "react";
+const Preloader: React.FC = () => {
+  const [active, setActive] = useState<boolean>(true);
 
-const Preloader = () => {
-  let [active, setActive] = useState(true);
   useEffect(() => {
-    setTimeout(function () {
+    const timer = setTimeout(() => {
       setActive(false);
     }, 500);
+
+    // cleanup
+    return () => clearTimeout(timer);
   }, []);
 
   return (

@@ -1,4 +1,6 @@
-const OurServicesTwo = () => {
+import type React from "react";
+
+const OurServicesTwo: React.FC = () => {
   return (
     <section className='bg-neutral-10 py-140'>
       <div className='container'>

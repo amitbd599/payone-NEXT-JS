@@ -1,6 +1,7 @@
+import type React from "react";
 import { Link } from "react-router-dom";
 
-const AboutInner = () => {
+const AboutInner: React.FC = () => {
   return (
     <section className='py-140 overflow-hidden'>
       <div className='container'>

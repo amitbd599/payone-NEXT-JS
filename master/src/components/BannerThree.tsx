@@ -1,7 +1,8 @@
+import type React from "react";
 import Marquee from "react-fast-marquee";
 import { Link } from "react-router-dom";
 
-const BannerThree = () => {
+const BannerThree: React.FC = () => {
   return (
     <section
       className='pt-120 z-1 position-relative overflow-hidden'
@@ -190,7 +191,7 @@ const BannerThree = () => {
                       35+
                     </h2>
                     <span className='fw-normal tw-text-lg text-dark-500'>
-                      Total dolly transections
+                      Total dolly transactions
                     </span>
                   </div>
                 </div>

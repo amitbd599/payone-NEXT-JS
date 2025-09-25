@@ -1,7 +1,8 @@
 import { useInView } from "react-intersection-observer";
 import CountUp from "react-countup";
 import { Link } from "react-router-dom";
-const OurBankOne = () => {
+import type React from "react";
+const OurBankOne: React.FC = () => {
   const { ref, inView } = useInView({
     threshold: 0,
   });

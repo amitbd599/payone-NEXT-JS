@@ -1,4 +1,6 @@
-const MobileOne = () => {
+import type React from "react";
+
+const MobileOne: React.FC = () => {
   return (
     <section className='py-140 bg-neutral-10 z-1 overflow-hidden'>
       <div className='container'>

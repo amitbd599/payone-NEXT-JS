@@ -1,4 +1,6 @@
-const FeesOthersInner = () => {
+import type React from "react";
+
+const FeesOthersInner: React.FC = () => {
   return (
     <section className='py-140 bg-neutral-10'>
       <div className='container'>

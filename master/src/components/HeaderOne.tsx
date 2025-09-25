@@ -1,13 +1,12 @@
-'use client'
-import { useEffect, useState } from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
-const HeaderOne = () => {
-  let pathname = usePathname();
-  const [scroll, setScroll] = useState(false);
-  let [mobileMenu, setMobileMenu] = useState(false);
-  let MENU = [
+const HeaderOne: React.FC = () => {
+  const pathname = usePathname();
+  const MENU = [
     {
       label: "HOME",
       children: [
@@ -57,27 +56,41 @@ const HeaderOne = () => {
     { label: "CONTACT", to: "/contact" },
   ];
 
+  const [scroll, setScroll] = useState<boolean>(false);
+  const [mobileMenu, setMobileMenu] = useState<boolean>(false);
+
   useEffect(() => {
-    window.onscroll = () => {
+    const handleScroll = () => {
       if (window.pageYOffset < 150) {
         setScroll(false);
-      } else if (window.pageYOffset > 150) {
+      } else {
         setScroll(true);
       }
-      return () => (window.onscroll = null);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // cleanup to avoid memory leaks
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
-  const handleMobileMenu = () => {
-    setMobileMenu(!mobileMenu);
+  const handleMobileMenu = (): void => {
+    setMobileMenu((prev) => !prev);
   };
 
-  const [openIndex, setOpenIndex] = useState(-1);
+  const [openIndex, setOpenIndex] = useState<number>(-1);
 
-  const isItemActive = (item) =>
+  interface NavItem {
+    to?: string;
+    children?: NavItem[];
+  }
+
+  const isItemActive = (item: NavItem): boolean =>
     item.to
       ? item.to === pathname
-      : item.children?.some((c) => c.to === pathname);
+      : item.children?.some((c) => c.to === pathname) ?? false;
 
   return (
     <>
@@ -93,10 +106,12 @@ const HeaderOne = () => {
             {/* Logo Start */}
             <div className='logo'>
               <Link href='/' className='link'>
-                <img
-                  src='assets/images/logo/logo.png'
+                <Image
+                  src='/assets/images/logo/logo.png'
                   alt='img'
                   className='tw-h-10'
+                  width={171}
+                  height={40}
                 />
               </Link>
             </div>
@@ -204,7 +219,12 @@ const HeaderOne = () => {
         </button>
         <div className='mobile-menu__inner'>
           <Link href='/' className='mobile-menu__logo'>
-            <img src='assets/images/logo/logo.png' alt='Logo' />
+            <Image
+              src='/assets/images/logo/logo.png'
+              alt='Logo'
+              width={171}
+              height={40}
+            />
           </Link>
           <div className='mobile-menu__menu'>
             {/* Nav menu Start */}

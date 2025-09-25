@@ -1,7 +1,12 @@
-import { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
-const CountryDropdown = () => {
-  const options = [
+type Option = {
+  label: string;
+  flag: string;
+};
+
+const CountryDropdown: React.FC = () => {
+  const options: Option[] = [
     { label: "USD", flag: "assets/images/flag/iceland.png" },
     { label: "BAN", flag: "assets/images/flag/bangladesh.png" },
     { label: "CHA", flag: "assets/images/flag/china.png" },
@@ -9,29 +14,34 @@ const CountryDropdown = () => {
     { label: "PRANCE", flag: "assets/images/flag/prance.png" },
   ];
 
-  const [isOpen, setIsOpen] = useState(false);
-  const [selected, setSelected] = useState(options[0]);
-  const dropdownRef = useRef(null);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [selected, setSelected] = useState<Option>(options[0]);
+  const dropdownRef = useRef<HTMLDivElement | null>(null);
 
   const toggleDropdown = () => {
     setIsOpen((prev) => !prev);
   };
 
-  const handleSelect = (option) => {
+  const handleSelect = (option: Option) => {
     setSelected(option);
     setIsOpen(false);
   };
 
   // Click outside to close dropdown
   useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
+      ) {
         setIsOpen(false);
       }
     };
+
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
+
   return (
     <div className='select-dropdown-wrapper tw-ms-2 tw-ml-2' ref={dropdownRef}>
       <button
