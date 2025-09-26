@@ -1,7 +1,9 @@
+"use client";
+import Image from "next/image";
 import React, { useRef } from "react";
 import Slider from "react-slick";
 const TestimonialsTwo: React.FC = () => {
-const sliderRef = useRef<Slider | null>(null);
+  const sliderRef = useRef<Slider | null>(null);
   const settings = {
     infinite: true,
     slidesToShow: 2,
@@ -46,8 +48,10 @@ const sliderRef = useRef<Slider | null>(null);
               data-aos-duration={600}
             >
               <span className=''>
-                <img
-                  src='assets/images/icon/star-icon2.png'
+                <Image
+                  width={27}
+                  height={27}
+                  src='/assets/images/icon/star-icon2.png'
                   alt='Image'
                   className=''
                 />
@@ -104,8 +108,10 @@ const sliderRef = useRef<Slider | null>(null);
                 <div className=''>
                   <div className='d-flex align-items-center justify-content-between tw-gap-3 flex-wrap tw-mb-6'>
                     <div className='d-flex align-items-center tw-gap-3'>
-                      <img
-                        src='assets/images/thumbs/testimonial-two-img1.png'
+                      <Image
+                        width={60}
+                        height={60}
+                        src='/assets/images/thumbs/testimonial-two-img1.png'
                         alt='Darlene Robertson'
                       />
                       <div className=''>
@@ -117,8 +123,10 @@ const sliderRef = useRef<Slider | null>(null);
                         </span>
                       </div>
                     </div>
-                    <img
-                      src='assets/images/icon/testimonial-icon1.png'
+                    <Image
+                      width={48}
+                      height={33}
+                      src='/assets/images/icon/testimonial-icon1.png'
                       alt='Quote Icon'
                     />
                   </div>
@@ -157,8 +165,10 @@ const sliderRef = useRef<Slider | null>(null);
                 <div className=''>
                   <div className='d-flex align-items-center justify-content-between tw-gap-3 flex-wrap tw-mb-6'>
                     <div className='d-flex align-items-center tw-gap-3'>
-                      <img
-                        src='assets/images/thumbs/testimonial-two-img2.png'
+                      <Image
+                        width={60}
+                        height={60}
+                        src='/assets/images/thumbs/testimonial-two-img2.png'
                         alt='Darlene Robertson'
                       />
                       <div className=''>
@@ -170,8 +180,10 @@ const sliderRef = useRef<Slider | null>(null);
                         </span>
                       </div>
                     </div>
-                    <img
-                      src='assets/images/icon/testimonial-icon1.png'
+                    <Image
+                      width={48}
+                      height={33}
+                      src='/assets/images/icon/testimonial-icon1.png'
                       alt='Quote Icon'
                     />
                   </div>
@@ -210,8 +222,10 @@ const sliderRef = useRef<Slider | null>(null);
                 <div className=''>
                   <div className='d-flex align-items-center justify-content-between tw-gap-3 flex-wrap tw-mb-6'>
                     <div className='d-flex align-items-center tw-gap-3'>
-                      <img
-                        src='assets/images/thumbs/testimonial-two-img1.png'
+                      <Image
+                        width={60}
+                        height={60}
+                        src='/assets/images/thumbs/testimonial-two-img1.png'
                         alt='Darlene Robertson'
                       />
                       <div className=''>
@@ -223,8 +237,10 @@ const sliderRef = useRef<Slider | null>(null);
                         </span>
                       </div>
                     </div>
-                    <img
-                      src='assets/images/icon/testimonial-icon1.png'
+                    <Image
+                      width={48}
+                      height={33}
+                      src='/assets/images/icon/testimonial-icon1.png'
                       alt='Quote Icon'
                     />
                   </div>

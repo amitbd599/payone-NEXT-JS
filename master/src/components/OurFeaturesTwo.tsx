@@ -1,13 +1,12 @@
-import { useInView } from "react-intersection-observer";
-import CountUp from "react-countup";
+"use client";
 import Popup from "reactjs-popup";
-import { Link } from "react-router-dom";
+
 import type React from "react";
+import Link from "next/link";
+import CounterView from "@/helper/CounterView";
+import Image from "next/image";
 
 const OurFeaturesTwo: React.FC = () => {
-  const { ref, inView } = useInView({
-    threshold: 0,
-  });
   return (
     <section className='bg-neutral-10 py-140 z- overflow-hidden'>
       <div className='container'>
@@ -18,7 +17,12 @@ const OurFeaturesTwo: React.FC = () => {
               data-aos='fade-up'
               data-aos-duration={600}
             >
-              <img src='assets/images/icon/star-icon2.png' alt='Image' />
+              <Image
+                width={27}
+                height={27}
+                src='/assets/images/icon/star-icon2.png'
+                alt='Image'
+              />
               <h5 className='fw-normal text-primary-600'>Our Features</h5>
             </div>
             <h2
@@ -44,7 +48,7 @@ const OurFeaturesTwo: React.FC = () => {
               data-aos-duration={1000}
             >
               <Link
-                to='/blog-details'
+                href='/blog-details'
                 className='features-two-link bg-main-600 fw-semibold text-dark-700 w-100 text-center tw-py-205 rounded-3 border-two-px-solid hover-text-dark-600'
               >
                 GET STARTED
@@ -62,8 +66,10 @@ const OurFeaturesTwo: React.FC = () => {
                   data-aos-duration={600}
                 >
                   <span className='tw-w-82px tw-h-82-px border-dashed-white rounded-circle flex-shrink-0 d-flex align-items-center justify-content-center flex-shrink-0'>
-                    <img
-                      src='assets/images/icon/our-features-two-icon1.png'
+                    <Image
+                      width={40}
+                      height={41}
+                      src='/assets/images/icon/our-features-two-icon1.png'
                       alt='Image'
                     />
                   </span>
@@ -82,8 +88,10 @@ const OurFeaturesTwo: React.FC = () => {
                   data-aos-duration={800}
                 >
                   <span className='tw-w-82px tw-h-82-px border-dashed-white rounded-circle flex-shrink-0 d-flex align-items-center justify-content-center'>
-                    <img
-                      src='assets/images/icon/our-features-two-icon2.png'
+                    <Image
+                      width={40}
+                      height={41}
+                      src='/assets/images/icon/our-features-two-icon2.png'
                       alt='Image'
                     />
                   </span>
@@ -103,8 +111,10 @@ const OurFeaturesTwo: React.FC = () => {
                   data-aos-duration={1000}
                 >
                   <span className='tw-w-82px tw-h-82-px border-dashed-white rounded-circle flex-shrink-0 d-flex align-items-center justify-content-center'>
-                    <img
-                      src='assets/images/icon/our-features-two-icon3.png'
+                    <Image
+                      width={44}
+                      height={45}
+                      src='/assets/images/icon/our-features-two-icon3.png'
                       alt='Image'
                     />
                   </span>
@@ -122,8 +132,10 @@ const OurFeaturesTwo: React.FC = () => {
             </div>
             <div className='col-xl-7'>
               <div className='position-relative'>
-                <img
-                  src='assets/images/thumbs/our-features-two-img1.png'
+                <Image
+                  width={746}
+                  height={459}
+                  src='/assets/images/thumbs/our-features-two-img1.png'
                   alt='Image'
                   data-aos='zoom-in'
                   data-aos-duration={1500}
@@ -154,18 +166,15 @@ const OurFeaturesTwo: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className='row gy-4' ref={ref}>
+        <div className='row gy-4'>
           <div className='col-xl-4 col-lg-6 col-md-6'>
             <div className='tw-pe-8' data-aos='fade-up' data-aos-duration={600}>
               <h4 className='fw-normal text-dark-600 tw-mb-3'>
                 Delighted Global Customers
               </h4>
               <h2 className='banner-item-title tw-text-15 text-base-two-600 tw-mb-6 cursor-big counter'>
-                {inView && (
-                  <span>
-                    <CountUp delay={0} start={0} end={5175} />+
-                  </span>
-                )}
+                {/* CounterView */}
+                <CounterView start={0} end={5175} title='+' />
               </h2>
               <span className='border-solid-dark-500 w-100 tw-mb-6' />
               <p className='fw-normal tw-text-xl text-dark-500 '>
@@ -178,11 +187,8 @@ const OurFeaturesTwo: React.FC = () => {
             <div className='tw-pe-8' data-aos='fade-up' data-aos-duration={800}>
               <h4 className='fw-normal text-dark-600 tw-mb-3'>Money Managed</h4>
               <h2 className='banner-item-title h1 tw-text-15 text-base-two-600 tw-mb-6 cursor-big counter'>
-                {inView && (
-                  <span>
-                    <CountUp delay={0} start={0} end={612} />B
-                  </span>
-                )}
+                {/* CounterView */}
+                <CounterView start={0} end={612} title='B' />
               </h2>
               <span className='border-solid-dark-500 w-100 tw-mb-6' />
               <p className='fw-normal tw-text-xl text-dark-500 '>
@@ -201,11 +207,8 @@ const OurFeaturesTwo: React.FC = () => {
                 Boost Your Transaction Volume
               </h4>
               <h2 className='banner-item-title tw-text-15 h1 text-base-two-600 tw-mb-6 cursor-big counter'>
-                {inView && (
-                  <span>
-                    <CountUp delay={0} start={0} end={88} />%
-                  </span>
-                )}
+                {/* CounterView */}
+                <CounterView start={0} end={88} title='%' />
               </h2>
               <span className='border-solid-dark-500 w-100 tw-mb-6' />
               <p className='fw-normal tw-text-xl text-dark-500 '>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type React from "react";
 
 const FAQTwo: React.FC = () => {
@@ -12,7 +13,12 @@ const FAQTwo: React.FC = () => {
               data-aos-duration={800}
             >
               <span>
-                <img src='assets/images/icon/star-icon3.png' alt='Image' />
+                <Image
+                  width={27}
+                  height={27}
+                  src='/assets/images/icon/star-icon3.png'
+                  alt='Image'
+                />
               </span>
               <h5 className='text-base-two-600 fw-normal cursor-big'>Faq</h5>
             </div>

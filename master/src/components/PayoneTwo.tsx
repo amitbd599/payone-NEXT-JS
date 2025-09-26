@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type React from "react";
 
 const PayoneTwo: React.FC = () => {
@@ -7,7 +8,12 @@ const PayoneTwo: React.FC = () => {
         <div className='row gy-4 align-items-center'>
           <div className='col-lg-6'>
             <div data-aos='zoom-in' data-aos-duration={1500}>
-              <img src='assets/images/thumbs/payone-two-img1.png' alt='Image' />
+              <Image
+                width={526}
+                height={488}
+                src='/assets/images/thumbs/payone-two-img1.png'
+                alt='Image'
+              />
             </div>
           </div>
           <div className='col-lg-6'>
@@ -18,8 +24,10 @@ const PayoneTwo: React.FC = () => {
                 data-aos-duration={600}
               >
                 <span className=''>
-                  <img
-                    src='assets/images/icon/star-icon2.png'
+                  <Image
+                    width={27}
+                    height={27}
+                    src='/assets/images/icon/star-icon2.png'
                     alt='Image'
                     className=''
                   />

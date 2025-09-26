@@ -1,17 +1,19 @@
+"use client";
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import { useLocation } from "react-router-dom";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
+import Image from "next/image";
 
 const HeaderTwo: React.FC = () => {
-  const { pathname } = useLocation();
+  const pathname = usePathname();
   const MENU = [
     {
       label: "HOME",
       children: [
         { label: "Home One", to: "/" },
-        { label: "Home Two", to: "/index-2" },
-        { label: "Home Three", to: "/index-3" },
-        { label: "Home Four", to: "/index-4" },
+        { label: "Home Two", to: "/demo-2" },
+        { label: "Home Three", to: "/demo-3" },
+        { label: "Home Four", to: "/demo-4" },
       ],
     },
     {
@@ -95,7 +97,7 @@ const HeaderTwo: React.FC = () => {
       <div className='overlay'></div>
       <div className={`side-overlay ${mobileMenu && "active"}`}></div>
       <header
-        className={`header transition-all header-three position-absolute  tw-start-0 w-100 tw-z-9 ${
+        className={`header transition-all header-three   tw-start-0 w-100 tw-z-9 ${
           scroll ? "fixed-header" : ""
         }`}
       >
@@ -103,9 +105,11 @@ const HeaderTwo: React.FC = () => {
           <nav className='d-flex align-items-center justify-content-between'>
             {/* Logo Start */}
             <div className='logo'>
-              <Link to='/' className='link'>
-                <img
-                  src='assets/images/logo/logo2.png'
+              <Link href='/' className='link'>
+                <Image
+                  width={171}
+                  height={40}
+                  src='/assets/images/logo/logo2.png'
                   alt='img'
                   className='tw-h-10'
                 />
@@ -131,14 +135,14 @@ const HeaderTwo: React.FC = () => {
                     >
                       {item.children ? (
                         <Link
-                          to='#'
+                          href='#'
                           className='nav-menu__link tw-pe-5 text-heading tw-py-9 fw-semibold text-dark-600 w-100'
                         >
                           {item.label}
                         </Link>
                       ) : (
                         <Link
-                          to={item.to}
+                          href={item.to}
                           className='nav-menu__link tw-pe-5 tw-py-9 text-dark-600 fw-semibold text-dark-600 w-100'
                         >
                           {item.label}
@@ -155,7 +159,7 @@ const HeaderTwo: React.FC = () => {
                               }`}
                             >
                               <Link
-                                to={sub.to}
+                                href={sub.to}
                                 className='nav-submenu__link hover-bg-neutral-100 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded hover-bg-main-100'
                               >
                                 {sub.label}
@@ -176,14 +180,14 @@ const HeaderTwo: React.FC = () => {
               <div className='d-sm-block d-none'>
                 <div className='d-flex align-items-center tw-gap-605 flex-wrap '>
                   <Link
-                    to='/log-in'
+                    href='/log-in'
                     className='text-dark-600 fw-semibold tw-text-lg hover-text hover-text-main-600 tw-duration-500'
                   >
                     LOGIN
                   </Link>
                   <div className='position-relative z-1'>
                     <Link
-                      to='/sign-up'
+                      href='/sign-up'
                       className='header-three-item-link text-dark-600 fw-semibold tw-text-lg tw-px-4 tw-py-2 bg-main-600 border-two-px-solid rounded-2 text-dark-600 '
                     >
                       SIGN IN
@@ -218,8 +222,13 @@ const HeaderTwo: React.FC = () => {
           <i className='ph ph-x' />
         </button>
         <div className='mobile-menu__inner'>
-          <Link to='/' className='mobile-menu__logo'>
-            <img src='assets/images/logo/logo.png' alt='Logo' />
+          <Link href='/' className='mobile-menu__logo'>
+            <Image
+              width={171}
+              height={40}
+              src='/assets/images/logo/logo.png'
+              alt='Logo'
+            />
           </Link>
           <div className='mobile-menu__menu'>
             {/* Nav menu Start */}
@@ -246,7 +255,7 @@ const HeaderTwo: React.FC = () => {
                       </button>
                     ) : (
                       <Link
-                        to={item.to}
+                        href={item.to}
                         className='nav-menu__link text-heading tw-py-9 fw-semibold w-100 text-white'
                       >
                         {item.label}
@@ -268,7 +277,7 @@ const HeaderTwo: React.FC = () => {
                             }`}
                           >
                             <Link
-                              to={sub.to}
+                              href={sub.to}
                               className='nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded'
                             >
                               {sub.label}

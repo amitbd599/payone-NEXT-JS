@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type React from "react";
 
 const MobileOne: React.FC = () => {
@@ -6,8 +7,10 @@ const MobileOne: React.FC = () => {
       <div className='container'>
         <div className='row gy-4'>
           <div className='col-lg-6'>
-            <img
-              src='assets/images/thumbs/mobile-app-three-img-1.png'
+            <Image
+              width={636}
+              height={579}
+              src='/assets/images/thumbs/mobile-app-three-img-1.png'
               alt='Image'
               data-aos='zoom-in'
               data-aos-duration={1500}
@@ -21,7 +24,12 @@ const MobileOne: React.FC = () => {
                 data-aos-duration={600}
               >
                 <span className=''>
-                  <img src='assets/images/icon/star-icon2.png' alt='Image' />
+                  <Image
+                    width={27}
+                    height={27}
+                    src='/assets/images/icon/star-icon2.png'
+                    alt='Image'
+                  />
                 </span>
                 <h5 className='text-primary-600 fw-normal'>
                   Mobile App 2.0 NEW
@@ -39,8 +47,8 @@ const MobileOne: React.FC = () => {
                 data-aos='fade-up'
                 data-aos-duration={1000}
               >
-                Don't miss out! Download now for seamless functionalities and
-                endless possibilities.
+                Don&apos;t miss out! Download now for seamless functionalities
+                and endless possibilities.
               </p>
               <div className='tw-mb-12'>
                 <div
@@ -85,8 +93,18 @@ const MobileOne: React.FC = () => {
                 data-aos='fade-up'
                 data-aos-duration={1400}
               >
-                <img src='assets/images/logo/mobile-img1.png' alt='Image' />
-                <img src='assets/images/logo/mobile-img2.png' alt='Image' />
+                <Image
+                  width={135}
+                  height={44}
+                  src='/assets/images/logo/mobile-img1.png'
+                  alt='Image'
+                />
+                <Image
+                  width={135}
+                  height={44}
+                  src='/assets/images/logo/mobile-img2.png'
+                  alt='Image'
+                />
               </div>
             </div>
           </div>

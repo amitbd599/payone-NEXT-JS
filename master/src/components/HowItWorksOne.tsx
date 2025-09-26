@@ -1,5 +1,6 @@
+import Image from "next/image";
+import Link from "next/link";
 import type React from "react";
-import { Link } from "react-router-dom";
 
 const HowItWorksOne: React.FC = () => {
   return (
@@ -12,7 +13,12 @@ const HowItWorksOne: React.FC = () => {
               data-aos='fade-up'
               data-aos-duration={600}
             >
-              <img src='assets/images/icon/star-icon2.png' alt='Image' />
+              <Image
+                width={27}
+                height={27}
+                src='/assets/images/icon/star-icon2.png'
+                alt='Image'
+              />
               <h5 className='text-primary-600 fw-normal'>How it Works</h5>
             </div>
             <h2
@@ -38,7 +44,7 @@ const HowItWorksOne: React.FC = () => {
               data-aos-duration={1000}
             >
               <Link
-                to='/log-in'
+                href='/log-in'
                 className='works-two-link bg-main-600 rounded-3 w-100 text-center tw-py-205 border-two-px-solid text-dark-700 fw-semibold hover-text-dark-600'
               >
                 OPEN A FREE ACCOUNT

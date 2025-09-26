@@ -1,26 +1,29 @@
-import { useInView } from "react-intersection-observer";
-import CountUp from "react-countup";
-import { Link } from "react-router-dom";
+import CounterView from "@/helper/CounterView";
+import Image from "next/image";
+import Link from "next/link";
 import type React from "react";
 const OurBankOne: React.FC = () => {
-  const { ref, inView } = useInView({
-    threshold: 0,
-  });
   return (
-    <div className='position-relative overflow-hidden' ref={ref}>
+    <div className='position-relative overflow-hidden'>
       <section className='our-services-three position-relative overflow-hidden z-1'>
-        <img
-          src='assets/images/shape/our-services-three-shape2.png'
+        <Image
+          width={49}
+          height={54}
+          src='/assets/images/shape/our-services-three-shape2.png'
           alt='Image'
           className='position-absolute tw-end-100-px tw-mt-104-px d-lg-block d-none animation-pulse__two'
         />
-        <img
-          src='assets/images/shape/banner-shape2.png'
+        <Image
+          width={78}
+          height={78}
+          src='/assets/images/shape/banner-shape2.png'
           alt='Image'
           className='position-absolute inset-inline-start-130px inset-block-start-130px z-n1 d-lg-block d-none animation-rotation__two'
         />
-        <img
-          src='assets/images/shape/our-services-three-shape1.png'
+        <Image
+          width={170}
+          height={178}
+          src='/assets/images/shape/our-services-three-shape1.png'
           alt='Image'
           className='position-absolute inset-inline-start-0 inset-block-end-0 d-lg-block d-none animation-Updowm__two'
         />
@@ -49,11 +52,8 @@ const OurBankOne: React.FC = () => {
                 data-aos-duration={600}
               >
                 <h2 className='fw-normal cursor-big tw-w-100px tw-h-100-px border-primary-600 rounded-circle d-flex align-items-center justify-content-center tw-mb-8 counter'>
-                  {inView && (
-                    <span>
-                      <CountUp delay={0} start={0} end={12} />+
-                    </span>
-                  )}
+                  {/* CounterView */}
+                  <CounterView start={0} end={12} title='+' />
                 </h2>
                 <h4 className='fw-normal tw-mb-2 '>Years of Excellent</h4>
                 <span className='fw-normal tw-text-lg text-dark-500'>
@@ -66,11 +66,8 @@ const OurBankOne: React.FC = () => {
                 data-aos-duration={800}
               >
                 <h2 className='fw-normal cursor-big tw-w-100px tw-h-100-px border-primary-600 rounded-circle d-flex align-items-center justify-content-center tw-mb-8 counter'>
-                  {inView && (
-                    <span>
-                      <CountUp delay={0} start={0} end={75} />+
-                    </span>
-                  )}
+                  {/* CounterView */}
+                  <CounterView start={0} end={75} title='+' />
                 </h2>
                 <h4 className='fw-normal tw-mb-2 '>Expert Members</h4>
                 <span className='fw-normal tw-text-lg text-dark-500'>
@@ -87,7 +84,12 @@ const OurBankOne: React.FC = () => {
                   data-aos='fade-up'
                   data-aos-duration={600}
                 >
-                  <img src='assets/images/icon/star-icon2.png' alt='Image' />
+                  <Image
+                    width={27}
+                    height={27}
+                    src='/assets/images/icon/star-icon2.png'
+                    alt='Image'
+                  />
                   <h5 className='fw-normal text-primary-600'>Our Services</h5>
                 </div>
                 <h2
@@ -111,7 +113,7 @@ const OurBankOne: React.FC = () => {
                   data-aos-duration={1200}
                 >
                   <Link
-                    to='/services-details'
+                    href='/services-details'
                     className='our-services-three-link w-100 text-center tw-py-205 border-two-px-solid rounded-3 bg-main-600 text-dark-600 fw-semibold'
                   >
                     ALL SERVICES

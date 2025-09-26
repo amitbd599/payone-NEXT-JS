@@ -1,5 +1,7 @@
+"use client";
+import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 
 const WhyChooseUsTwo: React.FC = () => {
   const [active, setActive] = useState<number>(1);
@@ -13,7 +15,12 @@ const WhyChooseUsTwo: React.FC = () => {
               data-aos='fade-up'
               data-aos-duration={600}
             >
-              <img src='assets/images/icon/star-icon2.png' alt='Image' />
+              <Image
+                width={27}
+                height={27}
+                src='/assets/images/icon/star-icon2.png'
+                alt='Image'
+              />
               <h5 className='fw-normal text-primary-600'>Why Choose Us</h5>
             </div>
             <h2
@@ -39,7 +46,7 @@ const WhyChooseUsTwo: React.FC = () => {
               data-aos-duration={1000}
             >
               <Link
-                to='/about-us'
+                href='/about-us'
                 className='choose-us-three-link text-dark-700 fw-semibold tw-text-lg bg-main-600 w-100 text-center tw-py-205 rounded-3 border-two-px-solid hover-text-dark-600'
               >
                 MORE ABOUT US
@@ -49,8 +56,10 @@ const WhyChooseUsTwo: React.FC = () => {
         </div>
         <div className='row gy-4'>
           <div className='col-lg-5' data-aos='fade-up' data-aos-duration={600}>
-            <img
-              src='assets/images/thumbs/blog-details-img2.png'
+            <Image
+              width={406}
+              height={380}
+              src='/assets/images/thumbs/blog-details-img2.png'
               alt='Image'
               className='bg-img tw-h-420-px'
             />
@@ -75,8 +84,10 @@ const WhyChooseUsTwo: React.FC = () => {
                 </div>
                 <div className='payment-solutions__content max-w-418-px tw-w-406-px w-100 bg-base-two-600 tw-rounded-xl tw-px-8 tw-py-8'>
                   <span className='tw-w-15 tw-h-15 bg-white tw-rounded-md d-flex align-items-center justify-content-center tw-mb-8'>
-                    <img
-                      src='assets/images/icon/why-choose-therr-icon1.png'
+                    <Image
+                      width={40}
+                      height={40}
+                      src='/assets/images/icon/why-choose-therr-icon1.png'
                       alt='Image'
                     />
                   </span>
@@ -89,7 +100,7 @@ const WhyChooseUsTwo: React.FC = () => {
                     objectives and then create.
                   </p>
                   <Link
-                    to='/about-us'
+                    href='/about-us'
                     className='fw-semibold tw-text-4 text-dark-600 bg-white tw-px-6 tw-py-3 tw-rounded-md w-100 text-center '
                   >
                     LEARN MORE
@@ -106,8 +117,10 @@ const WhyChooseUsTwo: React.FC = () => {
                   className='payment-solutions__button bg-base-two-10 tw-w-86-px tw-h-420-px tw-rounded-md tw-py-6 border-base-two-600 border-top border-bottom position-relative'
                 >
                   <span className='choose-us__icon tw-w-13 tw-h-13 bg-base-two-10 tw-rounded-md text-base-two-600 tw-text-7 d-flex align-items-center justify-content-center position-absolute bottom-0 tw-start-0 tw-ms-50-persent  translate-middle-x tw-mb-7'>
-                    <img
-                      src='assets/images/icon/why-choose-therr-icon1.png'
+                    <Image
+                      width={40}
+                      height={40}
+                      src='/assets/images/icon/why-choose-therr-icon1.png'
                       alt='Image'
                     />
                   </span>
@@ -117,8 +130,10 @@ const WhyChooseUsTwo: React.FC = () => {
                 </div>
                 <div className='payment-solutions__content max-w-418-px tw-w-406-px w-100 bg-base-two-600 tw-rounded-xl tw-px-8 tw-py-8'>
                   <span className='tw-w-15 tw-h-15 bg-white tw-rounded-md d-flex align-items-center justify-content-center tw-mb-8'>
-                    <img
-                      src='assets/images/icon/why-choose-therr-icon1.png'
+                    <Image
+                      width={40}
+                      height={40}
+                      src='/assets/images/icon/why-choose-therr-icon1.png'
                       alt='Image'
                     />
                   </span>
@@ -131,7 +146,7 @@ const WhyChooseUsTwo: React.FC = () => {
                     objectives and then create.
                   </p>
                   <Link
-                    to='/about-us'
+                    href='/about-us'
                     className='fw-semibold tw-text-4 text-dark-600 bg-white tw-px-6 tw-py-3 tw-rounded-md w-100 text-center '
                   >
                     LEARN MORE
@@ -156,8 +171,10 @@ const WhyChooseUsTwo: React.FC = () => {
                 </div>
                 <div className='payment-solutions__content max-w-418-px tw-w-406-px w-100 bg-base-two-600 tw-rounded-xl tw-px-8 tw-py-8'>
                   <span className='tw-w-15 tw-h-15 bg-white tw-rounded-md d-flex align-items-center justify-content-center tw-mb-8'>
-                    <img
-                      src='assets/images/icon/why-choose-therr-icon1.png'
+                    <Image
+                      width={40}
+                      height={40}
+                      src='/assets/images/icon/why-choose-therr-icon1.png'
                       alt='Image'
                     />
                   </span>
@@ -170,7 +187,7 @@ const WhyChooseUsTwo: React.FC = () => {
                     objectives and then create.
                   </p>
                   <Link
-                    to='/about-us'
+                    href='/about-us'
                     className='fw-semibold tw-text-4 text-dark-600 bg-white tw-px-6 tw-py-3 tw-rounded-md w-100 text-center '
                   >
                     LEARN MORE
@@ -195,8 +212,10 @@ const WhyChooseUsTwo: React.FC = () => {
                 </div>
                 <div className='payment-solutions__content max-w-418-px tw-w-406-px w-100 bg-base-two-600 tw-rounded-xl tw-px-8 tw-py-8'>
                   <span className='tw-w-15 tw-h-15 bg-white tw-rounded-md d-flex align-items-center justify-content-center tw-mb-8'>
-                    <img
-                      src='assets/images/icon/why-choose-therr-icon1.png'
+                    <Image
+                      width={40}
+                      height={40}
+                      src='/assets/images/icon/why-choose-therr-icon1.png'
                       alt='Image'
                     />
                   </span>
@@ -209,7 +228,7 @@ const WhyChooseUsTwo: React.FC = () => {
                     objectives and then create.
                   </p>
                   <Link
-                    to='/about-us'
+                    href='/about-us'
                     className='fw-semibold tw-text-4 text-dark-600 bg-white tw-px-6 tw-py-3 tw-rounded-md w-100 text-center '
                   >
                     LEARN MORE

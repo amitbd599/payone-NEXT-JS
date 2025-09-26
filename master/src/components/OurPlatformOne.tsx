@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type React from "react";
 
 const OurPlatformOne: React.FC = () => {
@@ -10,7 +11,12 @@ const OurPlatformOne: React.FC = () => {
             data-aos='fade-up'
             data-aos-duration={600}
           >
-            <img src='assets/images/icon/star-icon2.png' alt='Image' />
+            <Image
+              width={27}
+              height={27}
+              src='/assets/images/icon/star-icon2.png'
+              alt='Image'
+            />
             <h5 className='fw-normal text-primary-600'>Our Platforms</h5>
           </div>
           <h2
@@ -31,8 +37,10 @@ const OurPlatformOne: React.FC = () => {
         <div className='bg-neutral-10 rounded-4 px-80 py-80'>
           <div className='row gy-4 align-items-center'>
             <div className='col-lg-6'>
-              <img
-                src='assets/images/thumbs/our-platforms-two-img1.png'
+              <Image
+                width={577}
+                height={592}
+                src='/assets/images/thumbs/our-platforms-two-img1.png'
                 alt='Image'
                 data-aos='zoom-in'
                 data-aos-duration={1500}
@@ -162,14 +170,18 @@ const OurPlatformOne: React.FC = () => {
                         </div>
                       </div>
                       <div className='d-flex align-items-center tw-gap-3 flex-wrap'>
-                        <img
-                          src='assets/images/logo/mobile-img1.png'
+                        <Image
+                          width={135}
+                          height={44}
+                          src='/assets/images/logo/mobile-img1.png'
                           alt='Image'
                           data-aos='fade-right'
                           data-aos-duration={1200}
                         />
-                        <img
-                          src='assets/images/logo/mobile-img2.png'
+                        <Image
+                          width={135}
+                          height={44}
+                          src='/assets/images/logo/mobile-img2.png'
                           alt='Image'
                           data-aos='fade-left'
                           data-aos-duration={1200}
@@ -239,14 +251,18 @@ const OurPlatformOne: React.FC = () => {
                         </div>
                       </div>
                       <div className='d-flex align-items-center tw-gap-3 flex-wrap'>
-                        <img
-                          src='assets/images/logo/mobile-img1.png'
+                        <Image
+                          width={135}
+                          height={44}
+                          src='/assets/images/logo/mobile-img1.png'
                           alt='Image'
                           data-aos='fade-right'
                           data-aos-duration={1200}
                         />
-                        <img
-                          src='assets/images/logo/mobile-img2.png'
+                        <Image
+                          width={135}
+                          height={44}
+                          src='/assets/images/logo/mobile-img2.png'
                           alt='Image'
                           data-aos='fade-left'
                           data-aos-duration={1200}
@@ -316,14 +332,18 @@ const OurPlatformOne: React.FC = () => {
                         </div>
                       </div>
                       <div className='d-flex align-items-center tw-gap-3 flex-wrap'>
-                        <img
-                          src='assets/images/logo/mobile-img1.png'
+                        <Image
+                          width={135}
+                          height={44}
+                          src='/assets/images/logo/mobile-img1.png'
                           alt='Image'
                           data-aos='fade-right'
                           data-aos-duration={1200}
                         />
-                        <img
-                          src='assets/images/logo/mobile-img2.png'
+                        <Image
+                          width={135}
+                          height={44}
+                          src='/assets/images/logo/mobile-img2.png'
                           alt='Image'
                           data-aos='fade-left'
                           data-aos-duration={1200}

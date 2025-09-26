@@ -1,5 +1,6 @@
+import Image from "next/image";
+import Link from "next/link";
 import type React from "react";
-import { Link } from "react-router-dom";
 
 const FooterThree: React.FC = () => {
   return (
@@ -13,46 +14,56 @@ const FooterThree: React.FC = () => {
                 data-aos='fade-up'
                 data-aos-duration={600}
               >
-                <Link to='/'>
-                  <img
-                    src='assets/images/logo/logo.png'
+                <Link href='/'>
+                  <Image
+                    width={171}
+                    height={40}
+                    src='/assets/images/logo/logo.png'
                     alt='Image'
                     className='tw-mb-6'
                   />
                 </Link>
                 <p className='fw-normal tw-text-lg text-neutral-10 tw-mb-8'>
                   We’ve got the perfect tools for your success. Join us today
-                  and empower toward excellence."
+                  and empower toward excellence.
                 </p>
                 <ul className='d-flex align-items-center tw-gap-5'>
                   <li>
                     <a href='https://www.facebook.com'>
-                      <img
-                        src='assets/images/icon/footer-facebook-logo.png'
+                      <Image
+                        width={48}
+                        height={50}
+                        src='/assets/images/icon/footer-facebook-logo.png'
                         alt='Image'
                       />
                     </a>
                   </li>
                   <li>
                     <a href='https://medium.com'>
-                      <img
-                        src='assets/images/icon/footer-medium-logo.png'
+                      <Image
+                        width={48}
+                        height={50}
+                        src='/assets/images/icon/footer-medium-logo.png'
                         alt='Image'
                       />
                     </a>
                   </li>
                   <li>
                     <a href='https://youtube.com'>
-                      <img
-                        src='assets/images/icon/footer-youtube-logo.png'
+                      <Image
+                        width={48}
+                        height={50}
+                        src='/assets/images/icon/footer-youtube-logo.png'
                         alt='Image'
                       />
                     </a>
                   </li>
                   <li>
                     <a href='https://x.com/i/flow/login'>
-                      <img
-                        src='assets/images/icon/footer-twitter-logo.png'
+                      <Image
+                        width={48}
+                        height={50}
+                        src='/assets/images/icon/footer-twitter-logo.png'
                         alt='Image'
                       />
                     </a>
@@ -68,7 +79,7 @@ const FooterThree: React.FC = () => {
                 <ul>
                   <li className='tw-mb-4'>
                     <Link
-                      to='/about-us'
+                      href='/about-us'
                       className='fw-normal tw-text-lg text-neutral-10 hover-text-main-600'
                     >
                       About Us
@@ -84,7 +95,7 @@ const FooterThree: React.FC = () => {
                   </li>
                   <li className='tw-mb-4'>
                     <Link
-                      to='/faq'
+                      href='/faq'
                       className='fw-normal tw-text-lg text-neutral-10 hover-text-main-600'
                     >
                       Faqs
@@ -92,7 +103,7 @@ const FooterThree: React.FC = () => {
                   </li>
                   <li className='tw-mb-4'>
                     <Link
-                      to='/contact'
+                      href='/contact'
                       className='fw-normal tw-text-lg text-neutral-10 hover-text-main-600'
                     >
                       Contact Us

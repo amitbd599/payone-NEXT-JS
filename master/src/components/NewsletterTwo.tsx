@@ -1,5 +1,6 @@
+import Image from "next/image";
+import Link from "next/link";
 import type React from "react";
-import { Link } from "react-router-dom";
 
 const NewsletterTwo: React.FC = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -45,13 +46,17 @@ const NewsletterTwo: React.FC = () => {
               </form>
               <div className='d-flex align-items-center tw-gap-6 flex-wrap'>
                 <div className='d-flex align-items-center'>
-                  <img
-                    src='assets/images/thumbs/newsletter-img1.png'
+                  <Image
+                    width={60}
+                    height={60}
+                    src='/assets/images/thumbs/newsletter-img1.png'
                     alt='Image'
                     className='flex-shrink-0'
                   />
-                  <img
-                    src='assets/images/thumbs/newsletter-img2.png'
+                  <Image
+                    width={60}
+                    height={60}
+                    src='/assets/images/thumbs/newsletter-img2.png'
                     alt='Image'
                     className='margin-inline-start--20px flex-shrink-0'
                   />
@@ -64,7 +69,7 @@ const NewsletterTwo: React.FC = () => {
                     More than 15k active users!
                   </h5>
                   <Link
-                    to='/contact'
+                    href='/contact'
                     className='tw-text-lg fw-medium text-white d-flex align-items-center tw-gap-105'
                   >
                     Join them now

@@ -2,11 +2,11 @@ import type React from "react";
 
 const TopHeaderTwo: React.FC = () => {
   return (
-    <div className='bg-warning-500 py-3 z-1 '>
+    <div className='bg-warning-500 py-3 z-1'>
       <div className='container max-w-1640'>
         <div className='d-flex align-items-center tw-gap-3 justify-content-between flex-wrap'>
           <div className='d-md-block d-none'>
-            <div className='d-flex align-items-center tw-gap-6 flex-wrap '>
+            <div className='d-flex align-items-center tw-gap-6 flex-wrap'>
               <div className='d-flex align-items-center gap-2 flex-wrap'>
                 <span className='tw-text-xl text-dark-600 fw-medium'>
                   <i className='ph-bold ph-headset' />

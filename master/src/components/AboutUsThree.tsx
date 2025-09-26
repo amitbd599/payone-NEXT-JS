@@ -1,5 +1,6 @@
 import type React from "react";
-import { Link } from "react-router-dom";
+import Image from "next/image";
+import Link from "next/link";
 
 const AboutUsThree: React.FC = () => {
   return (
@@ -12,7 +13,12 @@ const AboutUsThree: React.FC = () => {
               data-aos='fade-up'
               data-aos-duration={600}
             >
-              <img src='assets/images/icon/star-icon2.png' alt='Image' />
+              <Image
+                width={27}
+                height={27}
+                src='/assets/images/icon/star-icon2.png'
+                alt='Image'
+              />
               <h5 className='fw-normal text-primary-600 '>About Us</h5>
             </div>
             <h2
@@ -37,7 +43,7 @@ const AboutUsThree: React.FC = () => {
               data-aos-duration={1200}
             >
               <Link
-                to='/about-us'
+                href='/about-us'
                 className='about-us-three-link bg-main-600 text-center tw-py-205 w-100 rounded-3 border-two-px-solid text-dark-600 fw-semibold hover-text-dark-600 '
               >
                 MORE ABOUT US
@@ -96,7 +102,7 @@ const AboutUsThree: React.FC = () => {
               </div>
               <div className='position-relative max-w-156-px w-100'>
                 <Link
-                  to='/about-us'
+                  href='/about-us'
                   className='about-us-three-link w-100 text-center tw-py-205 bg-main-600 fw-semibold tw-text-lg text-base-two-600 rounded-3 border-two-px-solid'
                 >
                   LEARN MORE
@@ -105,8 +111,10 @@ const AboutUsThree: React.FC = () => {
             </div>
           </div>
           <div className='col-xl-3'>
-            <img
-              src='assets/images/thumbs/about-us-three-img1.png'
+            <Image
+              width={306}
+              height={444}
+              src='/assets/images/thumbs/about-us-three-img1.png'
               alt='Image'
               className='w-100 h-100'
               data-aos='fade-up'

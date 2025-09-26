@@ -11,9 +11,9 @@ const HeaderOne: React.FC = () => {
       label: "HOME",
       children: [
         { label: "Home One", to: "/" },
-        { label: "Home Two", to: "/index-2" },
-        { label: "Home Three", to: "/index-3" },
-        { label: "Home Four", to: "/index-4" },
+        { label: "Home Two", to: "/demo-2" },
+        { label: "Home Three", to: "/demo-3" },
+        { label: "Home Four", to: "/demo-4" },
       ],
     },
     {

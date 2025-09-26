@@ -1,6 +1,8 @@
+"use client";
+import Image from "next/image";
+import Link from "next/link";
 import type React from "react";
 import Marquee from "react-fast-marquee";
-import { Link } from "react-router-dom";
 
 const BannerThree: React.FC = () => {
   return (
@@ -9,20 +11,24 @@ const BannerThree: React.FC = () => {
       style={{ backgroundImage: "url(assets/images/bg/banner-three-bg1.png)" }}
     >
       <div className='tw-mb-96px'>
-        <img
-          src='assets/images/shape/banner-three-scroll-shape1.png'
+        <Image
+          width={54}
+          height={219}
+          src='/assets/images/shape/banner-three-scroll-shape1.png'
           alt='Image'
           className='position-absolute tw-end-0 bottom-0 tw-me-15 tw-mb-182-px z-n1 d-xl-block d-none animation-Updowm__two'
         />
-        <img
-          src='assets/images/shape/banner-three-circle-shape1.png'
+        <Image
+          width={55}
+          height={53}
+          src='/assets/images/shape/banner-three-circle-shape1.png'
           alt='Image'
           className='position-absolute z-n1 tw-end-23 tw-block-start-200-px  d-xl-block d-none animation-rotation__two'
         />
         <div className='d-xl-block d-none'>
           <a
             href='#'
-            className='tw-w-140px tw-h-140-px border-neutral-35-6px bg-neutral-40 rounded-circle d-flex align-items-center justify-content-center z-n1 position-absolute tw-end-0 bottom-0 tw-mb-214-px tw-me-290-px '
+            className='tw-w-140px tw-h-140-px border-neutral-35-6px bg-neutral-40 rounded-circle d-flex align-items-center justify-content-center z-n1 position-absolute tw-end-0 bottom-0 tw-mb-214-px tw-me-290-px'
           >
             <span className='tw-w-80-px tw-h-80-px bg-base-two-600 rounded-circle tw-text-6 text-white d-flex align-items-center justify-content-center'>
               <i className='ph-fill ph-play' />
@@ -42,8 +48,10 @@ const BannerThree: React.FC = () => {
                           data-aos='fade-up'
                           data-aos-duration={600}
                         >
-                          <img
-                            src='assets/images/icon/star-icon3.png'
+                          <Image
+                            width={27}
+                            height={27}
+                            src='/assets/images/icon/star-icon3.png'
                             alt='star'
                           />
                           <h5 className='fw-normal text-base-two-600 cursor-big'>
@@ -60,8 +68,10 @@ const BannerThree: React.FC = () => {
                             <span className='text-base-two-600'>Next-Gen</span>
                             Digital Solutions
                           </h2>
-                          <img
-                            src='assets/images/shape/banner-three-shape1.png'
+                          <Image
+                            width={276}
+                            height={17}
+                            src='/assets/images/shape/banner-three-shape1.png'
                             alt='Image'
                             className='banner-shape-three-one position-absolute z-n1 tw-block-start-130-px tw-start-58 d-lg-block d-none'
                           />
@@ -83,7 +93,7 @@ const BannerThree: React.FC = () => {
                       >
                         <div className='position-relative'>
                           <Link
-                            to='/blog-details'
+                            href='/blog-details'
                             className='banner-three-item-link bg-main-600 text-dark-600 fw-semibold tw-text-lg tw-px-5 tw-py-3 border-two-px-solid rounded-3 hover-text-dark-600'
                           >
                             GET STARTED
@@ -91,7 +101,7 @@ const BannerThree: React.FC = () => {
                         </div>
                         <div className='position-relative'>
                           <Link
-                            to='/about-us'
+                            href='/about-us'
                             className='banner-three-item-2-link bg-warning-500 text-dark-600 fw-semibold tw-text-lg tw-px-5 tw-py-3 border-two-px-solid rounded-3 hover-text-dark-600'
                           >
                             ABOUT US
@@ -99,13 +109,17 @@ const BannerThree: React.FC = () => {
                         </div>
                       </div>
                     </div>
-                    <img
-                      src='assets/images/shape/banner-three-start-shape1.png'
+                    <Image
+                      width={62}
+                      height={62}
+                      src='/assets/images/shape/banner-three-start-shape1.png'
                       alt='Image'
                       className='position-absolute bottom-0 tw-end-100-px tw-mb--30px z-n1 d-xl-block d-none animation-rotation__two'
                     />
-                    <img
-                      src='assets/images/shape/banne-three-arrow-shape1.png'
+                    <Image
+                      width={213}
+                      height={69}
+                      src='/assets/images/shape/banne-three-arrow-shape1.png'
                       alt='Image'
                       className='position-absolute z-n1 tw-end--110-px tw-block-start--9 tw-rotate--7deg d-xl-block d-none animate-wobble__two'
                     />
@@ -116,8 +130,10 @@ const BannerThree: React.FC = () => {
                       data-aos='fade-up'
                       data-aos-duration={1300}
                     >
-                      <img
-                        src='assets/images/thumbs/banner-three-img2.png'
+                      <Image
+                        width={70}
+                        height={67}
+                        src='/assets/images/thumbs/banner-three-img2.png'
                         alt='Image'
                       />
                       <div className=''>
@@ -134,23 +150,31 @@ const BannerThree: React.FC = () => {
                     </div>
                     <div data-aos='fade-up' data-aos-duration={1400}>
                       <div className='d-flex align-items-center tw-mb-2'>
-                        <img
-                          src='assets/images/thumbs/banner-img4.png'
+                        <Image
+                          width={48}
+                          height={49}
+                          src='/assets/images/thumbs/banner-img4.png'
                           alt='Image'
                           className='tw-hover-z-2 tw-duration-400'
                         />
-                        <img
-                          src='assets/images/thumbs/banner-img3.png'
+                        <Image
+                          width={48}
+                          height={49}
+                          src='/assets/images/thumbs/banner-img3.png'
                           alt='Image'
                           className='margin-left--12px tw-hover-z-2 tw-duration-400'
                         />
-                        <img
-                          src='assets/images/thumbs/banner-img2.png'
+                        <Image
+                          width={48}
+                          height={49}
+                          src='/assets/images/thumbs/banner-img2.png'
                           alt='Image'
                           className='margin-left--12px tw-hover-z-2 tw-duration-400'
                         />
-                        <img
-                          src='assets/images/thumbs/banner-three-img3.png'
+                        <Image
+                          width={48}
+                          height={48}
+                          src='/assets/images/thumbs/banner-three-img3.png'
                           alt='Image'
                           className='margin-left--12px'
                         />
@@ -167,8 +191,10 @@ const BannerThree: React.FC = () => {
               </div>
               <div className='col-xl-3 col-lg-6'>
                 <div className='d-xl-block d-none text-end'>
-                  <img
-                    src='assets/images/thumbs/banner-three-img1.png'
+                  <Image
+                    width={350}
+                    height={694}
+                    src='/assets/images/thumbs/banner-three-img1.png'
                     alt='img'
                     className='margin-top--40px'
                     data-aos='zoom-in'
@@ -203,8 +229,10 @@ const BannerThree: React.FC = () => {
         <div className='slider__marquee style2 bg-base-two-600 tw-py-8'>
           <Marquee className='marquee_mode'>
             <div className='item tw-gap-10'>
-              <img
-                src='assets/images/icon/banner-three-marque-icon1.png '
+              <Image
+                width={38}
+                height={38}
+                src='/assets/images/icon/banner-three-marque-icon1.png'
                 alt='img'
               />
               <h3 className='fw-normal text-white hover-text-main-600 tw-duration-500'>
@@ -213,8 +241,10 @@ const BannerThree: React.FC = () => {
               </h3>
             </div>
             <div className='item tw-gap-10'>
-              <img
-                src='assets/images/icon/banner-three-marque-icon1.png '
+              <Image
+                width={38}
+                height={38}
+                src='/assets/images/icon/banner-three-marque-icon1.png'
                 alt='img'
               />
               <h3 className='fw-normal text-white hover-text-main-600 tw-duration-500'>
@@ -222,8 +252,10 @@ const BannerThree: React.FC = () => {
               </h3>
             </div>
             <div className='item tw-gap-10'>
-              <img
-                src='assets/images/icon/banner-three-marque-icon1.png '
+              <Image
+                width={38}
+                height={38}
+                src='/assets/images/icon/banner-three-marque-icon1.png'
                 alt='img'
               />
               <h3 className='fw-normal text-white hover-text-main-600 tw-duration-500'>
@@ -232,8 +264,10 @@ const BannerThree: React.FC = () => {
               </h3>
             </div>
             <div className='item tw-gap-10'>
-              <img
-                src='assets/images/icon/banner-three-marque-icon1.png '
+              <Image
+                width={38}
+                height={38}
+                src='/assets/images/icon/banner-three-marque-icon1.png'
                 alt='img'
               />
               <h3 className='fw-normal text-white hover-text-main-600 tw-duration-500'>
@@ -241,8 +275,10 @@ const BannerThree: React.FC = () => {
               </h3>
             </div>
             <div className='item tw-gap-10'>
-              <img
-                src='assets/images/icon/banner-three-marque-icon1.png '
+              <Image
+                width={38}
+                height={38}
+                src='/assets/images/icon/banner-three-marque-icon1.png'
                 alt='img'
               />
               <h3 className='fw-normal text-white hover-text-main-600 tw-duration-500'>
@@ -251,8 +287,10 @@ const BannerThree: React.FC = () => {
               </h3>
             </div>
             <div className='item tw-gap-10'>
-              <img
-                src='assets/images/icon/banner-three-marque-icon1.png '
+              <Image
+                width={38}
+                height={38}
+                src='/assets/images/icon/banner-three-marque-icon1.png'
                 alt='img'
               />
               <h3 className='fw-normal text-white hover-text-main-600 tw-duration-500'>
@@ -260,8 +298,10 @@ const BannerThree: React.FC = () => {
               </h3>
             </div>
             <div className='item tw-gap-10'>
-              <img
-                src='assets/images/icon/banner-three-marque-icon1.png '
+              <Image
+                width={38}
+                height={38}
+                src='/assets/images/icon/banner-three-marque-icon1.png'
                 alt='img'
               />
               <h3 className='fw-normal text-white hover-text-main-600 tw-duration-500'>
@@ -270,8 +310,10 @@ const BannerThree: React.FC = () => {
               </h3>
             </div>
             <div className='item tw-gap-10'>
-              <img
-                src='assets/images/icon/banner-three-marque-icon1.png '
+              <Image
+                width={38}
+                height={38}
+                src='/assets/images/icon/banner-three-marque-icon1.png'
                 alt='img'
               />
               <h3 className='fw-normal text-white hover-text-main-600 tw-duration-500'>

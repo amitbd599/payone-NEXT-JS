@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type React from "react";
 
 const OurFeaturesThree: React.FC = () => {
@@ -10,7 +11,12 @@ const OurFeaturesThree: React.FC = () => {
             data-aos='fade-up'
             data-aos-duration={600}
           >
-            <img src='assets/images/icon/star-icon2.png' alt='Image' />
+            <Image
+              width={27}
+              height={27}
+              src='/assets/images/icon/star-icon2.png'
+              alt='Image'
+            />
             <h5 className='fw-normal text-primary-600'>Our Features</h5>
           </div>
           <h2
@@ -38,7 +44,7 @@ const OurFeaturesThree: React.FC = () => {
               <div className='tw-px-6 tw-py-6 rounded-3 border-bottom-black-2px group-hover-bg-base-two-600 tw-duration-400'>
                 <span className='tw-w-72px tw-h-72-px bg-base-two-600 rounded-circle d-flex align-items-center justify-content-center tw-mb-10 group-hover-bg-main-600 tw-duration-400'>
                   <img
-                    src='assets/images/icon/our-features-three-img1.png'
+                    src='/assets/images/icon/our-features-three-img1.png'
                     alt='Image'
                     className='group-hover-item-text-invert-black tw-duration-400'
                   />
@@ -60,7 +66,7 @@ const OurFeaturesThree: React.FC = () => {
               <div className='tw-px-6 tw-py-6 rounded-3 border-bottom-black-2px group-hover-bg-base-two-600 tw-duration-400'>
                 <span className='tw-w-72px tw-h-72-px bg-base-two-600 rounded-circle d-flex align-items-center justify-content-center tw-mb-10 group-hover-bg-main-600 tw-duration-400'>
                   <img
-                    src='assets/images/icon/our-features-three-img2.png'
+                    src='/assets/images/icon/our-features-three-img2.png'
                     alt='Image'
                     className='group-hover-item-text-invert-black tw-duration-400'
                   />
@@ -82,7 +88,7 @@ const OurFeaturesThree: React.FC = () => {
               data-aos-duration={1500}
             >
               <img
-                src='assets/images/thumbs/our-features-three-img1.png'
+                src='/assets/images/thumbs/our-features-three-img1.png'
                 alt='Image'
               />
             </div>
@@ -96,7 +102,7 @@ const OurFeaturesThree: React.FC = () => {
               <div className='tw-px-6 tw-py-6 rounded-3 border-bottom-black-2px group-hover-bg-base-two-600 tw-duration-400'>
                 <span className='tw-w-72px tw-h-72-px bg-base-two-600 rounded-circle d-flex align-items-center justify-content-center tw-mb-10 group-hover-bg-main-600 tw-duration-400'>
                   <img
-                    src='assets/images/icon/our-features-three-img3.png'
+                    src='/assets/images/icon/our-features-three-img3.png'
                     alt='Image'
                     className='group-hover-item-text-invert-black tw-duration-400'
                   />
@@ -118,7 +124,7 @@ const OurFeaturesThree: React.FC = () => {
               <div className='tw-px-6 tw-py-6 rounded-3 border-bottom-black-2px group-hover-bg-base-two-600 tw-duration-400'>
                 <span className='tw-w-72px tw-h-72-px bg-base-two-600 rounded-circle d-flex align-items-center justify-content-center tw-mb-10 group-hover-bg-main-600 tw-duration-400'>
                   <img
-                    src='assets/images/icon/our-features-three-img4.png'
+                    src='/assets/images/icon/our-features-three-img4.png'
                     alt='Image'
                     className='group-hover-item-text-invert-black tw-duration-400'
                   />

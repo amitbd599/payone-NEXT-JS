@@ -1,5 +1,6 @@
+import Image from "next/image";
+import Link from "next/link";
 import type React from "react";
-import { Link } from "react-router-dom";
 
 const BlogThree: React.FC = () => {
   return (
@@ -12,7 +13,12 @@ const BlogThree: React.FC = () => {
               data-aos='fade-up'
               data-aos-duration={600}
             >
-              <img src='assets/images/icon/star-icon3.png' alt='Image' />
+              <Image
+                width={27}
+                height={27}
+                src='/assets/images/icon/star-icon3.png'
+                alt='Image'
+              />
               <h5 className='fw-normal text-dark-600 cursor-big'>Articles</h5>
             </div>
             <h2
@@ -40,7 +46,7 @@ const BlogThree: React.FC = () => {
               data-aos-duration={1000}
             >
               <Link
-                to='/blog-list'
+                href='/blog-list'
                 className='articles-link w-100 text-center tw-py-205 bg-main-600 rounded-3 tw-text-lg text-dark-700 border-two-px-solid fw-semibold hover-text-dark-600'
               >
                 ALL BLOGS
@@ -55,8 +61,10 @@ const BlogThree: React.FC = () => {
               data-aos='fade-up'
               data-aos-duration={800}
             >
-              <img
-                src='assets/images/thumbs/articles-two-img1.png'
+              <Image
+                width={416}
+                height={360}
+                src='/assets/images/thumbs/articles-two-img1.png'
                 alt='Image'
                 className='w-100 h-100'
               />
@@ -69,7 +77,7 @@ const BlogThree: React.FC = () => {
                     How to Identify and Avoid Online Banking{" "}
                   </h4>
                   <Link
-                    to='/blog-details'
+                    href='/blog-details'
                     className='bg-neutral-10 tw-px-6 tw-py-205 fw-bold tw-text-4 text-dark-600 w-100 d-flex align-items-center justify-content-center hover-text-white hover-bg-base-two-600 tw-transition-04-secend tw-rounded-xl'
                   >
                     Read More
@@ -84,8 +92,10 @@ const BlogThree: React.FC = () => {
               data-aos='fade-up'
               data-aos-duration={1000}
             >
-              <img
-                src='assets/images/thumbs/articles-two-img2.png'
+              <Image
+                width={416}
+                height={360}
+                src='/assets/images/thumbs/articles-two-img2.png'
                 alt='Image'
                 className='w-100 h-100'
               />
@@ -98,7 +108,7 @@ const BlogThree: React.FC = () => {
                     How to Apply for a Online Banking Services
                   </h4>
                   <Link
-                    to='/blog-details'
+                    href='/blog-details'
                     className='bg-neutral-10 tw-px-6 tw-py-205 fw-bold tw-text-4 text-dark-600 w-100 d-flex align-items-center justify-content-center hover-text-white hover-bg-base-two-600 tw-transition-04-secend tw-rounded-xl'
                   >
                     Read More
@@ -113,8 +123,10 @@ const BlogThree: React.FC = () => {
               data-aos='fade-up'
               data-aos-duration={1200}
             >
-              <img
-                src='assets/images/thumbs/articles-two-img3.png'
+              <Image
+                width={416}
+                height={360}
+                src='/assets/images/thumbs/articles-two-img3.png'
                 alt='Image'
                 className='w-100 h-100'
               />
@@ -127,7 +139,7 @@ const BlogThree: React.FC = () => {
                     How to Pay Bills Online: A Beginner’s Guide
                   </h4>
                   <Link
-                    to='/blog-details'
+                    href='/blog-details'
                     className='bg-neutral-10 tw-px-6 tw-py-205 fw-bold tw-text-4 text-dark-600 w-100 d-flex align-items-center justify-content-center hover-text-white hover-bg-base-two-600 tw-transition-04-secend tw-rounded-xl'
                   >
                     Read More

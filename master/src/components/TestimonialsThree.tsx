@@ -1,3 +1,5 @@
+"use client";
+import Image from "next/image";
 import React, { useRef } from "react";
 import Slider from "react-slick";
 const TestimonialsThree: React.FC = () => {
@@ -53,8 +55,10 @@ const TestimonialsThree: React.FC = () => {
               data-aos-duration={600}
             >
               <span className=''>
-                <img
-                  src='assets/images/icon/star-icon2.png'
+                <Image
+                  width={27}
+                  height={27}
+                  src='/assets/images/icon/star-icon2.png'
                   alt='Image'
                   className=''
                 />
@@ -114,8 +118,10 @@ const TestimonialsThree: React.FC = () => {
               <div className='bg-white tw-px-8 tw-py-8 tw-rounded-xl w-100 h-100'>
                 <div className=''>
                   <div className='d-flex align-items-center justify-content-between tw-gap-3 flex-wrap tw-mb-6'>
-                    <img
-                      src='assets/images/thumbs/testimonial-img1.png'
+                    <Image
+                      width={60}
+                      height={60}
+                      src='/assets/images/thumbs/testimonial-img1.png'
                       alt='Darlene Robertson'
                     />
                     <div className=''>
@@ -126,8 +132,10 @@ const TestimonialsThree: React.FC = () => {
                         Software Tester
                       </span>
                     </div>
-                    <img
-                      src='assets/images/icon/testimonial-icon1.png'
+                    <Image
+                      width={48}
+                      height={33}
+                      src='/assets/images/icon/testimonial-icon1.png'
                       alt='Quote Icon'
                     />
                   </div>
@@ -168,8 +176,10 @@ const TestimonialsThree: React.FC = () => {
               <div className='bg-white tw-px-8 tw-py-8 tw-rounded-xl w-100 h-100'>
                 <div className=''>
                   <div className='d-flex align-items-center justify-content-between tw-gap-3 flex-wrap tw-mb-6'>
-                    <img
-                      src='assets/images/thumbs/testimonial-img2.png'
+                    <Image
+                      width={60}
+                      height={60}
+                      src='/assets/images/thumbs/testimonial-img2.png'
                       alt='Darlene Robertson'
                     />
                     <div className=''>
@@ -180,8 +190,10 @@ const TestimonialsThree: React.FC = () => {
                         Software Tester
                       </span>
                     </div>
-                    <img
-                      src='assets/images/icon/testimonial-icon1.png'
+                    <Image
+                      width={48}
+                      height={33}
+                      src='/assets/images/icon/testimonial-icon1.png'
                       alt='Quote Icon'
                     />
                   </div>
@@ -222,8 +234,10 @@ const TestimonialsThree: React.FC = () => {
               <div className='bg-white tw-px-8 tw-py-8 tw-rounded-xl w-100 h-100'>
                 <div className=''>
                   <div className='d-flex align-items-center justify-content-between tw-gap-3 flex-wrap tw-mb-6'>
-                    <img
-                      src='assets/images/thumbs/testimonial-img3.png'
+                    <Image
+                      width={60}
+                      height={60}
+                      src='/assets/images/thumbs/testimonial-img3.png'
                       alt='Darlene Robertson'
                     />
                     <div className=''>
@@ -234,8 +248,10 @@ const TestimonialsThree: React.FC = () => {
                         Software Tester
                       </span>
                     </div>
-                    <img
-                      src='assets/images/icon/testimonial-icon1.png'
+                    <Image
+                      width={48}
+                      height={33}
+                      src='/assets/images/icon/testimonial-icon1.png'
                       alt='Quote Icon'
                     />
                   </div>
@@ -276,8 +292,10 @@ const TestimonialsThree: React.FC = () => {
               <div className='bg-white tw-px-8 tw-py-8 tw-rounded-xl w-100 h-100'>
                 <div className=''>
                   <div className='d-flex align-items-center justify-content-between tw-gap-3 flex-wrap tw-mb-6'>
-                    <img
-                      src='assets/images/thumbs/testimonial-img2.png'
+                    <Image
+                      width={60}
+                      height={60}
+                      src='/assets/images/thumbs/testimonial-img2.png'
                       alt='Darlene Robertson'
                     />
                     <div className=''>
@@ -288,8 +306,10 @@ const TestimonialsThree: React.FC = () => {
                         Software Tester
                       </span>
                     </div>
-                    <img
-                      src='assets/images/icon/testimonial-icon1.png'
+                    <Image
+                      width={48}
+                      height={33}
+                      src='/assets/images/icon/testimonial-icon1.png'
                       alt='Quote Icon'
                     />
                   </div>

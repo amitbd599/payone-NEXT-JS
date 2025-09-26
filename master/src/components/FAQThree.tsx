@@ -1,4 +1,5 @@
 import type React from "react";
+import Image from "next/image";
 
 const FAQThree: React.FC = () => {
   return (
@@ -12,7 +13,12 @@ const FAQThree: React.FC = () => {
               data-aos-duration={600}
             >
               <span>
-                <img src='assets/images/icon/star-icon2.png' alt='Image' />
+                <Image
+                  width={27}
+                  height={27}
+                  src='/assets/images/icon/star-icon2.png'
+                  alt='Image'
+                />
               </span>
               <h5 className='text-primary-600 fw-normal cursor-big'>Faq</h5>
             </div>
@@ -52,8 +58,10 @@ const FAQThree: React.FC = () => {
                   aria-selected='true'
                 >
                   <span className='tw-mb-5 group-hover-item-text-invert tw-transition-04-secend d-block'>
-                    <img
-                      src='assets/images/icon/faq-img1.png'
+                    <Image
+                      width={48}
+                      height={48}
+                      src='/assets/images/icon/faq-img1.png'
                       alt='Image'
                       className='faq-img'
                     />
@@ -75,8 +83,10 @@ const FAQThree: React.FC = () => {
                   aria-selected='false'
                 >
                   <span className='tw-mb-5 group-hover-item-text-invert tw-transition-04-secend d-block'>
-                    <img
-                      src='assets/images/icon/faq-img2.png'
+                    <Image
+                      width={48}
+                      height={48}
+                      src='/assets/images/icon/faq-img2.png'
                       alt='Image'
                       className='faq-img'
                     />
@@ -98,8 +108,10 @@ const FAQThree: React.FC = () => {
                   aria-selected='false'
                 >
                   <span className='tw-mb-5 group-hover-item-text-invert tw-transition-04-secend d-block'>
-                    <img
-                      src='assets/images/icon/faq-img3.png'
+                    <Image
+                      width={48}
+                      height={48}
+                      src='/assets/images/icon/faq-img3.png'
                       alt='Image'
                       className='faq-img'
                     />
@@ -121,8 +133,10 @@ const FAQThree: React.FC = () => {
                   aria-selected='false'
                 >
                   <span className='tw-mb-5 group-hover-item-text-invert tw-transition-04-secend d-block'>
-                    <img
-                      src='assets/images/icon/faq-img4.png'
+                    <Image
+                      width={48}
+                      height={48}
+                      src='/assets/images/icon/faq-img4.png'
                       alt='Image'
                       className='faq-img'
                     />

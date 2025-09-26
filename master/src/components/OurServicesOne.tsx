@@ -1,5 +1,7 @@
+"use client";
+import Image from "next/image";
+import Link from "next/link";
 import type React from "react";
-import { Link } from "react-router-dom";
 import Slider from "react-slick";
 
 const OurServicesOne: React.FC = () => {
@@ -60,7 +62,12 @@ const OurServicesOne: React.FC = () => {
               data-aos='fade-up'
               data-aos-duration={600}
             >
-              <img src='assets/images/icon/star-icon2.png' alt='Image' />
+              <Image
+                width={27}
+                height={27}
+                src='/assets/images/icon/star-icon2.png'
+                alt='Image'
+              />
               <h5 className='fw-normal text-primary-600'>Our Services</h5>
             </div>
             <h2
@@ -86,7 +93,7 @@ const OurServicesOne: React.FC = () => {
               data-aos-duration={1000}
             >
               <Link
-                to='/about-us'
+                href='/about-us'
                 className='services-two-link fw-semibold tw-text-lg text-dark-700 bg-main-600 tw-px-5 tw-py-205 rounded-3 w-100 border-two-px-solid hover-text-dark-600'
               >
                 SEE MORE
@@ -103,8 +110,10 @@ const OurServicesOne: React.FC = () => {
               <div className='single group max-w-246-px w-100 position-relative'>
                 <div className='our-services-slider-card tw-px-8 tw-py-8 bg-white tw-rounded-xl border-base-two-600 border-bottom text-center group-hover-bg-main-600 tw-duration-500 tw-hover-border-black tw-transition-05-secend'>
                   <span className='tw-mb-6 d-block'>
-                    <img
-                      src='assets/images/icon/our-services-two-img1.png'
+                    <Image
+                      width={61}
+                      height={81}
+                      src='/assets/images/icon/our-services-two-img1.png'
                       alt='Image'
                     />
                   </span>
@@ -118,8 +127,10 @@ const OurServicesOne: React.FC = () => {
               <div className='single group max-w-246-px w-100 position-relative'>
                 <div className='our-services-slider-card tw-px-8 tw-py-8 bg-white tw-rounded-xl border-base-two-600 border-bottom text-center group-hover-bg-main-600 tw-duration-500 tw-hover-border-black tw-transition-05-secend'>
                   <span className='tw-mb-6 d-block'>
-                    <img
-                      src='assets/images/icon/our-services-two-img2.png'
+                    <Image
+                      width={60}
+                      height={74}
+                      src='/assets/images/icon/our-services-two-img2.png'
                       alt='Image'
                     />
                   </span>
@@ -133,8 +144,10 @@ const OurServicesOne: React.FC = () => {
               <div className='single group max-w-246-px w-100 position-relative'>
                 <div className='our-services-slider-card tw-px-8 tw-py-8 bg-white tw-rounded-xl border-base-two-600 border-bottom text-center group-hover-bg-main-600 tw-duration-500 tw-hover-border-black tw-transition-05-secend'>
                   <span className='tw-mb-6 d-block'>
-                    <img
-                      src='assets/images/icon/our-services-two-img3.png'
+                    <Image
+                      width={80}
+                      height={80}
+                      src='/assets/images/icon/our-services-two-img3.png'
                       alt='Image'
                     />
                   </span>
@@ -148,8 +161,10 @@ const OurServicesOne: React.FC = () => {
               <div className='single group max-w-246-px w-100 position-relative'>
                 <div className='our-services-slider-card tw-px-8 tw-py-8 bg-white tw-rounded-xl border-base-two-600 border-bottom text-center group-hover-bg-main-600 tw-duration-500 tw-hover-border-black tw-transition-05-secend'>
                   <span className='tw-mb-6 d-block'>
-                    <img
-                      src='assets/images/icon/our-services-two-img4.png'
+                    <Image
+                      width={81}
+                      height={81}
+                      src='/assets/images/icon/our-services-two-img4.png'
                       alt='Image'
                     />
                   </span>
@@ -163,8 +178,10 @@ const OurServicesOne: React.FC = () => {
               <div className='single group max-w-246-px w-100 position-relative'>
                 <div className='our-services-slider-card tw-px-8 tw-py-8 bg-white tw-rounded-xl border-base-two-600 border-bottom text-center group-hover-bg-main-600 tw-duration-500 tw-hover-border-black tw-transition-05-secend'>
                   <span className='tw-mb-6 d-block'>
-                    <img
-                      src='assets/images/icon/our-services-two-img5.png'
+                    <Image
+                      width={81}
+                      height={81}
+                      src='/assets/images/icon/our-services-two-img5.png'
                       alt='Image'
                     />
                   </span>
@@ -178,8 +195,10 @@ const OurServicesOne: React.FC = () => {
               <div className='single group max-w-246-px w-100 position-relative'>
                 <div className='our-services-slider-card tw-px-8 tw-py-8 bg-white tw-rounded-xl border-base-two-600 border-bottom text-center group-hover-bg-main-600 tw-duration-500 tw-hover-border-black tw-transition-05-secend'>
                   <span className='tw-mb-6 d-block'>
-                    <img
-                      src='assets/images/icon/our-services-two-img3.png'
+                    <Image
+                      width={80}
+                      height={80}
+                      src='/assets/images/icon/our-services-two-img3.png'
                       alt='Image'
                     />
                   </span>

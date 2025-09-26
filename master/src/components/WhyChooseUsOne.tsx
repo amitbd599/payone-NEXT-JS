@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type React from "react";
 
 const WhyChooseUsOne: React.FC = () => {
@@ -10,7 +11,12 @@ const WhyChooseUsOne: React.FC = () => {
             data-aos='fade-up'
             data-aos-duration={600}
           >
-            <img src='assets/images/icon/star-icon2.png' alt='Image' />
+            <Image
+              width={27}
+              height={27}
+              src='/assets/images/icon/star-icon2.png'
+              alt='Image'
+            />
             <h5 className='fw-normal text-primary-600'>Why Choose Us</h5>
           </div>
           <h2
@@ -33,8 +39,10 @@ const WhyChooseUsOne: React.FC = () => {
           <div className='col-xl-3 col-lg-4 col-md-6 col-sm-6'>
             <div className='tw-px-8' data-aos='fade-up' data-aos-duration={600}>
               <span className='bg-base-two-600 w-15 h-15 rounded-3 d-flex align-items-center justify-content-center tw-mb-10'>
-                <img
-                  src='assets/images/icon/why-choose-us-two-icon1.png'
+                <Image
+                  width={40}
+                  height={40}
+                  src='/assets/images/icon/why-choose-us-two-icon1.png'
                   alt='Image'
                 />
               </span>
@@ -57,8 +65,10 @@ const WhyChooseUsOne: React.FC = () => {
             >
               <div className='tw-px-8'>
                 <span className='bg-main-600 w-15 h-15 rounded-3 d-flex align-items-center justify-content-center tw-mb-10'>
-                  <img
-                    src='assets/images/icon/why-choose-us-two-icon2.png'
+                  <Image
+                    width={36}
+                    height={36}
+                    src='/assets/images/icon/why-choose-us-two-icon2.png'
                     alt='Image'
                   />
                 </span>
@@ -77,8 +87,10 @@ const WhyChooseUsOne: React.FC = () => {
           <div className='col-xl-3 col-lg-4 col-md-6 col-sm-6'>
             <div className='tw-px-8' data-aos='fade-up' data-aos-duration={800}>
               <span className='bg-base-two-600 w-15 h-15 rounded-3 d-flex align-items-center justify-content-center tw-mb-10'>
-                <img
-                  src='assets/images/icon/why-choose-us-two-icon3.png'
+                <Image
+                  width={40}
+                  height={40}
+                  src='/assets/images/icon/why-choose-us-two-icon3.png'
                   alt='Image'
                 />
               </span>
@@ -101,8 +113,10 @@ const WhyChooseUsOne: React.FC = () => {
             >
               <div className='tw-px-8'>
                 <span className='bg-main-600 w-15 h-15 rounded-3 d-flex align-items-center justify-content-center tw-mb-10'>
-                  <img
-                    src='assets/images/icon/why-choose-us-two-icon4.png'
+                  <Image
+                    width={34}
+                    height={34}
+                    src='/assets/images/icon/why-choose-us-two-icon4.png'
                     alt='Image'
                   />
                 </span>

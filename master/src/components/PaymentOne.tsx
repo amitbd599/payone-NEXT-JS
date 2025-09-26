@@ -1,5 +1,7 @@
+"use client";
+import Image from "next/image";
+import Link from "next/link";
 import React, { useRef } from "react";
-import { Link } from "react-router-dom";
 import Slider from "react-slick";
 
 const PaymentOne: React.FC = () => {
@@ -62,7 +64,12 @@ const PaymentOne: React.FC = () => {
               data-aos='fade-up'
               data-aos-duration={600}
             >
-              <img src='assets/images/icon/star-icon2.png' alt='Image' />
+              <Image
+                width={27}
+                height={27}
+                src='/assets/images/icon/star-icon2.png'
+                alt='Image'
+              />
               <h5 className='fw-normal text-primary-600'>More Features</h5>
             </div>
             <h2
@@ -90,7 +97,7 @@ const PaymentOne: React.FC = () => {
               data-aos-duration={1200}
             >
               <Link
-                to='/about-us'
+                href='/about-us'
                 className='features-three-link fw-semibold tw-text-lg text-dark-700 border-two-px-solid bg-main-600 tw-px-5 tw-py-205 rounded-3 w-100 d-flex align-items-center justify-content-center hover-text-dark-600'
               >
                 SEE MORE
@@ -109,8 +116,10 @@ const PaymentOne: React.FC = () => {
                 <div className='our-services-slider-card tw-px-8 tw-py-8 bg-white tw-rounded-xl border-base-two-600 border-bottom text-center group-hover-bg-main-600 tw-duration-500 tw-hover-border-black tw-transition-05-secend'>
                   <span className='tw-w-80-px tw-h-80-px tw-border-base-two-600-dashed d-block d-flex align-items-center justify-content-center tw-mb-6 tw-rounded-xl mx-auto'>
                     <span className='tw-w-17 tw-h-17 bg-base-two-10 d-flex align-items-center justify-content-center group-hover-bg-base-two-600 tw-rounded-md tw-duration-500'>
-                      <img
-                        src='assets/images/icon/more-features-three-img-1.png'
+                      <Image
+                        width={51}
+                        height={51}
+                        src='/assets/images/icon/more-features-three-img-1.png'
                         alt='Image'
                         className='group-hover-item-text-invert tw-duration-500'
                       />
@@ -127,8 +136,10 @@ const PaymentOne: React.FC = () => {
                 <div className='our-services-slider-card tw-px-8 tw-py-8 bg-white tw-rounded-xl border-base-two-600 border-bottom text-center group-hover-bg-main-600 tw-duration-500 tw-hover-border-black tw-transition-05-secend'>
                   <span className='tw-w-80-px tw-h-80-px tw-border-base-two-600-dashed d-block d-flex align-items-center justify-content-center tw-mb-6 tw-rounded-xl mx-auto'>
                     <span className='tw-w-17 tw-h-17 bg-base-two-10 d-flex align-items-center justify-content-center group-hover-bg-base-two-600 tw-rounded-md tw-duration-500'>
-                      <img
-                        src='assets/images/icon/more-features-three-img-2.png'
+                      <Image
+                        width={51}
+                        height={51}
+                        src='/assets/images/icon/more-features-three-img-2.png'
                         alt='Image'
                         className='group-hover-item-text-invert tw-duration-500'
                       />
@@ -145,8 +156,10 @@ const PaymentOne: React.FC = () => {
                 <div className='our-services-slider-card tw-px-8 tw-py-8 bg-white tw-rounded-xl border-base-two-600 border-bottom text-center group-hover-bg-main-600 tw-duration-500 tw-hover-border-black tw-transition-05-secend'>
                   <span className='tw-w-80-px tw-h-80-px tw-border-base-two-600-dashed d-block d-flex align-items-center justify-content-center tw-mb-6 tw-rounded-xl mx-auto'>
                     <span className='tw-w-17 tw-h-17 bg-base-two-10 d-flex align-items-center justify-content-center group-hover-bg-base-two-600 tw-rounded-md tw-duration-500'>
-                      <img
-                        src='assets/images/icon/more-features-three-img-3.png'
+                      <Image
+                        width={48}
+                        height={48}
+                        src='/assets/images/icon/more-features-three-img-3.png'
                         alt='Image'
                         className='group-hover-item-text-invert tw-duration-500'
                       />
@@ -163,8 +176,10 @@ const PaymentOne: React.FC = () => {
                 <div className='our-services-slider-card tw-px-8 tw-py-8 bg-white tw-rounded-xl border-base-two-600 border-bottom text-center group-hover-bg-main-600 tw-duration-500 tw-hover-border-black tw-transition-05-secend'>
                   <span className='tw-w-80-px tw-h-80-px tw-border-base-two-600-dashed d-block d-flex align-items-center justify-content-center tw-mb-6 tw-rounded-xl mx-auto'>
                     <span className='tw-w-17 tw-h-17 bg-base-two-10 d-flex align-items-center justify-content-center group-hover-bg-base-two-600 tw-rounded-md tw-duration-500'>
-                      <img
-                        src='assets/images/icon/more-features-three-img-4.png'
+                      <Image
+                        width={51}
+                        height={51}
+                        src='/assets/images/icon/more-features-three-img-4.png'
                         alt='Image'
                         className='group-hover-item-text-invert tw-duration-500'
                       />
@@ -181,8 +196,10 @@ const PaymentOne: React.FC = () => {
                 <div className='our-services-slider-card tw-px-8 tw-py-8 bg-white tw-rounded-xl border-base-two-600 border-bottom text-center group-hover-bg-main-600 tw-duration-500 tw-hover-border-black tw-transition-05-secend'>
                   <span className='tw-w-80-px tw-h-80-px tw-border-base-two-600-dashed d-block d-flex align-items-center justify-content-center tw-mb-6 tw-rounded-xl mx-auto'>
                     <span className='tw-w-17 tw-h-17 bg-base-two-10 d-flex align-items-center justify-content-center group-hover-bg-base-two-600 tw-rounded-md tw-duration-500'>
-                      <img
-                        src='assets/images/icon/more-features-three-img-5.png'
+                      <Image
+                        width={47}
+                        height={47}
+                        src='/assets/images/icon/more-features-three-img-5.png'
                         alt='Image'
                         className='group-hover-item-text-invert tw-duration-500'
                       />
@@ -199,8 +216,10 @@ const PaymentOne: React.FC = () => {
                 <div className='our-services-slider-card tw-px-8 tw-py-8 bg-white tw-rounded-xl border-base-two-600 border-bottom text-center group-hover-bg-main-600 tw-duration-500 tw-hover-border-black tw-transition-05-secend'>
                   <span className='tw-w-80-px tw-h-80-px tw-border-base-two-600-dashed d-block d-flex align-items-center justify-content-center tw-mb-6 tw-rounded-xl mx-auto'>
                     <span className='tw-w-17 tw-h-17 bg-base-two-10 d-flex align-items-center justify-content-center group-hover-bg-base-two-600 tw-rounded-md tw-duration-500'>
-                      <img
-                        src='assets/images/icon/more-features-three-img-3.png'
+                      <Image
+                        width={48}
+                        height={48}
+                        src='/assets/images/icon/more-features-three-img-3.png'
                         alt='Image'
                         className='group-hover-item-text-invert tw-duration-500'
                       />
