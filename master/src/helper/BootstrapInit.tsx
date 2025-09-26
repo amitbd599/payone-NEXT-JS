@@ -1,10 +1,17 @@
 "use client";
+
 import { useEffect } from "react";
-export default function BootstrapInit() {
+
+export default function BootstrapInit(): null {
   useEffect(() => {
+    // Only run in the browser
     if (typeof window !== "undefined") {
-      require("bootstrap/dist/js/bootstrap.bundle.min.js");
+      // Dynamically import bootstrap JS
+      import("bootstrap").then(() => {
+        // Bootstrap loaded successfully
+      });
     }
   }, []);
+
   return null;
 }

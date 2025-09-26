@@ -1,5 +1,6 @@
+import Image from "next/image";
+import Link from "next/link";
 import type React from "react";
-import { Link } from "react-router-dom";
 
 const BlogOne: React.FC = () => {
   return (
@@ -12,7 +13,12 @@ const BlogOne: React.FC = () => {
               data-aos='fade-up'
               data-aos-duration={800}
             >
-              <img src='assets/images/icon/star-icon3.png' alt='Image' />
+              <Image
+                width={27}
+                height={27}
+                src='/assets/images/icon/star-icon3.png'
+                alt='Image'
+              />
               <h5 className='fw-normal text-dark-600 cursor-big'>Articles</h5>
             </div>
             <h2
@@ -40,7 +46,7 @@ const BlogOne: React.FC = () => {
               data-aos-duration={1000}
             >
               <Link
-                to='/blog-list'
+                href='/blog-list'
                 className='articles-link w-100 text-center tw-py-205 bg-main-600 rounded-3 tw-text-lg text-dark-700 border-two-px-solid fw-semibold hover-text-dark-600'
               >
                 ALL BLOGS
@@ -56,8 +62,10 @@ const BlogOne: React.FC = () => {
               data-aos-duration={900}
             >
               <span className='tw-mb-4 w-100 h-100'>
-                <img
-                  src='assets/images/thumbs/articles-img1.png'
+                <Image
+                  width={588}
+                  height={321}
+                  src='/assets/images/thumbs/articles-img1.png'
                   alt='Image'
                   className='w-100 h-100'
                 />
@@ -90,7 +98,7 @@ const BlogOne: React.FC = () => {
                 </p>
                 <div className='position-relative z-1 max-w-160-px w-100'>
                   <Link
-                    to='/blog-details'
+                    href='/blog-details'
                     className='articles-view-link w-100 text-center tw-py-205 bg-main-600 rounded-3 text-dark-600 fw-semibold tw-text-lg hover-text-dark-600'
                   >
                     VIEW DETAILS
@@ -106,8 +114,10 @@ const BlogOne: React.FC = () => {
                 data-aos='fade-up'
                 data-aos-duration={800}
               >
-                <img
-                  src='assets/images/thumbs/articles-img2.png'
+                <Image
+                  width={264}
+                  height={302}
+                  src='/assets/images/thumbs/articles-img2.png'
                   alt='Image'
                   className='articles-img tw-mb-4 max-w-256 h-100 bg-img'
                 />
@@ -139,7 +149,7 @@ const BlogOne: React.FC = () => {
                   </p>
                   <div className='position-relative z-1 max-w-160-px w-100'>
                     <Link
-                      to='/blog-details'
+                      href='/blog-details'
                       className='articles-view-link w-100 text-center tw-py-205 bg-main-600 rounded-3 text-dark-600 fw-semibold tw-text-lg hover-text-dark-600'
                     >
                       VIEW DETAILS
@@ -152,8 +162,10 @@ const BlogOne: React.FC = () => {
                 data-aos='fade-up'
                 data-aos-duration={1000}
               >
-                <img
-                  src='assets/images/thumbs/articles-img3.png'
+                <Image
+                  width={264}
+                  height={302}
+                  src='/assets/images/thumbs/articles-img3.png'
                   alt='Image'
                   className='articles-img tw-mb-4 max-w-256 h-100 bg-img'
                 />
@@ -185,7 +197,7 @@ const BlogOne: React.FC = () => {
                   </p>
                   <div className='position-relative z-1 max-w-160-px w-100'>
                     <Link
-                      to='/blog-details'
+                      href='/blog-details'
                       className='articles-view-link w-100 text-center tw-py-205 bg-main-600 rounded-3 text-dark-600 fw-semibold tw-text-lg hover-text-dark-600'
                     >
                       VIEW DETAILS

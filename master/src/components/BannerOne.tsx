@@ -1,16 +1,12 @@
 "use client";
-import { useInView } from "react-intersection-observer";
-import CountUp from "react-countup";
 import Popup from "reactjs-popup";
 
 import Marquee from "react-fast-marquee";
 import type React from "react";
 import Image from "next/image";
+import CounterView from "@/helper/CounterView";
 
 const BannerOne: React.FC = () => {
-  const { ref, inView } = useInView({
-    threshold: 0,
-  });
   return (
     <>
       <section className='pt-120 bg-base-two-600 z-1 position-relative overflow-hidden'>
@@ -133,7 +129,7 @@ const BannerOne: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className='banner-item' ref={ref}>
+            <div className='banner-item'>
               <div className='bg-white tw-py-5 tw-px-5 rounded-3 d-inline-flex align-items-center tw-gap-3 position-absolute inset-block-start-70-persent inset-inline-start-42-persent z-1 max-w-263 animation-Updowm__two'>
                 <div className='d-flex align-items-center '>
                   <Image
@@ -159,12 +155,8 @@ const BannerOne: React.FC = () => {
                 </div>
                 <div>
                   <h4 className='fw-normal tw-text-6 counter'>
-                    {inView && (
-                      <span>
-                        <CountUp delay={0} start={0} end={25} />
-                        K+
-                      </span>
-                    )}
+                    {/* CounterView */}
+                    <CounterView start={0} end={25} title='K+' />
                   </h4>
                   <span className='fw-normal tw-text-lg text-dark-500'>
                     Active users{" "}
@@ -198,11 +190,8 @@ const BannerOne: React.FC = () => {
                 Payment Received
               </span>
               <h4 className='fw-normal tw-mb-3 counter'>
-                {inView && (
-                  <span>
-                    +<CountUp delay={0} start={0} end={358900} />
-                  </span>
-                )}
+                {/* CounterView */}
+                +<CounterView start={0} end={358900} title='' />
               </h4>
               <div className='d-flex align-items-center tw-gap-2 justify-content-between'>
                 <span className='tw-text-lg fw-semibold text-dark-600'>
@@ -225,12 +214,9 @@ const BannerOne: React.FC = () => {
               data-aos='fade-up'
               data-aos-duration={800}
             >
-              Join&nbsp;{" "}
-              {inView && (
-                <span>
-                  <CountUp delay={0} start={0} end={10245} />
-                </span>
-              )}{" "}
+              Join&nbsp;
+              {/* CounterView */}
+              <CounterView start={0} end={10245} title='' />
               +&nbsp;
             </h3>
             <h5

@@ -1,10 +1,8 @@
+import CounterView from "@/helper/CounterView";
+import Image from "next/image";
 import type React from "react";
-import CountUp from "react-countup";
-import { useInView } from "react-intersection-observer";
+
 const OurFeatureOne: React.FC = () => {
-  const { ref, inView } = useInView({
-    threshold: 0,
-  });
   return (
     <>
       <section className='py-140 z-1 overflow-hidden'>
@@ -16,7 +14,12 @@ const OurFeatureOne: React.FC = () => {
                 data-aos='fade-up'
                 data-aos-duration={800}
               >
-                <img src='assets/images/icon/star-icon2.png' alt='Image' />
+                <Image
+                  width={27}
+                  height={27}
+                  src='/assets/images/icon/star-icon2.png'
+                  alt='Image'
+                />
                 <h5 className='text-primary-600 fw-normal'> Our Features</h5>
               </div>
               <h2
@@ -49,7 +52,7 @@ const OurFeatureOne: React.FC = () => {
                   <span className='tw-w-72px tw-h-72-px border-base-two-600 d-flex align-items-center justify-content-center rounded-3 tw-mb-6'>
                     <span className='w-15 h-15 bg-base-two-10 rounded-3 d-flex align-items-center justify-content-center'>
                       <img
-                        src='assets/images/icon/our-feature-icon1.png'
+                        src='/assets/images/icon/our-feature-icon1.png'
                         alt='Image'
                       />
                     </span>
@@ -70,7 +73,7 @@ const OurFeatureOne: React.FC = () => {
                   <span className='tw-w-72px tw-h-72-px border-base-two-600 d-flex align-items-center justify-content-center rounded-3 tw-mb-6'>
                     <span className='w-15 h-15 bg-base-two-10 rounded-3 d-flex align-items-center justify-content-center'>
                       <img
-                        src='assets/images/icon/our-feature-icon2.png'
+                        src='/assets/images/icon/our-feature-icon2.png'
                         alt='Image'
                       />
                     </span>
@@ -87,7 +90,7 @@ const OurFeatureOne: React.FC = () => {
                   <span className='tw-w-72px tw-h-72-px border-base-two-600 d-flex align-items-center justify-content-center rounded-3 tw-mb-6'>
                     <span className='w-15 h-15 bg-base-two-10 rounded-3 d-flex align-items-center justify-content-center'>
                       <img
-                        src='assets/images/icon/our-feature-icon3.png'
+                        src='/assets/images/icon/our-feature-icon3.png'
                         alt='Image'
                       />
                     </span>
@@ -106,31 +109,27 @@ const OurFeatureOne: React.FC = () => {
               <div className='position-relative'>
                 <div>
                   <img
-                    src='assets/images/thumbs/our-feature-img1.png'
+                    src='/assets/images/thumbs/our-feature-img1.png'
                     alt='Image'
                     data-aos='zoom-in'
                     data-aos-duration={1200}
                   />
                 </div>
                 <div
-                  ref={ref}
                   className='our-feature__card-one bg-white tw-w-232-px tw-h-116-px position-absolute top-0 tw-start-0 border-bottom-right-24-px'
                   data-aos='fade-right'
                   data-aos-duration={1000}
                 >
                   <div className='our-feature-card-three max-w-219 bg-warning-500 rounded-3 tw-px-6 tw-py-5 d-flex align-items-center tw-gap-4 position-absolute inset-inline-start-0 inset-block-start-0'>
                     <img
-                      src='assets/images/shape/our-feature-shape1.png'
+                      src='/assets/images/shape/our-feature-shape1.png'
                       alt='Image'
                       data-aos-duration={800}
                     />
                     <div>
                       <h3 className='fw-normal text-dark-600 mb-0 cursor-big counter'>
-                        {inView && (
-                          <span>
-                            <CountUp delay={0} start={0} end={45} />%
-                          </span>
-                        )}
+                        {/* CounterView */}
+                        <CounterView start={0} end={45} title='K+' />
                       </h3>
                       <span className='fw-normal tw-text-lg text-dark-500'>
                         Success rate
@@ -146,11 +145,8 @@ const OurFeatureOne: React.FC = () => {
                   <div className='our-feature-card-four max-w-176 bg-main-600 rounded-3 tw-px-6 tw-py-5 position-absolute inset-block-end-0 inset-inline-end-0'>
                     <div>
                       <h3 className='fw-normal text-dark-600 mb-1 cursor-big counter'>
-                        {inView && (
-                          <span>
-                            <CountUp delay={0} start={0} end={11} />K
-                          </span>
-                        )}
+                        {/* CounterView */}
+                        <CounterView start={0} end={11} title='K' />
                       </h3>
                       <span className='fw-normal tw-text-lg text-dark-500'>
                         Banking Card available

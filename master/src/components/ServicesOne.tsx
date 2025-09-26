@@ -1,10 +1,10 @@
 import type React from "react";
-import { Link } from "react-router-dom";
+import Image from "next/image";
+import Link from "next/link";
 
 const ServicesOne: React.FC = () => {
   return (
     <>
-      {" "}
       <section className='py-140 z-1 overflow-hidden'>
         <div className='container'>
           <div className='d-flex align-items-center tw-gap-3 justify-content-between flex-wrap tw-mb-80-px'>
@@ -15,8 +15,10 @@ const ServicesOne: React.FC = () => {
                 data-aos-duration={600}
               >
                 <span className=''>
-                  <img
-                    src='assets/images/icon/star-icon2.png'
+                  <Image
+                    width={27}
+                    height={27}
+                    src='/assets/images/icon/star-icon2.png'
                     alt='Image'
                     className=''
                   />
@@ -46,7 +48,7 @@ const ServicesOne: React.FC = () => {
                 data-aos-duration={1200}
               >
                 <Link
-                  to='/our-services'
+                  href='/our-services'
                   className='our-serbices-item-link fw-semibold tw-text-lg text-dark-700 tw-py-205 bg-main-600 w-100 text-center rounded-3 hover-text-dark-600 tw-duration-500'
                 >
                   ALL SERVICES
@@ -70,8 +72,10 @@ const ServicesOne: React.FC = () => {
                 </button>
                 <div className='tw-px-8 tw-py-8 group-hover-bg-base-two-600 tw-transition-03-secend rounded-3'>
                   <span className='group-hover-bg-main-600 tw-transition-03-secend group-hover-text-dark-600 our-services-bank w-15 h-15 bg-base-two-600 rounded-3 tw-text-805 text-white align-items-center justify-content-center d-flex tw-mb-10'>
-                    <img
-                      src='assets/images/icon/services-icon-img4.png'
+                    <Image
+                      width={34}
+                      height={34}
+                      src='/assets/images/icon/services-icon-img4.png'
                       alt='Image'
                       className='text-white'
                     />
@@ -103,8 +107,10 @@ const ServicesOne: React.FC = () => {
                 </button>
                 <div className='tw-px-8 tw-py-8 group-hover-bg-base-two-600 tw-transition-03-secend rounded-3'>
                   <span className='group-hover-bg-main-600 tw-transition-03-secend group-hover-text-dark-600 our-services-bank w-15 h-15 bg-base-two-600 rounded-3 tw-text-805 text-white align-items-center justify-content-center d-flex tw-mb-10'>
-                    <img
-                      src='assets/images/icon/services-icon-img1.png'
+                    <Image
+                      width={32}
+                      height={39}
+                      src='/assets/images/icon/services-icon-img1.png'
                       alt='Image'
                       className='text-white'
                     />
@@ -136,8 +142,10 @@ const ServicesOne: React.FC = () => {
                 </button>
                 <div className='tw-px-8 tw-py-8 group-hover-bg-base-two-600 tw-transition-03-secend rounded-3'>
                   <span className='group-hover-bg-main-600 tw-transition-03-secend group-hover-text-dark-600 our-services-bank w-15 h-15 bg-base-two-600 rounded-3 tw-text-805 text-white align-items-center justify-content-center d-flex tw-mb-10'>
-                    <img
-                      src='assets/images/icon/services-icon-img2.png'
+                    <Image
+                      width={34}
+                      height={31}
+                      src='/assets/images/icon/services-icon-img2.png'
                       alt='Image'
                       className='text-white'
                     />
@@ -169,8 +177,10 @@ const ServicesOne: React.FC = () => {
                 </button>
                 <div className='tw-px-8 tw-py-8 group-hover-bg-base-two-600 tw-transition-03-secend rounded-3'>
                   <span className='group-hover-bg-main-600 tw-transition-03-secend group-hover-text-dark-600 our-services-bank w-15 h-15 bg-base-two-600 rounded-3 tw-text-805 text-white align-items-center justify-content-center d-flex tw-mb-10'>
-                    <img
-                      src='assets/images/icon/services-icon-img3.png'
+                    <Image
+                      width={38}
+                      height={38}
+                      src='/assets/images/icon/services-icon-img3.png'
                       alt='Image'
                       className='text-white'
                     />

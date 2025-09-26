@@ -1,3 +1,5 @@
+"use client";
+import Image from "next/image";
 import React, { useRef } from "react";
 import Slider from "react-slick";
 
@@ -60,64 +62,80 @@ const PaymentMethodOne: React.FC = () => {
             <Slider ref={sliderRef} {...settings} className='swiper-wrapper '>
               <div className='swiper-slide'>
                 <div className='single'>
-                  <img
-                    src='assets/images/logo/payment-method-img1.png'
+                  <Image
+                    width={161}
+                    height={108}
+                    src='/assets/images/logo/payment-method-img1.png'
                     alt='Image'
                   />
                 </div>
               </div>
               <div className='swiper-slide'>
                 <div className='single'>
-                  <img
-                    src='assets/images/logo/payment-mathod-img2.png'
+                  <Image
+                    width={161}
+                    height={108}
+                    src='/assets/images/logo/payment-mathod-img2.png'
                     alt='Image'
                   />
                 </div>
               </div>
               <div className='swiper-slide'>
                 <div className='single'>
-                  <img
-                    src='assets/images/logo/payment-mathod-img3.png'
+                  <Image
+                    width={161}
+                    height={108}
+                    src='/assets/images/logo/payment-mathod-img3.png'
                     alt='Image'
                   />
                 </div>
               </div>
               <div className='swiper-slide'>
                 <div className='single'>
-                  <img
-                    src='assets/images/logo/payment-mathod-img4.png'
+                  <Image
+                    width={161}
+                    height={107}
+                    src='/assets/images/logo/payment-mathod-img4.png'
                     alt='Image'
                   />
                 </div>
               </div>
               <div className='swiper-slide'>
                 <div className='single'>
-                  <img
-                    src='assets/images/logo/payment-mathod-img5.png'
+                  <Image
+                    width={161}
+                    height={108}
+                    src='/assets/images/logo/payment-mathod-img5.png'
                     alt='Image'
                   />
                 </div>
               </div>
               <div className='swiper-slide'>
                 <div className='single'>
-                  <img
-                    src='assets/images/logo/payment-mathod-img6.png'
+                  <Image
+                    width={163}
+                    height={108}
+                    src='/assets/images/logo/payment-mathod-img6.png'
                     alt='Image'
                   />
                 </div>
               </div>
               <div className='swiper-slide'>
                 <div className='single'>
-                  <img
-                    src='assets/images/logo/payment-mathod-img7.png'
+                  <Image
+                    width={162}
+                    height={108}
+                    src='/assets/images/logo/payment-mathod-img7.png'
                     alt='Image'
                   />
                 </div>
               </div>
               <div className='swiper-slide'>
                 <div className='single'>
-                  <img
-                    src='assets/images/logo/payment-mathod-img4.png'
+                  <Image
+                    width={162}
+                    height={108}
+                    src='/assets/images/logo/payment-mathod-img4.png'
                     alt='Image'
                   />
                 </div>

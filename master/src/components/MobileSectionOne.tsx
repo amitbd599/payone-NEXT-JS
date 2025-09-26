@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type React from "react";
 
 const MobileSectionOne: React.FC = () => {
@@ -6,8 +7,10 @@ const MobileSectionOne: React.FC = () => {
       <div className='container'>
         <div className='row gy-4'>
           <div className='col-lg-6'>
-            <img
-              src='assets/images/thumbs/mobile-app-img-1.png'
+            <Image
+              width={636}
+              height={562}
+              src='/assets/images/thumbs/mobile-app-img-1.png'
               alt='Image'
               data-aos='zoom-in'
               data-aos-duration={1500}
@@ -21,8 +24,10 @@ const MobileSectionOne: React.FC = () => {
                 data-aos-duration={800}
               >
                 <span className=''>
-                  <img
-                    src='assets/images/icon/star-icon2.png'
+                  <Image
+                    width={27}
+                    height={27}
+                    src='/assets/images/icon/star-icon2.png'
                     alt='Image'
                     className=''
                   />
@@ -43,8 +48,8 @@ const MobileSectionOne: React.FC = () => {
                 data-aos='fade-up'
                 data-aos-duration={1200}
               >
-                Don't miss out! Download now for seamless functionalities and
-                endless possibilities.
+                Don&apos;t miss out! Download now for seamless functionalities
+                and endless possibilities.
               </p>
               <div className='tw-mb-12'>
                 <div
@@ -85,14 +90,18 @@ const MobileSectionOne: React.FC = () => {
                 </div>
               </div>
               <div className='d-flex align-items-center tw-gap-3 flex-wrap'>
-                <img
-                  src='assets/images/logo/mobile-img1.png'
+                <Image
+                  width={135}
+                  height={44}
+                  src='/assets/images/logo/mobile-img1.png'
                   alt='Image'
                   data-aos='zoom-out-right'
                   data-aos-duration={800}
                 />
-                <img
-                  src='assets/images/logo/mobile-img2.png'
+                <Image
+                  width={135}
+                  height={44}
+                  src='/assets/images/logo/mobile-img2.png'
                   alt='Image'
                   data-aos='zoom-out-left'
                   data-aos-duration={800}

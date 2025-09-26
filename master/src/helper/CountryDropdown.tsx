@@ -1,3 +1,5 @@
+"use client";
+import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 
 type Option = {
@@ -7,11 +9,11 @@ type Option = {
 
 const CountryDropdown: React.FC = () => {
   const options: Option[] = [
-    { label: "USD", flag: "assets/images/flag/iceland.png" },
-    { label: "BAN", flag: "assets/images/flag/bangladesh.png" },
-    { label: "CHA", flag: "assets/images/flag/china.png" },
-    { label: "JAP", flag: "assets/images/flag/japan.png" },
-    { label: "PRANCE", flag: "assets/images/flag/prance.png" },
+    { label: "USD", flag: "/assets/images/flag/iceland.png" },
+    { label: "BAN", flag: "/assets/images/flag/bangladesh.png" },
+    { label: "CHA", flag: "/assets/images/flag/china.png" },
+    { label: "JAP", flag: "/assets/images/flag/japan.png" },
+    { label: "PRANCE", flag: "/assets/images/flag/prance.png" },
   ];
 
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -50,7 +52,13 @@ const CountryDropdown: React.FC = () => {
         className='select-button d-flex align-items-center tw-gap-105 position-absolute top-0 tw-end-0 top-50 translate-middle-y tw-me-4'
       >
         <span className='select-dropdown__flag mb-1'>
-          <img src={selected.flag} alt='Flag' className='tw-w-4 tw-h-3' />
+          <Image
+            width={28}
+            height={20}
+            src={selected.flag}
+            alt='Flag'
+            className='tw-w-4 tw-h-3'
+          />
         </span>
         <span className='select-button__text tw-text-sm fw-normal text-dark-500 text-uppercase fw-semibold'>
           {selected.label}
@@ -77,7 +85,13 @@ const CountryDropdown: React.FC = () => {
             onClick={() => handleSelect(option)}
           >
             <span className='select-dropdown__flag'>
-              <img src={option.flag} alt='Flag' className='tw-w-4 tw-h-3' />
+              <Image
+                width={28}
+                height={20}
+                src={option.flag}
+                alt='Flag'
+                className='tw-w-4 tw-h-3'
+              />
             </span>
             <span className='select-dropdown__text text-capitalize tw-text-sm text-neutral-600 fw-semibold'>
               {option.label}

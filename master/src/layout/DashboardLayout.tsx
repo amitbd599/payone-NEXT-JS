@@ -5,7 +5,7 @@ import DashboardProfileSection from "../components/DashboardProfileSection";
 import Preloader from "../helper/Preloader";
 
 interface DashboardProps {
-   children: ReactNode;
+  children: ReactNode;
 }
 
 const DashboardLayout: React.FC<DashboardProps> = ({ children }) => {
@@ -18,7 +18,7 @@ const DashboardLayout: React.FC<DashboardProps> = ({ children }) => {
       <DashboardHeader />
 
       {/* DashboardProfileSection */}
-      <DashboardProfileSection children={children} />
+      <DashboardProfileSection>{children}</DashboardProfileSection>
 
       {/* DashboardFooter */}
       <DashboardFooter />

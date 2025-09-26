@@ -4,6 +4,18 @@ import Preloader from "@/helper/Preloader";
 import HeaderOne from "@/components/HeaderOne";
 import BannerOne from "@/components/BannerOne";
 import AOSWrap from "@/helper/AOSWrap";
+import OurFeatureOne from "@/components/OurFeatureOne";
+import PaynoneOne from "@/components/PaynoneOne";
+import ServicesOne from "@/components/ServicesOne";
+import RequestSectionOne from "@/components/RequestSectionOne";
+import WorkingSectionOne from "@/components/WorkingSectionOne";
+import MobileSectionOne from "@/components/MobileSectionOne";
+import TestimonialsOne from "@/components/TestimonialsOne";
+import FAQOne from "@/components/FAQOne";
+import PaymentMethodOne from "@/components/PaymentMethodOne";
+import BlogOne from "@/components/BlogOne";
+import NewsletterOne from "@/components/NewsletterOne";
+import FooterOne from "@/components/FooterOne";
 
 export const generateMetadata = async (): Promise<Metadata> => {
   return {
@@ -44,29 +56,40 @@ export default function Home() {
       <BannerOne />
 
       {/* OurFeatureOne */}
-      {/* <OurFeatureOne /> */}
+      <OurFeatureOne />
+
       {/* PaynoneOne */}
-      {/* <PaynoneOne /> */}
+      <PaynoneOne />
+
       {/* ServicesOne */}
-      {/* <ServicesOne /> */}
+      <ServicesOne />
+
       {/* RequestSectionOne */}
-      {/* <RequestSectionOne /> */}
+      <RequestSectionOne />
+
       {/* WorkingSectionOne */}
-      {/* <WorkingSectionOne /> */}
+      <WorkingSectionOne />
+
       {/* MobileSectionOne */}
-      {/* <MobileSectionOne /> */}
+      <MobileSectionOne />
+
       {/* TestimonialsOne */}
-      {/* <TestimonialsOne /> */}
+      <TestimonialsOne />
+
       {/* FAQOne */}
-      {/* <FAQOne /> */}
+      <FAQOne />
+
       {/* PaymentMethodOne */}
-      {/* <PaymentMethodOne /> */}
+      <PaymentMethodOne />
+
       {/* BlogOne */}
-      {/* <BlogOne /> */}
+      <BlogOne />
+
       {/* NewsletterOne */}
-      {/* <NewsletterOne /> */}
+      <NewsletterOne />
+
       {/* FooterOne */}
-      {/* <FooterOne /> */}
+      <FooterOne />
     </AOSWrap>
   );
 }

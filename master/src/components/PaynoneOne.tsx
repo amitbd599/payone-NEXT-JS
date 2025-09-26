@@ -34,7 +34,7 @@ const PaynoneOne: React.FC = () => {
                   One Contract, One Integration
                 </h4>
                 <p className='fw-normal tw-text-xl text-dark-600'>
-                  Don't get lost in papers! Easy registration, rapid
+                  Don&apos;t get lost in papers! Easy registration, rapid
                   integration!
                 </p>
               </div>
