@@ -1,5 +1,6 @@
+import Image from "next/image";
+import Link from "next/link";
 import type React from "react";
-import { Link } from "react-router-dom";
 
 const TeamMemberOne: React.FC = () => {
   return (
@@ -12,7 +13,12 @@ const TeamMemberOne: React.FC = () => {
               data-aos='fade-up'
               data-aos-duration={600}
             >
-              <img src='assets/images/icon/star-icon2.png' alt='Image' />
+              <Image
+                width={27}
+                height={27}
+                src='/assets/images/icon/star-icon2.png'
+                alt='Image'
+              />
               <h5 className='fw-normal text-primary-600 '>Team Members</h5>
             </div>
             <h2
@@ -38,7 +44,7 @@ const TeamMemberOne: React.FC = () => {
               data-aos-duration={1000}
             >
               <Link
-                to='/about-us'
+                href='/about-us'
                 className='team-members-link w-100 text-center tw-py-205 tw-rounded-md bg-main-600 text-dark-700 tw-text-lg fw-semibold border-two-px-solid'
               >
                 READ MORE
@@ -55,15 +61,19 @@ const TeamMemberOne: React.FC = () => {
             >
               <div className='tw-h-380-px position-relative'>
                 <div className='bg-white tw-rounded-xl position-absolute w-100 h-100 top-0 start-0 text-center tw-visible tw-opacity-1 group-hover-item-hiddem group-hover-item-opacity-0 tw-duration-500'>
-                  <img
-                    src='assets/images/thumbs/our-team-member-other-img1.png'
+                  <Image
+                    width={200}
+                    height={200}
+                    src='/assets/images/thumbs/our-team-member-other-img1.png'
                     alt='Image'
                     className='tw-mt-10'
                   />
                 </div>
                 <div className='team-member__hover-img position-absolute top-0 start-0 w-100 h-100 tw-invisible tw-opacity-0 group-hover-item-visible group-hover-item-opacity-1 tw-duration-500 bg-img'>
-                  <img
-                    src='assets/images/thumbs/our-team-member-other-img8.png'
+                  <Image
+                    width={306}
+                    height={380}
+                    src='/assets/images/thumbs/our-team-member-other-img8.png'
                     alt='Image'
                     className='w-100 h-100 object-fit-cover'
                   />
@@ -94,15 +104,19 @@ const TeamMemberOne: React.FC = () => {
             >
               <div className='tw-h-380-px position-relative'>
                 <div className='bg-white tw-rounded-xl position-absolute w-100 h-100 top-0 start-0 text-center tw-visible tw-opacity-1 group-hover-item-hiddem group-hover-item-opacity-0 tw-duration-500'>
-                  <img
-                    src='assets/images/thumbs/our-team-member-other-img2.png'
+                  <Image
+                    width={200}
+                    height={200}
+                    src='/assets/images/thumbs/our-team-member-other-img2.png'
                     alt='Image'
                     className='tw-mt-10'
                   />
                 </div>
                 <div className='team-member__hover-img position-absolute top-0 start-0 w-100 h-100 tw-invisible tw-opacity-0 group-hover-item-visible group-hover-item-opacity-1 tw-duration-500 bg-img'>
-                  <img
-                    src='assets/images/thumbs/our-team-member-other-img8.png'
+                  <Image
+                    width={306}
+                    height={380}
+                    src='/assets/images/thumbs/our-team-member-other-img8.png'
                     alt='Image'
                     className='w-100 h-100 object-fit-cover'
                   />
@@ -133,15 +147,19 @@ const TeamMemberOne: React.FC = () => {
             >
               <div className='tw-h-380-px position-relative'>
                 <div className='bg-white tw-rounded-xl position-absolute w-100 h-100 top-0 start-0 text-center tw-visible tw-opacity-1 group-hover-item-hiddem group-hover-item-opacity-0 tw-duration-500'>
-                  <img
-                    src='assets/images/thumbs/our-team-member-other-img7.png'
+                  <Image
+                    width={200}
+                    height={200}
+                    src='/assets/images/thumbs/our-team-member-other-img7.png'
                     alt='Image'
                     className='tw-mt-10'
                   />
                 </div>
                 <div className='team-member__hover-img position-absolute top-0 start-0 w-100 h-100 tw-invisible tw-opacity-0 group-hover-item-visible group-hover-item-opacity-1 tw-duration-500 bg-img'>
-                  <img
-                    src='assets/images/thumbs/our-team-member-other-img8.png'
+                  <Image
+                    width={306}
+                    height={380}
+                    src='/assets/images/thumbs/our-team-member-other-img8.png'
                     alt='Image'
                     className='w-100 h-100 object-fit-cover'
                   />
@@ -172,15 +190,19 @@ const TeamMemberOne: React.FC = () => {
             >
               <div className='tw-h-380-px position-relative'>
                 <div className='bg-white tw-rounded-xl position-absolute w-100 h-100 top-0 start-0 text-center tw-visible tw-opacity-1 group-hover-item-hiddem group-hover-item-opacity-0 tw-duration-500'>
-                  <img
-                    src='assets/images/thumbs/our-team-member-other-img3.png'
+                  <Image
+                    width={200}
+                    height={200}
+                    src='/assets/images/thumbs/our-team-member-other-img3.png'
                     alt='Image'
                     className='tw-mt-10'
                   />
                 </div>
                 <div className='team-member__hover-img position-absolute top-0 start-0 w-100 h-100 tw-invisible tw-opacity-0 group-hover-item-visible group-hover-item-opacity-1 tw-duration-500 bg-img'>
-                  <img
-                    src='assets/images/thumbs/our-team-member-other-img8.png'
+                  <Image
+                    width={306}
+                    height={380}
+                    src='/assets/images/thumbs/our-team-member-other-img8.png'
                     alt='Image'
                     className='w-100 h-100 object-fit-cover'
                   />

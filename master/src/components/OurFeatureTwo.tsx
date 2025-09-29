@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type React from "react";
 
 const OurFeatureTwo: React.FC = () => {
@@ -11,7 +12,12 @@ const OurFeatureTwo: React.FC = () => {
               data-aos='fade-up'
               data-aos-duration={600}
             >
-              <img src='assets/images/icon/star-icon2.png' alt='' />
+              <Image
+                width={27}
+                height={27}
+                src='/assets/images/icon/star-icon2.png'
+                alt=''
+              />
               <h5 className='fw-normal text-primary-600'>Our Features</h5>
             </div>
             <h2
@@ -42,8 +48,10 @@ const OurFeatureTwo: React.FC = () => {
             >
               <div className='tw-px-10 tw-py-8 tw-rounded-xl text-center group-hover-bg-neutral-10 tw-duration-300 group-hover-border-base-two-600 tw-transition-all'>
                 <span className='tw-w-72-px tw-h-72-px bg-neutral-10 rounded-circle border-neutral-50 border tw-mb-6 group-hover-bg-white tw-duration-300 d-flex align-items-center justify-content-center mx-auto'>
-                  <img
-                    src='assets/images/icon/our-features-four-icon1.png'
+                  <Image
+                    width={40}
+                    height={40}
+                    src='/assets/images/icon/our-features-four-icon1.png'
                     alt=''
                     className='animate__heartBeat'
                   />
@@ -64,8 +72,10 @@ const OurFeatureTwo: React.FC = () => {
             >
               <div className='tw-px-10 tw-py-8 tw-rounded-xl text-center group-hover-bg-neutral-10 tw-duration-300 group-hover-border-base-two-600 tw-transition-all'>
                 <span className='tw-w-72-px tw-h-72-px bg-neutral-10 rounded-circle border-neutral-50 border tw-mb-6 group-hover-bg-white tw-duration-300 d-flex align-items-center justify-content-center mx-auto'>
-                  <img
-                    src='assets/images/icon/our-features-four-icon2.png'
+                  <Image
+                    width={40}
+                    height={40}
+                    src='/assets/images/icon/our-features-four-icon2.png'
                     alt=''
                     className='animate__heartBeat'
                   />
@@ -86,8 +96,10 @@ const OurFeatureTwo: React.FC = () => {
             >
               <div className='tw-px-10 tw-py-8 tw-rounded-xl text-center group-hover-bg-neutral-10 tw-duration-300 group-hover-border-base-two-600 tw-transition-all'>
                 <span className='tw-w-72-px tw-h-72-px bg-neutral-10 rounded-circle border-neutral-50 border tw-mb-6 group-hover-bg-white tw-duration-300 d-flex align-items-center justify-content-center mx-auto'>
-                  <img
-                    src='assets/images/icon/our-features-four-icon3.png'
+                  <Image
+                    width={40}
+                    height={40}
+                    src='/assets/images/icon/our-features-four-icon3.png'
                     alt=''
                     className='animate__heartBeat'
                   />
@@ -108,8 +120,10 @@ const OurFeatureTwo: React.FC = () => {
             >
               <div className='tw-px-10 tw-py-8 tw-rounded-xl text-center group-hover-bg-neutral-10 tw-duration-300 group-hover-border-base-two-600 tw-transition-all'>
                 <span className='tw-w-72-px tw-h-72-px bg-neutral-10 rounded-circle border-neutral-50 border tw-mb-6 group-hover-bg-white tw-duration-300 d-flex align-items-center justify-content-center mx-auto'>
-                  <img
-                    src='assets/images/icon/our-features-four-icon4.png'
+                  <Image
+                    width={40}
+                    height={40}
+                    src='/assets/images/icon/our-features-four-icon4.png'
                     alt=''
                     className='animate__heartBeat'
                   />
@@ -130,8 +144,10 @@ const OurFeatureTwo: React.FC = () => {
             >
               <div className='tw-px-10 tw-py-8 tw-rounded-xl text-center group-hover-bg-neutral-10 tw-duration-300 group-hover-border-base-two-600 tw-transition-all'>
                 <span className='tw-w-72-px tw-h-72-px bg-neutral-10 rounded-circle border-neutral-50 border tw-mb-6 group-hover-bg-white tw-duration-300 d-flex align-items-center justify-content-center mx-auto'>
-                  <img
-                    src='assets/images/icon/our-features-four-icon5.png'
+                  <Image
+                    width={40}
+                    height={40}
+                    src='/assets/images/icon/our-features-four-icon5.png'
                     alt=''
                     className='animate__heartBeat'
                   />
@@ -152,8 +168,10 @@ const OurFeatureTwo: React.FC = () => {
             >
               <div className='tw-px-10 tw-py-8 tw-rounded-xl text-center group-hover-bg-neutral-10 tw-duration-300 group-hover-border-base-two-600 tw-transition-all'>
                 <span className='tw-w-72-px tw-h-72-px bg-neutral-10 rounded-circle border-neutral-50 border tw-mb-6 group-hover-bg-white tw-duration-300 d-flex align-items-center justify-content-center mx-auto'>
-                  <img
-                    src='assets/images/icon/our-features-four-icon6.png'
+                  <Image
+                    width={40}
+                    height={40}
+                    src='/assets/images/icon/our-features-four-icon6.png'
                     alt=''
                     className='animate__heartBeat'
                   />

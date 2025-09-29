@@ -1,5 +1,7 @@
+"use client";
+import Image from "next/image";
+import Link from "next/link";
 import type React from "react";
-import { Link } from "react-router-dom";
 
 const SignUpInner: React.FC = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -21,9 +23,11 @@ const SignUpInner: React.FC = () => {
       <div className='d-flex'>
         <div className='flex-grow-1'>
           <div className='max-w-526-px w-100 log-in-card tw-px-6 tw-py-12 mx-auto'>
-            <Link to='/' className='tw-mb-188-px'>
-              <img
-                src='assets/images/logo/logo2.png'
+            <Link href='/' className='tw-mb-188-px'>
+              <Image
+                width={171}
+                height={40}
+                src='/assets/images/logo/logo2.png'
                 alt='Image'
                 className=''
               />
@@ -36,7 +40,12 @@ const SignUpInner: React.FC = () => {
                 href='#'
                 className='d-flex align-items-center tw-gap-205 tw-py-3 w-100 border-neutral-05 border rounded-3 text-center justify-content-center tw-mb-6 flex-wrap hover-bg-neutral-20'
               >
-                <img src='assets/images/icon/google-icon1.png' alt='Image' />
+                <Image
+                  width={24}
+                  height={24}
+                  src='/assets/images/icon/google-icon1.png'
+                  alt='Image'
+                />
                 <span className='text-dark-500 fw-semibold tw-text-4'>
                   Continue With Google
                 </span>
@@ -121,8 +130,8 @@ const SignUpInner: React.FC = () => {
                 Sign Up
               </button>
               <span className='fw-semibold tw-text-4 text-primary-50 text-center justify-content-center d-flex'>
-                Don't have an account?
-                <Link to='/log-in' className='fw-semibold text-primary-600'>
+                Don&apos;t have an account?
+                <Link href='/log-in' className='fw-semibold text-primary-600'>
                   &nbsp;Log In
                 </Link>
               </span>
@@ -130,8 +139,10 @@ const SignUpInner: React.FC = () => {
           </div>
         </div>
         <div className='w-50 d-lg-block d-none '>
-          <img
-            src='assets/images/thumbs/sign-up-img1.png'
+          <Image
+            width={948}
+            height={1080}
+            src='/assets/images/thumbs/sign-up-img1.png'
             alt='Image'
             className='w-100 h-100 object-fit-cover'
           />

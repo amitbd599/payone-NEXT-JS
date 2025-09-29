@@ -1,3 +1,5 @@
+"use client";
+import Image from "next/image";
 import type React from "react";
 
 const ServicesDetailsInner: React.FC = () => {
@@ -28,8 +30,10 @@ const ServicesDetailsInner: React.FC = () => {
         <div className='d-flex tw-gap-10 w-100 flex-wrap'>
           <div className='max-w-850-px w-100'>
             <div className='tw-mb-10'>
-              <img
-                src='assets/images/thumbs/services-details-other-two-img1.png'
+              <Image
+                width={832}
+                height={480}
+                src='/assets/images/thumbs/services-details-other-two-img1.png'
                 alt='Image'
                 className='tw-mb-8'
               />

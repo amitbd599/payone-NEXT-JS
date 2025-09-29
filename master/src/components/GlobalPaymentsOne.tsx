@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type React from "react";
 
 const GlobalPaymentsOne: React.FC = () => {
@@ -10,7 +11,12 @@ const GlobalPaymentsOne: React.FC = () => {
             data-aos='fade-up'
             data-aos-duration={600}
           >
-            <img src='assets/images/icon/star-icon2.png' alt='Image' />
+            <Image
+              width={27}
+              height={27}
+              src='/assets/images/icon/star-icon2.png'
+              alt='Image'
+            />
             <h5 className='fw-normal text-primary-600'>What we do</h5>
           </div>
           <h2
@@ -38,8 +44,10 @@ const GlobalPaymentsOne: React.FC = () => {
             >
               <div className='tw-px-6 tw-py-6 rounded-3 border-bottom-black-2px group-hover-bg-base-two-600 tw-duration-400'>
                 <span className='tw-w-72px tw-h-72-px bg-base-two-600 rounded-circle d-flex align-items-center justify-content-center tw-mb-10 group-hover-bg-main-600 tw-duration-400'>
-                  <img
-                    src='assets/images/icon/global-payments-icon1.png'
+                  <Image
+                    width={36}
+                    height={36}
+                    src='/assets/images/icon/global-payments-icon1.png'
                     alt='Image'
                     className='animate__wobble group-hover-item-text-invert-black tw-duration-400'
                   />
@@ -60,8 +68,10 @@ const GlobalPaymentsOne: React.FC = () => {
             >
               <div className='tw-px-6 tw-py-6 rounded-3 border-bottom-black-2px group-hover-bg-base-two-600 tw-duration-400'>
                 <span className='tw-w-72px tw-h-72-px bg-base-two-600 rounded-circle d-flex align-items-center justify-content-center tw-mb-10 group-hover-bg-main-600 tw-duration-400'>
-                  <img
-                    src='assets/images/icon/global-payments-icon2.png'
+                  <Image
+                    width={40}
+                    height={40}
+                    src='/assets/images/icon/global-payments-icon2.png'
                     alt='Image'
                     className='animate__wobble group-hover-item-text-invert-black tw-duration-400'
                   />
@@ -81,8 +91,10 @@ const GlobalPaymentsOne: React.FC = () => {
               data-aos='zoom-in'
               data-aos-duration={1500}
             >
-              <img
-                src='assets/images/thumbs/global-payments-img1.png'
+              <Image
+                width={636}
+                height={554}
+                src='/assets/images/thumbs/global-payments-img1.png'
                 alt='Image'
               />
             </div>
@@ -95,8 +107,10 @@ const GlobalPaymentsOne: React.FC = () => {
             >
               <div className='tw-px-6 tw-py-6 rounded-3 border-bottom-black-2px group-hover-bg-base-two-600 tw-duration-400'>
                 <span className='tw-w-72px tw-h-72-px bg-base-two-600 rounded-circle d-flex align-items-center justify-content-center tw-mb-10 group-hover-bg-main-600 tw-duration-400'>
-                  <img
-                    src='assets/images/icon/global-payments-icon3.png'
+                  <Image
+                    width={40}
+                    height={40}
+                    src='/assets/images/icon/global-payments-icon3.png'
                     alt='Image'
                     className='animate__wobble group-hover-item-text-invert-black tw-duration-400'
                   />
@@ -117,8 +131,10 @@ const GlobalPaymentsOne: React.FC = () => {
             >
               <div className='tw-px-6 tw-py-6 rounded-3 border-bottom-black-2px group-hover-bg-base-two-600 tw-duration-400'>
                 <span className='tw-w-72px tw-h-72-px bg-base-two-600 rounded-circle d-flex align-items-center justify-content-center tw-mb-10 group-hover-bg-main-600 tw-duration-400'>
-                  <img
-                    src='assets/images/icon/global-payments-icon4.png'
+                  <Image
+                    width={40}
+                    height={40}
+                    src='/assets/images/icon/global-payments-icon4.png'
                     alt='Image'
                     className='animate__wobble group-hover-item-text-invert-black tw-duration-400'
                   />

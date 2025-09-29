@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type React from "react";
 
 const WhyChooseUsThree: React.FC = () => {
@@ -11,7 +12,12 @@ const WhyChooseUsThree: React.FC = () => {
               data-aos='fade-up'
               data-aos-duration={600}
             >
-              <img src='assets/images/icon/star-icon2.png' alt='Image' />
+              <Image
+                width={27}
+                height={27}
+                src='/assets/images/icon/star-icon2.png'
+                alt='Image'
+              />
               <h5 className='fw-normal text-primary-600'>Why Choose Us</h5>
             </div>
             <h2
@@ -40,8 +46,10 @@ const WhyChooseUsThree: React.FC = () => {
             >
               <span className='tw-w-72-px tw-h-72-px border-base-two-600 border tw-border-dashed tw-rounded-md d-flex align-items-center justify-content-center tw-mb-10 mx-auto'>
                 <span className='tw-w-15 tw-h-15 tw-rounded-md bg-base-two-600 d-flex align-items-center justify-content-center'>
-                  <img
-                    src='assets/images/icon/why-choose-us-other-icon1.png'
+                  <Image
+                    width={40}
+                    height={40}
+                    src='/assets/images/icon/why-choose-us-other-icon1.png'
                     alt='Image'
                   />
                 </span>
@@ -65,8 +73,10 @@ const WhyChooseUsThree: React.FC = () => {
             >
               <span className='tw-w-72-px tw-h-72-px border-base-two-600 border tw-border-dashed tw-rounded-md d-flex align-items-center justify-content-center tw-mb-10 mx-auto'>
                 <span className='tw-w-15 tw-h-15 tw-rounded-md bg-base-two-600 d-flex align-items-center justify-content-center'>
-                  <img
-                    src='assets/images/icon/why-choose-us-other-icon2.png'
+                  <Image
+                    width={40}
+                    height={40}
+                    src='/assets/images/icon/why-choose-us-other-icon2.png'
                     alt='Image'
                   />
                 </span>
@@ -90,8 +100,10 @@ const WhyChooseUsThree: React.FC = () => {
             >
               <span className='tw-w-72-px tw-h-72-px border-base-two-600 border tw-border-dashed tw-rounded-md d-flex align-items-center justify-content-center tw-mb-10 mx-auto'>
                 <span className='tw-w-15 tw-h-15 tw-rounded-md bg-base-two-600 d-flex align-items-center justify-content-center'>
-                  <img
-                    src='assets/images/icon/why-choose-us-other-icon3.png'
+                  <Image
+                    width={40}
+                    height={40}
+                    src='/assets/images/icon/why-choose-us-other-icon3.png'
                     alt='Image'
                   />
                 </span>

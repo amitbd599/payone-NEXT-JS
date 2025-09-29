@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type React from "react";
 
 const PaymentSolutionOne: React.FC = () => {
@@ -6,8 +7,10 @@ const PaymentSolutionOne: React.FC = () => {
       <div className='container'>
         <div className='row gy-5 align-items-center'>
           <div className='col-lg-6'>
-            <img
-              src='assets/images/thumbs/payment-solutions-four-img1.png'
+            <Image
+              width={577}
+              height={593}
+              src='/assets/images/thumbs/payment-solutions-four-img1.png'
               alt='img'
               data-aos='zoom-in'
               data-aos-duration={1500}
@@ -20,7 +23,12 @@ const PaymentSolutionOne: React.FC = () => {
                 data-aos='fade-up'
                 data-aos-duration={600}
               >
-                <img src='assets/images/icon/star-icon2.png' alt='' />
+                <Image
+                  width={27}
+                  height={27}
+                  src='/assets/images/icon/star-icon2.png'
+                  alt=''
+                />
                 <h5 className='fw-normal text-primary-600'>
                   Quick &amp; Trusted Payments
                 </h5>

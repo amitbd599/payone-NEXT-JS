@@ -1,5 +1,6 @@
+import Image from "next/image";
+import Link from "next/link";
 import type React from "react";
-import { Link } from "react-router-dom";
 
 const BlogStandardInner: React.FC = () => {
   return (
@@ -14,8 +15,10 @@ const BlogStandardInner: React.FC = () => {
                 data-aos-duration={600}
               >
                 <div className='position-relative tw-mb-6'>
-                  <img
-                    src='assets/images/thumbs/blog-digital-marketing-img1.png'
+                  <Image
+                    width={588}
+                    height={300}
+                    src='/assets/images/thumbs/blog-digital-marketing-img1.png'
                     alt='Image'
                   />
                   <div className='digital-marketing'>
@@ -35,14 +38,14 @@ const BlogStandardInner: React.FC = () => {
                   </div>
                   <h3 className=''>
                     <Link
-                      to='/blog-details'
+                      href='/blog-details'
                       className='fw-normal text-dark-600 tw-mb-10 line-clamp-2 cursor-big'
                     >
                       How to Send Money Instantly Without Hidden Fees
                     </Link>
                   </h3>
                   <Link
-                    to='/blog-details'
+                    href='/blog-details'
                     className='tw-px-6 tw-py-3 tw-rounded-md border-neutral-50 border tw-rounded-xl fw-semibold tw-text-lg text-dark-600 w-100 text-center hover-bg-base-two-600 hover-text-white tw-duration-500'
                   >
                     View Details
@@ -57,8 +60,10 @@ const BlogStandardInner: React.FC = () => {
                 data-aos-duration={800}
               >
                 <div className='position-relative tw-mb-6'>
-                  <img
-                    src='assets/images/thumbs/blog-digital-marketing-img2.png'
+                  <Image
+                    width={588}
+                    height={300}
+                    src='/assets/images/thumbs/blog-digital-marketing-img2.png'
                     alt='Image'
                   />
                   <div className='digital-marketing'>
@@ -78,7 +83,7 @@ const BlogStandardInner: React.FC = () => {
                   </div>
                   <h3 className=''>
                     <Link
-                      to='#'
+                      href='#'
                       className='fw-normal text-dark-600 tw-mb-10 line-clamp-2 cursor-big'
                     >
                       The Future of Digital Payments: Fast, Secure &amp;
@@ -86,7 +91,7 @@ const BlogStandardInner: React.FC = () => {
                     </Link>
                   </h3>
                   <Link
-                    to='/blog-details'
+                    href='/blog-details'
                     className='tw-px-6 tw-py-3 tw-rounded-md border-neutral-50 border tw-rounded-xl fw-semibold tw-text-lg text-dark-600 w-100 text-center hover-bg-base-two-600 hover-text-white tw-duration-500'
                   >
                     View Details
@@ -101,8 +106,10 @@ const BlogStandardInner: React.FC = () => {
                 data-aos-duration={1000}
               >
                 <div className='position-relative tw-mb-6'>
-                  <img
-                    src='assets/images/thumbs/blog-digital-marketing-img3.png'
+                  <Image
+                    width={588}
+                    height={300}
+                    src='/assets/images/thumbs/blog-digital-marketing-img3.png'
                     alt='Image'
                   />
                   <div className='digital-marketing'>
@@ -122,14 +129,14 @@ const BlogStandardInner: React.FC = () => {
                   </div>
                   <h3 className=''>
                     <Link
-                      to='/blog-details'
+                      href='/blog-details'
                       className='fw-normal text-dark-600 tw-mb-10 line-clamp-2 cursor-big'
                     >
                       Avoid These Common When Sending Money Online
                     </Link>
                   </h3>
                   <Link
-                    to='/blog-details'
+                    href='/blog-details'
                     className='tw-px-6 tw-py-3 tw-rounded-md border-neutral-50 border tw-rounded-xl fw-semibold tw-text-lg text-dark-600 w-100 text-center hover-bg-base-two-600 hover-text-white tw-duration-500'
                   >
                     View Details
@@ -144,8 +151,10 @@ const BlogStandardInner: React.FC = () => {
                 data-aos-duration={1000}
               >
                 <div className='position-relative tw-mb-6'>
-                  <img
-                    src='assets/images/thumbs/blog-digital-marketing-img4.png'
+                  <Image
+                    width={588}
+                    height={300}
+                    src='/assets/images/thumbs/blog-digital-marketing-img4.png'
                     alt='Image'
                   />
                   <div className='digital-marketing'>
@@ -165,14 +174,14 @@ const BlogStandardInner: React.FC = () => {
                   </div>
                   <h3 className=''>
                     <Link
-                      to='/blog-details'
+                      href='/blog-details'
                       className='fw-normal text-dark-600 tw-mb-10 line-clamp-2 cursor-big'
                     >
                       Top 5 Benefits of Using Online Money Transfers
                     </Link>
                   </h3>
                   <Link
-                    to='/blog-details'
+                    href='/blog-details'
                     className='tw-px-6 tw-py-3 tw-rounded-md border-neutral-50 border tw-rounded-xl fw-semibold tw-text-lg text-dark-600 w-100 text-center hover-bg-base-two-600 hover-text-white tw-duration-500'
                   >
                     View Details
@@ -187,8 +196,10 @@ const BlogStandardInner: React.FC = () => {
                 data-aos-duration={1200}
               >
                 <div className='position-relative tw-mb-6'>
-                  <img
-                    src='assets/images/thumbs/blog-digital-marketing-img5.png'
+                  <Image
+                    width={588}
+                    height={300}
+                    src='/assets/images/thumbs/blog-digital-marketing-img5.png'
                     alt='Image'
                   />
                   <div className='digital-marketing'>
@@ -208,14 +219,14 @@ const BlogStandardInner: React.FC = () => {
                   </div>
                   <h3 className=''>
                     <Link
-                      to='/blog-details'
+                      href='/blog-details'
                       className='fw-normal text-dark-600 tw-mb-10 line-clamp-2 cursor-big'
                     >
                       Secure Your Transactions: Online Payment Safety Tips
                     </Link>
                   </h3>
                   <Link
-                    to='/blog-details'
+                    href='/blog-details'
                     className='tw-px-6 tw-py-3 tw-rounded-md border-neutral-50 border tw-rounded-xl fw-semibold tw-text-lg text-dark-600 w-100 text-center hover-bg-base-two-600 hover-text-white tw-duration-500'
                   >
                     View Details
@@ -230,8 +241,10 @@ const BlogStandardInner: React.FC = () => {
                 data-aos-duration={1400}
               >
                 <div className='position-relative tw-mb-6'>
-                  <img
-                    src='assets/images/thumbs/blog-digital-marketing-img6.png'
+                  <Image
+                    width={588}
+                    height={300}
+                    src='/assets/images/thumbs/blog-digital-marketing-img6.png'
                     alt='Image'
                   />
                   <div className='digital-marketing'>
@@ -251,14 +264,14 @@ const BlogStandardInner: React.FC = () => {
                   </div>
                   <h3 className=''>
                     <Link
-                      to='/blog-details'
+                      href='/blog-details'
                       className='fw-normal text-dark-600 tw-mb-10 line-clamp-2 cursor-big'
                     >
                       Why Digital Wallets Are the Future of Online Payments
                     </Link>
                   </h3>
                   <Link
-                    to='/blog-details'
+                    href='/blog-details'
                     className='tw-px-6 tw-py-3 tw-rounded-md border-neutral-50 border tw-rounded-xl fw-semibold tw-text-lg text-dark-600 w-100 text-center hover-bg-base-two-600 hover-text-white tw-duration-500'
                   >
                     View Details

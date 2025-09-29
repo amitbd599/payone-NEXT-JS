@@ -1,5 +1,6 @@
+import Image from "next/image";
+import Link from "next/link";
 import type React from "react";
-import { Link } from "react-router-dom";
 
 const PricingPlanTwo: React.FC = () => {
   return (
@@ -12,7 +13,12 @@ const PricingPlanTwo: React.FC = () => {
               data-aos='fade-up'
               data-aos-duration={600}
             >
-              <img src='assets/images/icon/star-icon2.png' alt='Image' />
+              <Image
+                width={27}
+                height={27}
+                src='/assets/images/icon/star-icon2.png'
+                alt='Image'
+              />
               <h5 className='fw-normal text-primary-600'>Our Pricing Plan</h5>
             </div>
             <h2
@@ -72,7 +78,7 @@ const PricingPlanTwo: React.FC = () => {
                   </div>
                   <div className='position-relative z-2'>
                     <Link
-                      to='/pricing-plan'
+                      href='/pricing-plan'
                       className='our-pricing-plan-other-link fw-semibold tw-text-lg text-dark-700 tw-py-3 bg-main-600 border-two-px-solid w-100 text-center tw-rounded-md hover-text-dark-600'
                     >
                       CHOOSE THIS PLAN
@@ -149,7 +155,7 @@ const PricingPlanTwo: React.FC = () => {
                   </div>
                   <div className='position-relative z-2'>
                     <Link
-                      to='/pricing-plan'
+                      href='/pricing-plan'
                       className='our-pricing-plan-other-link fw-semibold tw-text-lg text-dark-700 tw-py-3 bg-main-600 border-two-px-solid w-100 text-center tw-rounded-md hover-text-dark-600'
                     >
                       CHOOSE THIS PLAN
@@ -226,7 +232,7 @@ const PricingPlanTwo: React.FC = () => {
                   </div>
                   <div className='position-relative z-2'>
                     <Link
-                      to='/pricing-plan'
+                      href='/pricing-plan'
                       className='our-pricing-plan-other-link fw-semibold tw-text-lg text-dark-700 tw-py-3 bg-main-600 border-two-px-solid w-100 text-center tw-rounded-md hover-text-dark-600'
                     >
                       CHOOSE THIS PLAN

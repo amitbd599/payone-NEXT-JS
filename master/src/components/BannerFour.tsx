@@ -1,17 +1,16 @@
-import { useInView } from "react-intersection-observer";
-import CountUp from "react-countup";
-import { Link } from "react-router-dom";
+import CounterView from "@/helper/CounterView";
+import Image from "next/image";
+import Link from "next/link";
 import type React from "react";
 
 const BannerFour: React.FC = () => {
-  const { ref, inView } = useInView({
-    threshold: 0,
-  });
   return (
     <>
-      <section className='pt-140 position-relative' ref={ref}>
-        <img
-          src='assets/images/shape/my-profile-shape-2.png'
+      <section className='pt-140 position-relative'>
+        <Image
+          width={289}
+          height={247}
+          src='/assets/images/shape/my-profile-shape-2.png'
           alt=''
           className='banner-four-shape-one position-absolute bottom-0 tw-end-0 z-1'
         />
@@ -23,7 +22,12 @@ const BannerFour: React.FC = () => {
                 data-aos='fade-up'
                 data-aos-duration={600}
               >
-                <img src='assets/images/icon/star-icon3.png' alt='' />
+                <Image
+                  width={27}
+                  height={27}
+                  src='/assets/images/icon/star-icon3.png'
+                  alt=''
+                />
                 <h5 className='text-base-two-600 fw-normal '>
                   Banking Platform
                 </h5>
@@ -58,7 +62,7 @@ const BannerFour: React.FC = () => {
                 </div>
                 <div className='position-relative max-w-130-px w-100'>
                   <Link
-                    to='/about-us'
+                    href='/about-us'
                     className='banner-four-link text-dark-700 tw-py-205 bg-warning-500 border-two-px-solid w-100 text-center tw-rounded-md fw-semibold tw-text-405 hover-text-dark-700'
                   >
                     ABOUT US
@@ -101,30 +105,32 @@ const BannerFour: React.FC = () => {
                 data-aos-duration={1200}
               >
                 <div className='d-flex '>
-                  <img
-                    src='assets/images/thumbs/banner-img4.png'
+                  <Image
+                    width={48}
+                    height={49}
+                    src='/assets/images/thumbs/banner-img4.png'
                     alt='img'
                     className=''
                   />
-                  <img
-                    src='assets/images/thumbs/banner-img3.png'
+                  <Image
+                    width={48}
+                    height={49}
+                    src='/assets/images/thumbs/banner-img3.png'
                     alt='img'
                     className='tw-ml--14-px'
                   />
-                  <img
-                    src='assets/images/thumbs/banner-img2.png'
+                  <Image
+                    width={48}
+                    height={49}
+                    src='/assets/images/thumbs/banner-img2.png'
                     alt='img'
                     className='tw-ml--14-px'
                   />
                 </div>
                 <div>
                   <h5 className='fw-normal counter'>
-                    {inView && (
-                      <span>
-                        <CountUp delay={0} start={0} end={20.5} />
-                        K+
-                      </span>
-                    )}
+                    {/* CounterView */}
+                    <CounterView start={0} end={25} title='K+' />
                   </h5>
                   <span className='fw-normal tw-text-5 text-dark-600'>
                     Over Review
@@ -137,7 +143,12 @@ const BannerFour: React.FC = () => {
               data-aos='fade-up'
               data-aos-duration={1500}
             >
-              <img src='assets/images/thumbs/banner-four-img1.png' alt='img' />
+              <Image
+                width={932}
+                height={680}
+                src='/assets/images/thumbs/banner-four-img1.png'
+                alt='img'
+              />
             </div>
           </div>
         </div>

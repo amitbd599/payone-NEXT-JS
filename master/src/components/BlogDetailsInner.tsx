@@ -1,5 +1,7 @@
+"use client";
 import type React from "react";
-import { Link } from "react-router-dom";
+import Image from "next/image";
+import Link from "next/link";
 
 const BlogDetailsInner: React.FC = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -9,7 +11,7 @@ const BlogDetailsInner: React.FC = () => {
     const email = formData.get("email");
     const message = formData.get("message");
 
-   // Production-safe: mark as intentionally unused
+    // Production-safe: mark as intentionally unused
     void name;
     void email;
     void message;
@@ -19,14 +21,16 @@ const BlogDetailsInner: React.FC = () => {
     const formData = new FormData(e.currentTarget);
     const name = formData.get("name");
 
-     // Production-safe: mark as intentionally unused
+    // Production-safe: mark as intentionally unused
     void name;
   };
   return (
     <section className='py-140 bg-neutral-10 z-1 overflow-hidden'>
       <div className='container'>
-        <img
-          src='assets/images/thumbs/blog-details-img1.png'
+        <Image
+          width={1296}
+          height={600}
+          src='/assets/images/thumbs/blog-details-img1.png'
           alt='Image'
           className='bg-img tw-mb-10'
           data-aos='zoom-in'
@@ -64,8 +68,10 @@ const BlogDetailsInner: React.FC = () => {
                 faster, safer, and more convenient than ever before. Most
                 platforms offer multi-currency support,
               </p>
-              <img
-                src='assets/images/thumbs/our-features-two-img1.png'
+              <Image
+                width={746}
+                height={459}
+                src='/assets/images/thumbs/our-features-two-img1.png'
                 alt='Image'
                 className='w-100 tw-mb-8'
                 data-aos='zoom-in'
@@ -144,7 +150,7 @@ const BlogDetailsInner: React.FC = () => {
                 </span>
                 <p className='fw-normal tw-text-lg text-dark-500 '>
                   Instant transfers allow users to send and receive money within
-                  seconds. Whether it's a local payment or an international
+                  seconds. Whether its a local payment or an international
                   transaction, speed plays a significant role in customer
                   satisfaction.
                 </p>
@@ -184,14 +190,18 @@ const BlogDetailsInner: React.FC = () => {
                 the without restrictions. make transactions hassle-free.
               </p>
               <div className='d-flex align-items-center tw-gap-6 flex-wrap tw-mb-8'>
-                <img
-                  src='assets/images/thumbs/blog-details-img3.png'
+                <Image
+                  width={406}
+                  height={380}
+                  src='/assets/images/thumbs/blog-details-img3.png'
                   alt='Image'
                   data-aos='fade-up'
                   data-aos-duration={800}
                 />
-                <img
-                  src='assets/images/thumbs/blog-details-img2.png'
+                <Image
+                  width={406}
+                  height={380}
+                  src='/assets/images/thumbs/blog-details-img2.png'
                   alt='Image'
                   data-aos='fade-up'
                   data-aos-duration={1000}
@@ -275,8 +285,10 @@ const BlogDetailsInner: React.FC = () => {
                   data-aos-duration={800}
                 >
                   <div className='d-flex tw-gap-6 flex-wrap'>
-                    <img
-                      src='assets/images/thumbs/blog-details-img4.png'
+                    <Image
+                      width={60}
+                      height={60}
+                      src='/assets/images/thumbs/blog-details-img4.png'
                       alt='Image'
                       className='tw-w-15 tw-h-15'
                     />
@@ -306,8 +318,10 @@ const BlogDetailsInner: React.FC = () => {
                 </div>
                 <div className='' data-aos='fade-up' data-aos-duration={800}>
                   <div className='d-flex tw-gap-6 flex-wrap'>
-                    <img
-                      src='assets/images/thumbs/blog-details-img5.png'
+                    <Image
+                      width={60}
+                      height={60}
+                      src='/assets/images/thumbs/blog-details-img5.png'
                       alt='Image'
                       className='tw-w-15 tw-h-15'
                     />
@@ -547,8 +561,10 @@ const BlogDetailsInner: React.FC = () => {
               <div>
                 <div className='d-flex align-items-center tw-gap-4 flex-wrap'>
                   <span className='max-w-110-px w-100'>
-                    <img
-                      src='assets/images/thumbs/articles-two-img1.png'
+                    <Image
+                      width={416}
+                      height={360}
+                      src='/assets/images/thumbs/articles-two-img1.png'
                       alt='Image'
                       className='tw-rounded-md'
                     />
@@ -558,7 +574,7 @@ const BlogDetailsInner: React.FC = () => {
                       Sep 15, 2024
                     </span>
                     <h5 className='fw-normal text-dark-600'>
-                      <Link to='/blog-details'>
+                      <Link href='/blog-details'>
                         Benefits Online Money Transfers
                       </Link>
                     </h5>
@@ -567,8 +583,10 @@ const BlogDetailsInner: React.FC = () => {
                 <span className='bg-neutral-05 w-100 tw-h-px tw-mb-5 tw-mt-5' />
                 <div className='d-flex align-items-center tw-gap-4 flex-wrap'>
                   <span className='max-w-110-px w-100'>
-                    <img
-                      src='assets/images/thumbs/blog-grid-img7.png'
+                    <Image
+                      width={110}
+                      height={90}
+                      src='/assets/images/thumbs/blog-grid-img7.png'
                       alt='Image'
                       className='tw-rounded-md'
                     />
@@ -578,15 +596,19 @@ const BlogDetailsInner: React.FC = () => {
                       Sep 15, 2024
                     </span>
                     <h5 className='fw-normal text-dark-600'>
-                      <Link to='/blog-details'>Online Payment Safety Tips</Link>
+                      <Link href='/blog-details'>
+                        Online Payment Safety Tips
+                      </Link>
                     </h5>
                   </div>
                 </div>
                 <span className='bg-neutral-05 w-100 tw-h-px tw-mb-5 tw-mt-5' />
                 <div className='d-flex align-items-center tw-gap-4 flex-wrap'>
                   <span className='max-w-110-px w-100'>
-                    <img
-                      src='assets/images/thumbs/blog-grid-img8.png'
+                    <Image
+                      width={110}
+                      height={90}
+                      src='/assets/images/thumbs/blog-grid-img8.png'
                       alt='Image'
                       className='tw-rounded-md'
                     />
@@ -596,7 +618,7 @@ const BlogDetailsInner: React.FC = () => {
                       Sep 15, 2024
                     </span>
                     <h5 className='fw-normal text-dark-600'>
-                      <Link to='/blog-details'>
+                      <Link href='/blog-details'>
                         How to Save More on Transfers
                       </Link>
                     </h5>
@@ -621,7 +643,7 @@ const BlogDetailsInner: React.FC = () => {
               data-aos-duration={1000}
             >
               <Link
-                to='/blog-details'
+                href='/blog-details'
                 className='blog-details-link w-100 text-center tw-py-205 bg-main-600 text-dark-700 fw-semibold tw-text-lg tw-rounded-md border-two-px-solid'
               >
                 VIEW MORE
@@ -636,8 +658,10 @@ const BlogDetailsInner: React.FC = () => {
                 data-aos-duration={800}
               >
                 <div className='position-relative tw-mb-6'>
-                  <img
-                    src='assets/images/thumbs/blog-digital-marketing-img1.png'
+                  <Image
+                    width={588}
+                    height={300}
+                    src='/assets/images/thumbs/blog-digital-marketing-img1.png'
                     alt='Image'
                   />
                   <div className='digital-marketing'>
@@ -676,8 +700,10 @@ const BlogDetailsInner: React.FC = () => {
                 data-aos-duration={1000}
               >
                 <div className='position-relative tw-mb-6'>
-                  <img
-                    src='assets/images/thumbs/blog-digital-marketing-img2.png'
+                  <Image
+                    width={588}
+                    height={300}
+                    src='/assets/images/thumbs/blog-digital-marketing-img2.png'
                     alt='Image'
                   />
                   <div className='digital-marketing'>
@@ -701,7 +727,7 @@ const BlogDetailsInner: React.FC = () => {
                     </a>
                   </h3>
                   <Link
-                    to='/blog-details'
+                    href='/blog-details'
                     className='tw-px-6 tw-py-3 border-neutral-50 border tw-rounded-xl w-100 text-center fw-semibold tw-text-lg text-dark-600'
                   >
                     View Details

@@ -1,5 +1,7 @@
+"use client";
+import Image from "next/image";
+import Link from "next/link";
 import type React from "react";
-import { Link } from "react-router-dom";
 
 const BlogGridInner: React.FC = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -7,7 +9,7 @@ const BlogGridInner: React.FC = () => {
     const formData = new FormData(e.currentTarget);
     const search = formData.get("search");
 
-      // Production-safe: mark as intentionally unused
+    // Production-safe: mark as intentionally unused
     void search;
   };
   return (
@@ -23,8 +25,10 @@ const BlogGridInner: React.FC = () => {
                     data-aos='fade-up'
                     data-aos-duration={600}
                   >
-                    <img
-                      src='assets/images/thumbs/blog-grid-img1.png'
+                    <Image
+                      width={416}
+                      height={361}
+                      src='/assets/images/thumbs/blog-grid-img1.png'
                       alt='Image'
                       className='bg-img'
                     />
@@ -37,7 +41,7 @@ const BlogGridInner: React.FC = () => {
                           The Role of AI in Securing Digital Transactions
                         </h4>
                         <Link
-                          to='/blog-details'
+                          href='/blog-details'
                           className='bg-neutral-10 tw-rounded-md tw-px-6 tw-py-205 w-100 text-dark-600 text-center hover-bg-base-two-600 hover-text-white tw-duration-500'
                         >
                           Read More
@@ -52,8 +56,10 @@ const BlogGridInner: React.FC = () => {
                     data-aos='fade-up'
                     data-aos-duration={800}
                   >
-                    <img
-                      src='assets/images/thumbs/blog-grid-img2.png'
+                    <Image
+                      width={416}
+                      height={360}
+                      src='/assets/images/thumbs/blog-grid-img2.png'
                       alt='Image'
                       className='bg-img'
                     />
@@ -66,7 +72,7 @@ const BlogGridInner: React.FC = () => {
                           Transfer Money Abroad Without High Fees
                         </h4>
                         <Link
-                          to='/blog-details'
+                          href='/blog-details'
                           className='bg-neutral-10 tw-rounded-md tw-px-6 tw-py-205 w-100 text-dark-600 text-center hover-bg-base-two-600 hover-text-white tw-duration-500'
                         >
                           Read More
@@ -81,8 +87,10 @@ const BlogGridInner: React.FC = () => {
                     data-aos='fade-up'
                     data-aos-duration={600}
                   >
-                    <img
-                      src='assets/images/thumbs/blog-grid-img3.png'
+                    <Image
+                      width={416}
+                      height={360}
+                      src='/assets/images/thumbs/blog-grid-img3.png'
                       alt='Image'
                       className='bg-img'
                     />
@@ -95,7 +103,7 @@ const BlogGridInner: React.FC = () => {
                           How They Work &amp; Why You Need Them
                         </h4>
                         <Link
-                          to='/blog-details'
+                          href='/blog-details'
                           className='bg-neutral-10 tw-rounded-md tw-px-6 tw-py-205 w-100 text-dark-600 text-center hover-bg-base-two-600 hover-text-white tw-duration-500'
                         >
                           Read More
@@ -110,8 +118,10 @@ const BlogGridInner: React.FC = () => {
                     data-aos='fade-up'
                     data-aos-duration={800}
                   >
-                    <img
-                      src='assets/images/thumbs/blog-grid-img4.png'
+                    <Image
+                      width={406}
+                      height={360}
+                      src='/assets/images/thumbs/blog-grid-img4.png'
                       alt='Image'
                       className='bg-img'
                     />
@@ -124,7 +134,7 @@ const BlogGridInner: React.FC = () => {
                           How to Keep Your Online Transactions Safe
                         </h4>
                         <Link
-                          to='/blog-details'
+                          href='/blog-details'
                           className='bg-neutral-10 tw-rounded-md tw-px-6 tw-py-205 w-100 text-dark-600 text-center hover-bg-base-two-600 hover-text-white tw-duration-500'
                         >
                           Read More
@@ -139,8 +149,10 @@ const BlogGridInner: React.FC = () => {
                     data-aos='fade-up'
                     data-aos-duration={600}
                   >
-                    <img
-                      src='assets/images/thumbs/blog-grid-img5.png'
+                    <Image
+                      width={416}
+                      height={360}
+                      src='/assets/images/thumbs/blog-grid-img5.png'
                       alt='Image'
                       className='bg-img'
                     />
@@ -153,7 +165,7 @@ const BlogGridInner: React.FC = () => {
                           Traditional Banking: The Future of Finance
                         </h4>
                         <Link
-                          to='/blog-details'
+                          href='/blog-details'
                           className='bg-neutral-10 tw-rounded-md tw-px-6 tw-py-205 w-100 text-dark-600 text-center hover-bg-base-two-600 hover-text-white tw-duration-500'
                         >
                           Read More
@@ -168,8 +180,10 @@ const BlogGridInner: React.FC = () => {
                     data-aos='fade-up'
                     data-aos-duration={800}
                   >
-                    <img
-                      src='assets/images/thumbs/blog-grid-img1.png'
+                    <Image
+                      width={416}
+                      height={361}
+                      src='/assets/images/thumbs/blog-grid-img1.png'
                       alt='Image'
                       className='bg-img'
                     />
@@ -182,7 +196,7 @@ const BlogGridInner: React.FC = () => {
                           How to Identify and Avoid Online Banking{" "}
                         </h4>
                         <Link
-                          to='/blog-details'
+                          href='/blog-details'
                           className='bg-neutral-10 tw-rounded-md tw-px-6 tw-py-205 w-100 text-dark-600 text-center hover-bg-base-two-600 hover-text-white tw-duration-500'
                         >
                           Read More
@@ -375,8 +389,10 @@ const BlogGridInner: React.FC = () => {
               <div>
                 <div className='d-flex align-items-center tw-gap-4 flex-wrap'>
                   <span className='max-w-110-px w-100'>
-                    <img
-                      src='assets/images/thumbs/articles-two-img1.png'
+                    <Image
+                      width={416}
+                      height={360}
+                      src='/assets/images/thumbs/articles-two-img1.png'
                       alt='Image'
                       className='tw-rounded-md'
                     />
@@ -386,7 +402,7 @@ const BlogGridInner: React.FC = () => {
                       Sep 15, 2024
                     </span>
                     <h5 className='fw-normal text-dark-600'>
-                      <Link to='/blog-details'>
+                      <Link href='/blog-details'>
                         Benefits Online Money Transfers
                       </Link>
                     </h5>
@@ -395,8 +411,10 @@ const BlogGridInner: React.FC = () => {
                 <span className='bg-neutral-05 w-100 tw-h-px tw-mb-5 tw-mt-5' />
                 <div className='d-flex align-items-center tw-gap-4 flex-wrap'>
                   <span className='max-w-110-px w-100'>
-                    <img
-                      src='assets/images/thumbs/blog-grid-img7.png'
+                    <Image
+                      width={110}
+                      height={90}
+                      src='/assets/images/thumbs/blog-grid-img7.png'
                       alt='Image'
                       className='tw-rounded-md'
                     />
@@ -406,15 +424,19 @@ const BlogGridInner: React.FC = () => {
                       Sep 15, 2024
                     </span>
                     <h5 className='fw-normal text-dark-600'>
-                      <Link to='/blog-details'>Online Payment Safety Tips</Link>
+                      <Link href='/blog-details'>
+                        Online Payment Safety Tips
+                      </Link>
                     </h5>
                   </div>
                 </div>
                 <span className='bg-neutral-05 w-100 tw-h-px tw-mb-5 tw-mt-5' />
                 <div className='d-flex align-items-center tw-gap-4 flex-wrap'>
                   <span className='max-w-110-px w-100'>
-                    <img
-                      src='assets/images/thumbs/blog-grid-img8.png'
+                    <Image
+                      width={110}
+                      height={90}
+                      src='/assets/images/thumbs/blog-grid-img8.png'
                       alt='Image'
                       className='tw-rounded-md'
                     />
@@ -424,7 +446,7 @@ const BlogGridInner: React.FC = () => {
                       Sep 15, 2024
                     </span>
                     <h5 className='fw-normal text-dark-600'>
-                      <Link to='/blog-details'>
+                      <Link href='/blog-details'>
                         How to Save More on Transfers
                       </Link>
                     </h5>

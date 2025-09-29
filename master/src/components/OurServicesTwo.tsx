@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type React from "react";
 
 const OurServicesTwo: React.FC = () => {
@@ -10,7 +11,12 @@ const OurServicesTwo: React.FC = () => {
             data-aos='fade-up'
             data-aos-duration={600}
           >
-            <img src='assets/images/icon/star-icon2.png' alt='Image' />
+            <Image
+              width={27}
+              height={27}
+              src='/assets/images/icon/star-icon2.png'
+              alt='Image'
+            />
             <h5 className='fw-normal text-primary-600'>Our Services</h5>
           </div>
           <h2
@@ -30,8 +36,10 @@ const OurServicesTwo: React.FC = () => {
             >
               <div className='tw-px-8 tw-py-8 bg-white tw-rounded-xl tw-duration-500 position-relative group-hover-bg-base-two-600'>
                 <span className='tw-w-15 tw-h-15 tw-rounded-md bg-base-two-10 d-flex align-items-center justify-content-center tw-duration-500 tw-mb-10 group-hover-bg-main-600'>
-                  <img
-                    src='assets/images/icon/our-services-others-icon1.png'
+                  <Image
+                    width={34}
+                    height={34}
+                    src='/assets/images/icon/our-services-others-icon1.png'
                     alt='Image'
                     className='group-hover-item-text-invert-black tw-duration-500'
                   />
@@ -63,8 +71,10 @@ const OurServicesTwo: React.FC = () => {
             >
               <div className='tw-px-8 tw-py-8 bg-white tw-rounded-xl tw-duration-500 position-relative group-hover-bg-base-two-600'>
                 <span className='tw-w-15 tw-h-15 tw-rounded-md bg-base-two-10 d-flex align-items-center justify-content-center tw-duration-500 tw-mb-10 group-hover-bg-main-600'>
-                  <img
-                    src='assets/images/icon/our-services-others-icon2.png'
+                  <Image
+                    width={31}
+                    height={39}
+                    src='/assets/images/icon/our-services-others-icon2.png'
                     alt='Image'
                     className='group-hover-item-text-invert-black tw-duration-500'
                   />
@@ -96,8 +106,10 @@ const OurServicesTwo: React.FC = () => {
             >
               <div className='tw-px-8 tw-py-8 bg-white tw-rounded-xl tw-duration-500 position-relative group-hover-bg-base-two-600'>
                 <span className='tw-w-15 tw-h-15 tw-rounded-md bg-base-two-10 d-flex align-items-center justify-content-center tw-duration-500 tw-mb-10 group-hover-bg-main-600'>
-                  <img
-                    src='assets/images/icon/our-services-others-icon3.png'
+                  <Image
+                    width={34}
+                    height={31}
+                    src='/assets/images/icon/our-services-others-icon3.png'
                     alt='Image'
                     className='group-hover-item-text-invert-black tw-duration-500'
                   />
@@ -129,8 +141,10 @@ const OurServicesTwo: React.FC = () => {
             >
               <div className='tw-px-8 tw-py-8 bg-white tw-rounded-xl tw-duration-500 position-relative group-hover-bg-base-two-600'>
                 <span className='tw-w-15 tw-h-15 tw-rounded-md bg-base-two-10 d-flex align-items-center justify-content-center tw-duration-500 tw-mb-10 group-hover-bg-main-600'>
-                  <img
-                    src='assets/images/icon/our-services-others-icon4.png'
+                  <Image
+                    width={38}
+                    height={38}
+                    src='/assets/images/icon/our-services-others-icon4.png'
                     alt='Image'
                     className='group-hover-item-text-invert-black tw-duration-500'
                   />
@@ -162,8 +176,10 @@ const OurServicesTwo: React.FC = () => {
             >
               <div className='tw-px-8 tw-py-8 bg-white tw-rounded-xl tw-duration-500 position-relative group-hover-bg-base-two-600'>
                 <span className='tw-w-15 tw-h-15 tw-rounded-md bg-base-two-10 d-flex align-items-center justify-content-center tw-duration-500 tw-mb-10 group-hover-bg-main-600'>
-                  <img
-                    src='assets/images/icon/our-services-others-icon1.png'
+                  <Image
+                    width={34}
+                    height={34}
+                    src='/assets/images/icon/our-services-others-icon1.png'
                     alt='Image'
                     className='group-hover-item-text-invert-black tw-duration-500'
                   />
@@ -195,8 +211,10 @@ const OurServicesTwo: React.FC = () => {
             >
               <div className='tw-px-8 tw-py-8 bg-white tw-rounded-xl tw-duration-500 position-relative group-hover-bg-base-two-600'>
                 <span className='tw-w-15 tw-h-15 tw-rounded-md bg-base-two-10 d-flex align-items-center justify-content-center tw-duration-500 tw-mb-10 group-hover-bg-main-600'>
-                  <img
-                    src='assets/images/icon/our-services-others-icon3.png'
+                  <Image
+                    width={34}
+                    height={31}
+                    src='/assets/images/icon/our-services-others-icon3.png'
                     alt='Image'
                     className='group-hover-item-text-invert-black tw-duration-500'
                   />
@@ -228,8 +246,10 @@ const OurServicesTwo: React.FC = () => {
             >
               <div className='tw-px-8 tw-py-8 bg-white tw-rounded-xl tw-duration-500 position-relative group-hover-bg-base-two-600'>
                 <span className='tw-w-15 tw-h-15 tw-rounded-md bg-base-two-10 d-flex align-items-center justify-content-center tw-duration-500 tw-mb-10 group-hover-bg-main-600'>
-                  <img
-                    src='assets/images/icon/our-services-others-icon4.png'
+                  <Image
+                    width={38}
+                    height={38}
+                    src='/assets/images/icon/our-services-others-icon4.png'
                     alt='Image'
                     className='group-hover-item-text-invert-black tw-duration-500'
                   />
@@ -261,8 +281,10 @@ const OurServicesTwo: React.FC = () => {
             >
               <div className='tw-px-8 tw-py-8 bg-white tw-rounded-xl tw-duration-500 position-relative group-hover-bg-base-two-600'>
                 <span className='tw-w-15 tw-h-15 tw-rounded-md bg-base-two-10 d-flex align-items-center justify-content-center tw-duration-500 tw-mb-10 group-hover-bg-main-600'>
-                  <img
-                    src='assets/images/icon/our-services-others-icon4.png'
+                  <Image
+                    width={38}
+                    height={38}
+                    src='/assets/images/icon/our-services-others-icon4.png'
                     alt='Image'
                     className='group-hover-item-text-invert-black tw-duration-500'
                   />

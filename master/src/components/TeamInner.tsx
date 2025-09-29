@@ -1,4 +1,5 @@
 import type React from "react";
+import Image from "next/image";
 
 const TeamInner: React.FC = () => {
   return (
@@ -10,7 +11,12 @@ const TeamInner: React.FC = () => {
             data-aos='fade-up'
             data-aos-duration={600}
           >
-            <img src='assets/images/icon/star-icon2.png' alt='Image' />
+            <Image
+              width={27}
+              height={27}
+              src='/assets/images/icon/star-icon2.png'
+              alt='Image'
+            />
             <h5 className='fw-normal text-primary-600'>Team Members</h5>
           </div>
           <h2
@@ -31,15 +37,19 @@ const TeamInner: React.FC = () => {
               >
                 <div className='tw-h-380-px position-relative'>
                   <div className='bg-white tw-rounded-xl position-absolute w-100 h-100 top-0 start-0 text-center tw-visible tw-opacity-1 group-hover-item-hiddem group-hover-item-opacity-0 tw-duration-500'>
-                    <img
-                      src='assets/images/thumbs/our-team-member-other-img1.png'
+                    <Image
+                      width={200}
+                      height={200}
+                      src='/assets/images/thumbs/our-team-member-other-img1.png'
                       alt='Image'
                       className='tw-mt-10'
                     />
                   </div>
                   <div className='team-member__hover-img position-absolute top-0 start-0 w-100 h-100 tw-invisible tw-opacity-0 group-hover-item-visible group-hover-item-opacity-1 tw-duration-500 bg-img'>
-                    <img
-                      src='assets/images/thumbs/our-team-member-other-img8.png'
+                    <Image
+                      width={306}
+                      height={380}
+                      src='/assets/images/thumbs/our-team-member-other-img8.png'
                       alt='Image'
                       className='w-100 h-100 object-fit-cover'
                     />
@@ -70,15 +80,19 @@ const TeamInner: React.FC = () => {
               >
                 <div className='tw-h-380-px position-relative'>
                   <div className='bg-white tw-rounded-xl position-absolute w-100 h-100 top-0 start-0 text-center tw-visible tw-opacity-1 group-hover-item-hiddem group-hover-item-opacity-0 tw-duration-500'>
-                    <img
-                      src='assets/images/thumbs/our-team-member-other-img2.png'
+                    <Image
+                      width={200}
+                      height={200}
+                      src='/assets/images/thumbs/our-team-member-other-img2.png'
                       alt='Image'
                       className='tw-mt-10'
                     />
                   </div>
                   <div className='team-member__hover-img position-absolute top-0 start-0 w-100 h-100 tw-invisible tw-opacity-0 group-hover-item-visible group-hover-item-opacity-1 tw-duration-500 bg-img'>
-                    <img
-                      src='assets/images/thumbs/our-team-member-other-img8.png'
+                    <Image
+                      width={306}
+                      height={380}
+                      src='/assets/images/thumbs/our-team-member-other-img8.png'
                       alt='Image'
                       className='w-100 h-100 object-fit-cover'
                     />
@@ -109,15 +123,19 @@ const TeamInner: React.FC = () => {
               >
                 <div className='tw-h-380-px position-relative'>
                   <div className='bg-white tw-rounded-xl position-absolute w-100 h-100 top-0 start-0 text-center tw-visible tw-opacity-1 group-hover-item-hiddem group-hover-item-opacity-0 tw-duration-500'>
-                    <img
-                      src='assets/images/thumbs/our-team-member-other-img7.png'
+                    <Image
+                      width={200}
+                      height={200}
+                      src='/assets/images/thumbs/our-team-member-other-img7.png'
                       alt='Image'
                       className='tw-mt-10'
                     />
                   </div>
                   <div className='team-member__hover-img position-absolute top-0 start-0 w-100 h-100 tw-invisible tw-opacity-0 group-hover-item-visible group-hover-item-opacity-1 tw-duration-500 bg-img'>
-                    <img
-                      src='assets/images/thumbs/our-team-member-other-img8.png'
+                    <Image
+                      width={306}
+                      height={380}
+                      src='/assets/images/thumbs/our-team-member-other-img8.png'
                       alt='Image'
                       className='w-100 h-100 object-fit-cover'
                     />
@@ -148,15 +166,19 @@ const TeamInner: React.FC = () => {
               >
                 <div className='tw-h-380-px position-relative'>
                   <div className='bg-white tw-rounded-xl position-absolute w-100 h-100 top-0 start-0 text-center tw-visible tw-opacity-1 group-hover-item-hiddem group-hover-item-opacity-0 tw-duration-500'>
-                    <img
-                      src='assets/images/thumbs/our-team-member-other-img3.png'
+                    <Image
+                      width={200}
+                      height={200}
+                      src='/assets/images/thumbs/our-team-member-other-img3.png'
                       alt='Image'
                       className='tw-mt-10'
                     />
                   </div>
                   <div className='team-member__hover-img position-absolute top-0 start-0 w-100 h-100 tw-invisible tw-opacity-0 group-hover-item-visible group-hover-item-opacity-1 tw-duration-500 bg-img'>
-                    <img
-                      src='assets/images/thumbs/our-team-member-other-img8.png'
+                    <Image
+                      width={306}
+                      height={380}
+                      src='/assets/images/thumbs/our-team-member-other-img8.png'
                       alt='Image'
                       className='w-100 h-100 object-fit-cover'
                     />
@@ -187,15 +209,19 @@ const TeamInner: React.FC = () => {
               >
                 <div className='tw-h-380-px position-relative'>
                   <div className='bg-white tw-rounded-xl position-absolute w-100 h-100 top-0 start-0 text-center tw-visible tw-opacity-1 group-hover-item-hiddem group-hover-item-opacity-0 tw-duration-500'>
-                    <img
-                      src='assets/images/thumbs/our-team-member-other-img4.png'
+                    <Image
+                      width={200}
+                      height={200}
+                      src='/assets/images/thumbs/our-team-member-other-img4.png'
                       alt='Image'
                       className='tw-mt-10'
                     />
                   </div>
                   <div className='team-member__hover-img position-absolute top-0 start-0 w-100 h-100 tw-invisible tw-opacity-0 group-hover-item-visible group-hover-item-opacity-1 tw-duration-500 bg-img'>
-                    <img
-                      src='assets/images/thumbs/our-team-member-other-img8.png'
+                    <Image
+                      width={306}
+                      height={380}
+                      src='/assets/images/thumbs/our-team-member-other-img8.png'
                       alt='Image'
                       className='w-100 h-100 object-fit-cover'
                     />
@@ -226,15 +252,19 @@ const TeamInner: React.FC = () => {
               >
                 <div className='tw-h-380-px position-relative'>
                   <div className='bg-white tw-rounded-xl position-absolute w-100 h-100 top-0 start-0 text-center tw-visible tw-opacity-1 group-hover-item-hiddem group-hover-item-opacity-0 tw-duration-500'>
-                    <img
-                      src='assets/images/thumbs/our-team-member-other-img5.png'
+                    <Image
+                      width={200}
+                      height={200}
+                      src='/assets/images/thumbs/our-team-member-other-img5.png'
                       alt='Image'
                       className='tw-mt-10'
                     />
                   </div>
                   <div className='team-member__hover-img position-absolute top-0 start-0 w-100 h-100 tw-invisible tw-opacity-0 group-hover-item-visible group-hover-item-opacity-1 tw-duration-500 bg-img'>
-                    <img
-                      src='assets/images/thumbs/our-team-member-other-img8.png'
+                    <Image
+                      width={306}
+                      height={380}
+                      src='/assets/images/thumbs/our-team-member-other-img8.png'
                       alt='Image'
                       className='w-100 h-100 object-fit-cover'
                     />
@@ -265,15 +295,19 @@ const TeamInner: React.FC = () => {
               >
                 <div className='tw-h-380-px position-relative'>
                   <div className='bg-white tw-rounded-xl position-absolute w-100 h-100 top-0 start-0 text-center tw-visible tw-opacity-1 group-hover-item-hiddem group-hover-item-opacity-0 tw-duration-500'>
-                    <img
-                      src='assets/images/thumbs/our-team-member-other-img6.png'
+                    <Image
+                      width={200}
+                      height={200}
+                      src='/assets/images/thumbs/our-team-member-other-img6.png'
                       alt='Image'
                       className='tw-mt-10'
                     />
                   </div>
                   <div className='team-member__hover-img position-absolute top-0 start-0 w-100 h-100 tw-invisible tw-opacity-0 group-hover-item-visible group-hover-item-opacity-1 tw-duration-500 bg-img'>
-                    <img
-                      src='assets/images/thumbs/our-team-member-other-img8.png'
+                    <Image
+                      width={306}
+                      height={380}
+                      src='/assets/images/thumbs/our-team-member-other-img8.png'
                       alt='Image'
                       className='w-100 h-100 object-fit-cover'
                     />
@@ -304,15 +338,19 @@ const TeamInner: React.FC = () => {
               >
                 <div className='tw-h-380-px position-relative'>
                   <div className='bg-white tw-rounded-xl position-absolute w-100 h-100 top-0 start-0 text-center tw-visible tw-opacity-1 group-hover-item-hiddem group-hover-item-opacity-0 tw-duration-500'>
-                    <img
-                      src='assets/images/thumbs/our-team-member-other-img7.png'
+                    <Image
+                      width={200}
+                      height={200}
+                      src='/assets/images/thumbs/our-team-member-other-img7.png'
                       alt='Image'
                       className='tw-mt-10'
                     />
                   </div>
                   <div className='team-member__hover-img position-absolute top-0 start-0 w-100 h-100 tw-invisible tw-opacity-0 group-hover-item-visible group-hover-item-opacity-1 tw-duration-500 bg-img'>
-                    <img
-                      src='assets/images/thumbs/our-team-member-other-img8.png'
+                    <Image
+                      width={306}
+                      height={380}
+                      src='/assets/images/thumbs/our-team-member-other-img8.png'
                       alt='Image'
                       className='w-100 h-100 object-fit-cover'
                     />

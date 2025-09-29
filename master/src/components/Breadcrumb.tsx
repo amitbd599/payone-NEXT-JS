@@ -1,6 +1,6 @@
+import Image from "next/image";
+import Link from "next/link";
 import type React from "react";
-import { Link } from "react-router-dom";
-
 
 interface BreadcrumbProps {
   title: string;
@@ -9,28 +9,38 @@ interface BreadcrumbProps {
 const Breadcrumb: React.FC<BreadcrumbProps> = ({ title }) => {
   return (
     <div className='tw-h-333-px bg-base-two-600 position-relative z-1 py-120'>
-      <img
-        src='assets/images/shape/my-profile-shape-1.png'
+      <Image
+        width={289}
+        height={247}
+        src='/assets/images/shape/my-profile-shape-1.png'
         alt='Image'
         className='shape__one position-absolute z-n1 tw-block-end-0 tw-start-0'
       />
-      <img
-        src='assets/images/shape/my-profile-shape-2.png'
+      <Image
+        width={289}
+        height={247}
+        src='/assets/images/shape/my-profile-shape-2.png'
         alt='Image'
         className='shape__two position-absolute z-n1 tw-block-end-0 tw-end-0'
       />
-      <img
-        src='assets/images/shape/circle-shape-img1.png'
+      <Image
+        width={55}
+        height={53}
+        src='/assets/images/shape/circle-shape-img1.png'
         alt='Image'
         className='position-absolute tw-start-100-px tw-block-start-100-px d-lg-block d-none animation-rotation__two'
       />
-      <img
-        src='assets/images/shape/banner-two-shape5.png'
+      <Image
+        width={109}
+        height={62}
+        src='/assets/images/shape/banner-two-shape5.png'
         alt='Image'
         className='position-absolute tw-end-60-px tw-block-end-75-px d-lg-block d-none animation-Updowm__two'
       />
-      <img
-        src='assets/images/shape/banner-two-shape2.png'
+      <Image
+        width={56}
+        height={56}
+        src='/assets/images/shape/banner-two-shape2.png'
         alt='Image'
         className='shape__five position-absolute bottom-0 tw-mb-16 tw-start-0 tw-ml-496-px z-n1 d-lg-block d-none animation-pulse__two'
       />
@@ -48,7 +58,7 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({ title }) => {
           data-aos-duration={800}
         >
           <Link
-            to='/'
+            href='/'
             className='fw-semibold tw-text-xl text-white text-uppercase'
           >
             HOME

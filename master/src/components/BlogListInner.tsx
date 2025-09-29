@@ -1,3 +1,5 @@
+"use client";
+import Image from "next/image";
 import type React from "react";
 import { Link } from "react-router-dom";
 
@@ -7,8 +9,8 @@ const BlogListInner: React.FC = () => {
     const formData = new FormData(e.currentTarget);
     const search = formData.get("search");
 
-        // Production-safe: mark as intentionally unused
-        void search;
+    // Production-safe: mark as intentionally unused
+    void search;
   };
   return (
     <section className='py-140 bg-neutral-10 z-1'>
@@ -22,8 +24,9 @@ const BlogListInner: React.FC = () => {
                 data-aos-duration={600}
               >
                 <div className='position-relative'>
-                  <img
-                    src='assets/images/thumbs/blog-grid-img2.png'
+                  <Image
+                    width={416}
+                    src='/assets/images/thumbs/blog-grid-img2.png'
                     alt='Image'
                     className='blog-list-img max-w-370-px w-100'
                   />
@@ -53,8 +56,10 @@ const BlogListInner: React.FC = () => {
                 data-aos-duration={800}
               >
                 <div className='position-relative'>
-                  <img
-                    src='assets/images/thumbs/blog-grid-img5.png'
+                  <Image
+                    width={416}
+                    height={360}
+                    src='/assets/images/thumbs/blog-grid-img5.png'
                     alt='Image'
                     className='max-w-370-px w-100 blog-list-img'
                   />
@@ -84,8 +89,10 @@ const BlogListInner: React.FC = () => {
                 data-aos-duration={1000}
               >
                 <div className='position-relative'>
-                  <img
-                    src='assets/images/thumbs/blog-list-img1.png'
+                  <Image
+                    width={370}
+                    height={280}
+                    src='/assets/images/thumbs/blog-list-img1.png'
                     alt='Image'
                     className='max-w-370-px w-100 blog-list-img'
                   />
@@ -115,8 +122,10 @@ const BlogListInner: React.FC = () => {
                 data-aos-duration={1200}
               >
                 <div className='position-relative'>
-                  <img
-                    src='assets/images/thumbs/blog-grid-img3.png'
+                  <Image
+                    width={370}
+                    height={280}
+                    src='/assets/images/thumbs/blog-grid-img3.png'
                     alt='Image'
                     className='max-w-370-px w-100 blog-list-img'
                   />
@@ -323,8 +332,10 @@ const BlogListInner: React.FC = () => {
               <div>
                 <div className='d-flex align-items-center tw-gap-4 flex-wrap'>
                   <span className='max-w-110-px w-100'>
-                    <img
-                      src='assets/images/thumbs/articles-two-img1.png'
+                    <Image
+                      width={416}
+                      height={360}
+                      src='/assets/images/thumbs/articles-two-img1.png'
                       alt='Image'
                       className='tw-rounded-md'
                     />
@@ -343,8 +354,10 @@ const BlogListInner: React.FC = () => {
                 <span className='bg-neutral-05 w-100 tw-h-px tw-mb-5 tw-mt-5' />
                 <div className='d-flex align-items-center tw-gap-4 flex-wrap'>
                   <span className='max-w-110-px w-100'>
-                    <img
-                      src='assets/images/thumbs/blog-grid-img7.png'
+                    <Image
+                      width={110}
+                      height={90}
+                      src='/assets/images/thumbs/blog-grid-img7.png'
                       alt='Image'
                       className='tw-rounded-md'
                     />
@@ -361,8 +374,10 @@ const BlogListInner: React.FC = () => {
                 <span className='bg-neutral-05 w-100 tw-h-px tw-mb-5 tw-mt-5' />
                 <div className='d-flex align-items-center tw-gap-4 flex-wrap'>
                   <span className='max-w-110-px w-100'>
-                    <img
-                      src='assets/images/thumbs/blog-grid-img8.png'
+                    <Image
+                      width={110}
+                      height={90}
+                      src='/assets/images/thumbs/blog-grid-img8.png'
                       alt='Image'
                       className='tw-rounded-md'
                     />

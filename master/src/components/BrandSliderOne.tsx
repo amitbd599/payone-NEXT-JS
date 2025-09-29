@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type React from "react";
 import Marquee from "react-fast-marquee";
 
@@ -16,40 +17,100 @@ const BrandSliderOne: React.FC = () => {
         <div className='swiper_ brand-four__slider_'>
           <Marquee>
             <div className=' grayscale hover-grayscale tw-duration-300 px-5'>
-              <img src='assets/images/thumbs/brand-four-img1.png' alt='' />
+              <Image
+                width={200}
+                height={33}
+                src='/assets/images/thumbs/brand-four-img1.png'
+                alt=''
+              />
             </div>
             <div className=' grayscale hover-grayscale tw-duration-300 px-5'>
-              <img src='assets/images/thumbs/brand-four-img1.png' alt='' />
+              <Image
+                width={200}
+                height={33}
+                src='/assets/images/thumbs/brand-four-img1.png'
+                alt=''
+              />
             </div>
             <div className=' grayscale hover-grayscale tw-duration-300 px-5'>
-              <img src='assets/images/thumbs/brand-four-img1.png' alt='' />
+              <Image
+                width={200}
+                height={33}
+                src='/assets/images/thumbs/brand-four-img1.png'
+                alt=''
+              />
             </div>
             <div className=' grayscale hover-grayscale tw-duration-300 px-5'>
-              <img src='assets/images/thumbs/brand-four-img1.png' alt='' />
+              <Image
+                width={200}
+                height={33}
+                src='/assets/images/thumbs/brand-four-img1.png'
+                alt=''
+              />
             </div>
             <div className=' grayscale hover-grayscale tw-duration-300 px-5'>
-              <img src='assets/images/thumbs/brand-four-img1.png' alt='' />
+              <Image
+                width={200}
+                height={33}
+                src='/assets/images/thumbs/brand-four-img1.png'
+                alt=''
+              />
             </div>
             <div className=' grayscale hover-grayscale tw-duration-300 px-5'>
-              <img src='assets/images/thumbs/brand-four-img1.png' alt='' />
+              <Image
+                width={200}
+                height={33}
+                src='/assets/images/thumbs/brand-four-img1.png'
+                alt=''
+              />
             </div>
             <div className=' grayscale hover-grayscale tw-duration-300 px-5'>
-              <img src='assets/images/thumbs/brand-four-img1.png' alt='' />
+              <Image
+                width={200}
+                height={33}
+                src='/assets/images/thumbs/brand-four-img1.png'
+                alt=''
+              />
             </div>
             <div className=' grayscale hover-grayscale tw-duration-300 px-5'>
-              <img src='assets/images/thumbs/brand-four-img1.png' alt='' />
+              <Image
+                width={200}
+                height={33}
+                src='/assets/images/thumbs/brand-four-img1.png'
+                alt=''
+              />
             </div>
             <div className=' grayscale hover-grayscale tw-duration-300 px-5'>
-              <img src='assets/images/thumbs/brand-four-img1.png' alt='' />
+              <Image
+                width={200}
+                height={33}
+                src='/assets/images/thumbs/brand-four-img1.png'
+                alt=''
+              />
             </div>
             <div className=' grayscale hover-grayscale tw-duration-300 px-5'>
-              <img src='assets/images/thumbs/brand-four-img1.png' alt='' />
+              <Image
+                width={200}
+                height={33}
+                src='/assets/images/thumbs/brand-four-img1.png'
+                alt=''
+              />
             </div>
             <div className=' grayscale hover-grayscale tw-duration-300 px-5'>
-              <img src='assets/images/thumbs/brand-four-img1.png' alt='' />
+              <Image
+                width={200}
+                height={33}
+                src='/assets/images/thumbs/brand-four-img1.png'
+                alt=''
+              />
             </div>
             <div className=' grayscale hover-grayscale tw-duration-300 px-5'>
-              <img src='assets/images/thumbs/brand-four-img1.png' alt='' />
+              <Image
+                width={200}
+                height={33}
+                src='/assets/images/thumbs/brand-four-img1.png'
+                alt=''
+              />
             </div>
           </Marquee>
         </div>

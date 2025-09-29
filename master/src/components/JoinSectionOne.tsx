@@ -1,12 +1,10 @@
-import { useInView } from "react-intersection-observer";
-import CountUp from "react-countup";
-import Popup from "reactjs-popup";
+"use client";
+import CounterView from "@/helper/CounterView";
+import Image from "next/image";
 import type React from "react";
+import Popup from "reactjs-popup";
 
 const JoinSectionOne: React.FC = () => {
-  const { ref, inView } = useInView({
-    threshold: 0,
-  });
   return (
     <section className='py-140 overflow-hidden'>
       <div className='container'>
@@ -17,7 +15,12 @@ const JoinSectionOne: React.FC = () => {
               data-aos='fade-up'
               data-aos-duration={600}
             >
-              <img src='assets/images/icon/star-icon2.png' alt='Image' />
+              <Image
+                width={27}
+                height={27}
+                src='/assets/images/icon/star-icon2.png'
+                alt='Image'
+              />
               <h5 className='fw-normal text-primary-600 '>Join 10,245+</h5>
             </div>
             <h2
@@ -36,44 +39,58 @@ const JoinSectionOne: React.FC = () => {
           >
             <div className='swiper-wrapper d-flex align-items-center w-100'>
               <div className='swiper-slide'>
-                <img
-                  src='assets/images/logo/banner-slider-img1.png'
+                <Image
+                  width={146}
+                  height={60}
+                  src='/assets/images/logo/banner-slider-img1.png'
                   alt='Image'
                 />
               </div>
               <div className='swiper-slide'>
-                <img
-                  src='assets/images/logo/banner-slider-img2.png'
+                <Image
+                  width={150}
+                  height={60}
+                  src='/assets/images/logo/banner-slider-img2.png'
                   alt='Image'
                 />
               </div>
               <div className='swiper-slide'>
-                <img
-                  src='assets/images/logo/banner-slider-img4.png'
+                <Image
+                  width={150}
+                  height={60}
+                  src='/assets/images/logo/banner-slider-img4.png'
                   alt='Image'
                 />
               </div>
               <div className='swiper-slide'>
-                <img
-                  src='assets/images/logo/banner-slider-img5.png'
+                <Image
+                  width={150}
+                  height={60}
+                  src='/assets/images/logo/banner-slider-img5.png'
                   alt='Image'
                 />
               </div>
               <div className='swiper-slide'>
-                <img
-                  src='assets/images/logo/banner-slider-img6.png'
+                <Image
+                  width={150}
+                  height={60}
+                  src='/assets/images/logo/banner-slider-img6.png'
                   alt='Image'
                 />
               </div>
               <div className='swiper-slide'>
-                <img
-                  src='assets/images/logo/banner-slider-img7.png'
+                <Image
+                  width={150}
+                  height={60}
+                  src='/assets/images/logo/banner-slider-img7.png'
                   alt='Image'
                 />
               </div>
               <div className='swiper-slide'>
-                <img
-                  src='assets/images/logo/banner-slider-img5.png'
+                <Image
+                  width={150}
+                  height={60}
+                  src='/assets/images/logo/banner-slider-img5.png'
                   alt='Image'
                 />
               </div>
@@ -83,8 +100,10 @@ const JoinSectionOne: React.FC = () => {
         </div>
         <div className=''>
           <div className='position-relative tw-mb-80-px'>
-            <img
-              src='assets/images/thumbs/blog-details-img1.png'
+            <Image
+              width={1296}
+              height={600}
+              src='/assets/images/thumbs/blog-details-img1.png'
               alt='Image'
               data-aos='zoom-in'
               data-aos-duration={1500}
@@ -117,11 +136,8 @@ const JoinSectionOne: React.FC = () => {
               <div className='group' data-aos='fade-up' data-aos-duration={600}>
                 <div className='text-center border-neutral-50 border tw-rounded-xl tw-px-6 tw-py-12 group-hover-bg-base-two-600 tw-duration-500'>
                   <h2 className='banner-item-title text-base-two-600 tw-mb-3 group-hover-text-white tw-duration-500'>
-                    {inView && (
-                      <span>
-                        <CountUp delay={0} start={0} end={15} />M
-                      </span>
-                    )}
+                    {/* CounterView */}
+                    <CounterView start={0} end={15} title='M' />
                   </h2>
                   <div>
                     <span className='fw-normal tw-text-lg text-dark-600 group-hover-text-white tw-duration-500'>
@@ -133,15 +149,12 @@ const JoinSectionOne: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className='col-xl-3 col-lg-4 col-md-6' ref={ref}>
+            <div className='col-xl-3 col-lg-4 col-md-6'>
               <div className='group' data-aos='fade-up' data-aos-duration={800}>
                 <div className='text-center border-neutral-50 border tw-rounded-xl tw-px-6 tw-py-12 group-hover-bg-base-two-600 tw-duration-500'>
                   <h2 className='banner-item-title text-base-two-600 tw-mb-3 group-hover-text-white tw-duration-500'>
-                    {inView && (
-                      <span>
-                        <CountUp delay={0} start={0} end={745} />+
-                      </span>
-                    )}
+                    {/* CounterView */}
+                    <CounterView start={0} end={745} title='+' />
                   </h2>
                   <div>
                     <span className='fw-normal tw-text-lg text-dark-600 group-hover-text-white tw-duration-500'>
@@ -161,11 +174,8 @@ const JoinSectionOne: React.FC = () => {
               >
                 <div className='text-center border-neutral-50 border tw-rounded-xl tw-px-6 tw-py-12 group-hover-bg-base-two-600 tw-duration-500'>
                   <h2 className='banner-item-title text-base-two-600 tw-mb-3 group-hover-text-white tw-duration-500'>
-                    {inView && (
-                      <span>
-                        <CountUp delay={0} start={0} end={10} />M
-                      </span>
-                    )}
+                    {/* CounterView */}
+                    <CounterView start={0} end={10} title='M' />
                   </h2>
                   <div>
                     <span className='fw-normal tw-text-lg text-dark-600 group-hover-text-white tw-duration-500'>
@@ -185,11 +195,8 @@ const JoinSectionOne: React.FC = () => {
               >
                 <div className='text-center border-neutral-50 border tw-rounded-xl tw-px-6 tw-py-12 group-hover-bg-base-two-600 tw-duration-500'>
                   <h2 className='banner-item-title text-base-two-600 tw-mb-3 group-hover-text-white tw-duration-500'>
-                    {inView && (
-                      <span>
-                        <CountUp delay={0} start={0} end={178} />+
-                      </span>
-                    )}
+                    {/* CounterView */}
+                    <CounterView start={0} end={178} title='+' />
                   </h2>
                   <div>
                     <span className='fw-normal tw-text-lg text-dark-600 group-hover-text-white tw-duration-500'>
