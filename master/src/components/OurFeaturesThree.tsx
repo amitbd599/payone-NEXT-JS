@@ -43,7 +43,9 @@ const OurFeaturesThree: React.FC = () => {
             >
               <div className='tw-px-6 tw-py-6 rounded-3 border-bottom-black-2px group-hover-bg-base-two-600 tw-duration-400'>
                 <span className='tw-w-72px tw-h-72-px bg-base-two-600 rounded-circle d-flex align-items-center justify-content-center tw-mb-10 group-hover-bg-main-600 tw-duration-400'>
-                  <img
+                  <Image
+                    width={40}
+                    height={40}
                     src='/assets/images/icon/our-features-three-img1.png'
                     alt='Image'
                     className='group-hover-item-text-invert-black tw-duration-400'
@@ -65,7 +67,9 @@ const OurFeaturesThree: React.FC = () => {
             >
               <div className='tw-px-6 tw-py-6 rounded-3 border-bottom-black-2px group-hover-bg-base-two-600 tw-duration-400'>
                 <span className='tw-w-72px tw-h-72-px bg-base-two-600 rounded-circle d-flex align-items-center justify-content-center tw-mb-10 group-hover-bg-main-600 tw-duration-400'>
-                  <img
+                  <Image
+                    width={36}
+                    height={36}
                     src='/assets/images/icon/our-features-three-img2.png'
                     alt='Image'
                     className='group-hover-item-text-invert-black tw-duration-400'
@@ -87,7 +91,9 @@ const OurFeaturesThree: React.FC = () => {
               data-aos='zoom-in'
               data-aos-duration={1500}
             >
-              <img
+              <Image
+                width={540}
+                height={554}
                 src='/assets/images/thumbs/our-features-three-img1.png'
                 alt='Image'
               />
@@ -101,7 +107,9 @@ const OurFeaturesThree: React.FC = () => {
             >
               <div className='tw-px-6 tw-py-6 rounded-3 border-bottom-black-2px group-hover-bg-base-two-600 tw-duration-400'>
                 <span className='tw-w-72px tw-h-72-px bg-base-two-600 rounded-circle d-flex align-items-center justify-content-center tw-mb-10 group-hover-bg-main-600 tw-duration-400'>
-                  <img
+                  <Image
+                    width={40}
+                    height={40}
                     src='/assets/images/icon/our-features-three-img3.png'
                     alt='Image'
                     className='group-hover-item-text-invert-black tw-duration-400'
@@ -123,7 +131,9 @@ const OurFeaturesThree: React.FC = () => {
             >
               <div className='tw-px-6 tw-py-6 rounded-3 border-bottom-black-2px group-hover-bg-base-two-600 tw-duration-400'>
                 <span className='tw-w-72px tw-h-72-px bg-base-two-600 rounded-circle d-flex align-items-center justify-content-center tw-mb-10 group-hover-bg-main-600 tw-duration-400'>
-                  <img
+                  <Image
+                    width={40}
+                    height={40}
                     src='/assets/images/icon/our-features-three-img4.png'
                     alt='Image'
                     className='group-hover-item-text-invert-black tw-duration-400'

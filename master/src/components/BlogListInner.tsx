@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import type React from "react";
-import { Link } from "react-router-dom";
 
 const BlogListInner: React.FC = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -26,6 +26,7 @@ const BlogListInner: React.FC = () => {
                 <div className='position-relative'>
                   <Image
                     width={416}
+                    height={360}
                     src='/assets/images/thumbs/blog-grid-img2.png'
                     alt='Image'
                     className='blog-list-img max-w-370-px w-100'
@@ -43,7 +44,7 @@ const BlogListInner: React.FC = () => {
                     services,
                   </p>
                   <Link
-                    to='/blog-details'
+                    href='/blog-details'
                     className='fw-semibold tw-text-4 text-dark-600 tw-px-6 tw-py-3 w-100 bg-neutral-10 tw-rounded-xl text-center hover-bg-base-two-600 hover-text-white tw-duration-500'
                   >
                     Read More
@@ -76,7 +77,7 @@ const BlogListInner: React.FC = () => {
                     regulatory oversight.
                   </p>
                   <Link
-                    to='/blog-details'
+                    href='/blog-details'
                     className='fw-semibold tw-text-4 text-dark-600 tw-px-6 tw-py-3 w-100 bg-neutral-10 tw-rounded-xl text-center hover-bg-base-two-600 hover-text-white tw-duration-500'
                   >
                     Read More
@@ -109,7 +110,7 @@ const BlogListInner: React.FC = () => {
                     innovations,
                   </p>
                   <Link
-                    to='/blog-details'
+                    href='/blog-details'
                     className='fw-semibold tw-text-4 text-dark-600 tw-px-6 tw-py-3 w-100 bg-neutral-10 tw-rounded-xl text-center hover-bg-base-two-600 hover-text-white tw-duration-500'
                   >
                     Read More
@@ -142,7 +143,7 @@ const BlogListInner: React.FC = () => {
                     banks are evolving
                   </p>
                   <Link
-                    to='/blog-details'
+                    href='/blog-details'
                     className='fw-semibold tw-text-4 text-dark-600 tw-px-6 tw-py-3 w-100 bg-neutral-10 tw-rounded-xl text-center hover-bg-base-two-600 hover-text-white tw-duration-500'
                   >
                     Read More
@@ -345,7 +346,7 @@ const BlogListInner: React.FC = () => {
                       Sep 15, 2024
                     </span>
                     <h5 className='fw-normal text-dark-600'>
-                      <Link to='/blog-details'>
+                      <Link href='/blog-details'>
                         Benefits Online Money Transfers
                       </Link>
                     </h5>
@@ -367,7 +368,9 @@ const BlogListInner: React.FC = () => {
                       Sep 15, 2024
                     </span>
                     <h5 className='fw-normal text-dark-600'>
-                      <Link to='/blog-details'>Online Payment Safety Tips</Link>
+                      <Link href='/blog-details'>
+                        Online Payment Safety Tips
+                      </Link>
                     </h5>
                   </div>
                 </div>
@@ -387,7 +390,7 @@ const BlogListInner: React.FC = () => {
                       Sep 15, 2024
                     </span>
                     <h5 className='fw-normal text-dark-600'>
-                      <Link to='/blog-details'>
+                      <Link href='/blog-details'>
                         How to Save More on Transfers
                       </Link>
                     </h5>

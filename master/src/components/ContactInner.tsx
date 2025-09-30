@@ -1,3 +1,5 @@
+"use client";
+import Image from "next/image";
 import type React from "react";
 
 const ContactInner: React.FC = () => {
@@ -80,7 +82,12 @@ const ContactInner: React.FC = () => {
         >
           <div className='tw-mb-12 text-center'>
             <div className='d-flex align-items-center tw-gap-1 tw-mb-3 justify-content-center'>
-              <img src='assets/images/icon/star-icon2.png' alt='Image' />
+              <Image
+                width={27}
+                height={27}
+                src='/assets/images/icon/star-icon2.png'
+                alt='Image'
+              />
               <h5 className='fw-normal text-primary-600'>Get In Touch</h5>
             </div>
             <h3 className='fw-normal text-dark-600 cursor-big'>
@@ -180,7 +187,12 @@ const ContactInner: React.FC = () => {
               data-aos='fade-up'
               data-aos-duration={600}
             >
-              <img src='assets/images/icon/star-icon3.png' alt='Image' />
+              <Image
+                width={27}
+                height={27}
+                src='/assets/images/icon/star-icon3.png'
+                alt='Image'
+              />
               <h5 className='fw-normal text-base-two-600'>FAQ</h5>
             </div>
             <h2

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type React from "react";
 import { Link } from "react-router-dom";
 
@@ -15,8 +16,10 @@ const FooterFour: React.FC = () => {
               >
                 <div className='tw-mb-15'>
                   <Link to='/'>
-                    <img
-                      src='assets/images/logo/logo3.png'
+                    <Image
+                      width={306}
+                      height={40}
+                      src='/assets/images/logo/logo3.png'
                       alt='Image'
                       className='tw-mb-6'
                     />
@@ -172,32 +175,40 @@ const FooterFour: React.FC = () => {
                 <ul className='d-flex align-items-center tw-gap-5'>
                   <li>
                     <a href='https://www.facebook.com'>
-                      <img
-                        src='assets/images/icon/footer-facebook-logo.png'
+                      <Image
+                        width={48}
+                        height={50}
+                        src='/assets/images/icon/footer-facebook-logo.png'
                         alt='Image'
                       />
                     </a>
                   </li>
                   <li>
                     <a href='https://medium.com'>
-                      <img
-                        src='assets/images/icon/footer-medium-logo.png'
+                      <Image
+                        width={48}
+                        height={50}
+                        src='/assets/images/icon/footer-medium-logo.png'
                         alt='Image'
                       />
                     </a>
                   </li>
                   <li>
                     <a href='https://youtube.com'>
-                      <img
-                        src='assets/images/icon/footer-youtube-logo.png'
+                      <Image
+                        width={48}
+                        height={50}
+                        src='/assets/images/icon/footer-youtube-logo.png'
                         alt='Image'
                       />
                     </a>
                   </li>
                   <li>
                     <a href='https://x.com/i/flow/login'>
-                      <img
-                        src='assets/images/icon/footer-twitter-logo.png'
+                      <Image
+                        width={48}
+                        height={50}
+                        src='/assets/images/icon/footer-twitter-logo.png'
                         alt='Image'
                       />
                     </a>

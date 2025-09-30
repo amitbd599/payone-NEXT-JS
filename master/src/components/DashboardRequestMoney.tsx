@@ -1,5 +1,7 @@
+"use client";
 import type React from "react";
 import CountryDropdown from "../helper/CountryDropdown";
+import Image from "next/image";
 
 const DashboardRequestMoney: React.FC = () => {
   const handleSubmitPersonalDetails = (e: React.FormEvent<HTMLFormElement>) => {
@@ -11,14 +13,12 @@ const DashboardRequestMoney: React.FC = () => {
     const description = formData.get("description");
     const date = formData.get("date");
 
-
     // Production-safe: mark as intentionally unused
     void name;
     void email;
     void country;
     void description;
     void date;
-
   };
   return (
     <div className='flex-grow-1 position-relative z-1'>
@@ -337,7 +337,7 @@ const DashboardRequestMoney: React.FC = () => {
                     <p className='fw-normal tw-text-lg text-dark-500 max-w-282-px w-100 flex-wrap '>
                       Effortlessly request money from friends, family, or
                       clients anytime, anywhere. Secure, fast, and hassle-free
-                      transactions."
+                      transactions.
                     </p>
                   </div>
                 </div>
@@ -365,8 +365,10 @@ const DashboardRequestMoney: React.FC = () => {
               </div>
               <div className='bg-neutral-10 tw-px-8 tw-py-8 rounded-3'>
                 <span className='tw-mb-6 d-flex justify-content-center '>
-                  <img
-                    src='assets/images/icon/check-circle-icon1.png'
+                  <Image
+                    width={60}
+                    height={60}
+                    src='/assets/images/icon/check-circle-icon1.png'
                     alt='Image'
                   />
                 </span>
@@ -377,7 +379,7 @@ const DashboardRequestMoney: React.FC = () => {
                   </span>
                 </div>
                 <p className='fw-normal tw-text-lg text-dark-500 tw-mb-6 text-center'>
-                  You've Succesfully sent
+                  You&apos;ve Succesfully sent
                   <span className='fw-semibold'>$1000</span>
                   to
                   <span className='fw-semibold'>kenzi.@example.com</span>

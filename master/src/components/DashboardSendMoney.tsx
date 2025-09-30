@@ -1,3 +1,5 @@
+"use client";
+import Image from "next/image";
 import CountryDropdown from "../helper/CountryDropdown";
 
 const DashboardSendMoney: React.FC = () => {
@@ -350,8 +352,10 @@ const DashboardSendMoney: React.FC = () => {
               </div>
               <div className='bg-neutral-10 tw-px-8 tw-py-8 rounded-3'>
                 <span className='tw-mb-6 d-flex justify-content-center '>
-                  <img
-                    src='assets/images/icon/check-circle-icon1.png'
+                  <Image
+                    width={60}
+                    height={60}
+                    src='/assets/images/icon/check-circle-icon1.png'
                     alt='Image'
                   />
                 </span>
@@ -362,7 +366,7 @@ const DashboardSendMoney: React.FC = () => {
                   </span>
                 </div>
                 <p className='fw-normal tw-text-lg text-dark-500 tw-mb-6 text-center'>
-                  You've Succesfully sent
+                  You&apos;ve Succesfully sent
                   <span className='fw-semibold'>$1000</span>
                   to
                   <span className='fw-semibold'>kenzi.@example.com</span>

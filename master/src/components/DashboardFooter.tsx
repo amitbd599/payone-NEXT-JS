@@ -1,5 +1,5 @@
+import Link from "next/link";
 import type React from "react";
-import { Link } from "react-router-dom";
 
 const DashboardFooter: React.FC = () => {
   return (
@@ -13,7 +13,7 @@ const DashboardFooter: React.FC = () => {
           <ul className='d-flex align-items-center tw-gap-2 flex-wrap'>
             <li>
               <Link
-                to='https://www.facebook.com'
+                href='https://www.facebook.com'
                 className='w-11 h-11 bg-base-two-10 tw-text-xl text-dark-600 rounded-circle hover-bg-base-two-600 hover-text-white tw-duration-400 d-flex align-items-center justify-content-center'
               >
                 <i className='ph ph-facebook-logo' />
@@ -21,7 +21,7 @@ const DashboardFooter: React.FC = () => {
             </li>
             <li>
               <Link
-                to='https://www.instagram.com/accounts/login'
+                href='https://www.instagram.com/accounts/login'
                 className='w-11 h-11 bg-base-two-10 tw-text-xl text-dark-600 rounded-circle hover-bg-base-two-600 hover-text-white tw-duration-400 d-flex align-items-center justify-content-center'
               >
                 <i className='ph ph-instagram-logo' />
@@ -29,7 +29,7 @@ const DashboardFooter: React.FC = () => {
             </li>
             <li>
               <Link
-                to='https://twitter-cl.vercel.app/login'
+                href='https://twitter-cl.vercel.app/login'
                 className='w-11 h-11 bg-base-two-10 tw-text-xl text-dark-600 rounded-circle hover-bg-base-two-600 hover-text-white tw-duration-400 d-flex align-items-center justify-content-center'
               >
                 <i className='ph ph-twitter-logo' />
@@ -37,7 +37,7 @@ const DashboardFooter: React.FC = () => {
             </li>
             <li>
               <Link
-                to='https://www.linkedin.com'
+                href='https://www.linkedin.com'
                 className='w-11 h-11 bg-base-two-10 tw-text-xl text-dark-600 rounded-circle hover-bg-base-two-600 hover-text-white tw-duration-400 d-flex align-items-center justify-content-center'
               >
                 <i className='ph ph-linkedin-logo' />
@@ -45,10 +45,10 @@ const DashboardFooter: React.FC = () => {
             </li>
           </ul>
           <div className='d-flex align-items-center tw-gap-6 flex-wrap'>
-            <Link to='#' className='fw-normal tw-text-lg text-dark-500'>
+            <Link href='#' className='fw-normal tw-text-lg text-dark-500'>
               Privacy policy
             </Link>
-            <Link to='#' className='fw-normal tw-text-lg text-dark-500'>
+            <Link href='#' className='fw-normal tw-text-lg text-dark-500'>
               Terms of condition
             </Link>
           </div>

@@ -1,18 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export",
+  reactStrictMode: false,
   images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "nextjs.sasstech.webnextpro.com",
-        port: "",
-        pathname: "/**",
-      },
-    ],
-  },
-  compress: true,
-  experimental: {
-    serverActions: {},
+    unoptimized: true,
   },
 };
 

@@ -1,8 +1,10 @@
+"use client";
+import Image from "next/image";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 
 const DashboardHeader: React.FC = () => {
-   const [scroll, setScroll] = useState<boolean>(false);
+  const [scroll, setScroll] = useState<boolean>(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,7 +28,7 @@ const DashboardHeader: React.FC = () => {
     const formData = new FormData(e.currentTarget);
     const search = formData.get("search") as string; // cast to string
 
-     // Production-safe: mark as intentionally unused
+    // Production-safe: mark as intentionally unused
     void search;
   };
 
@@ -38,8 +40,13 @@ const DashboardHeader: React.FC = () => {
         <div className='container'>
           <div className='d-flex align-items-center tw-gap-6 justify-content-between'>
             <div className='d-flex align-items-center w-100 tw-gap-6 max-w-885-px'>
-              <Link to='/'>
-                <img src='assets/images/logo/logo2.png' alt='Image' />
+              <Link href='/'>
+                <Image
+                  width={171}
+                  height={40}
+                  src='/assets/images/logo/logo2.png'
+                  alt='Image'
+                />
               </Link>
               <form
                 onSubmit={handleSubmit}
@@ -104,8 +111,10 @@ const DashboardHeader: React.FC = () => {
                       </div>
                       <div className='tw-px-5 tw-py-5 max-h-270 overflow-y-auto scroll-sm'>
                         <div className='d-flex align-items-start tw-gap-2'>
-                          <img
-                            src='assets/images/thumbs/newsletter-img1.png'
+                          <Image
+                            width={60}
+                            height={60}
+                            src='/assets/images/thumbs/newsletter-img1.png'
                             alt='Image'
                             className='tw-w-12 tw-h-12 rounded-circle object-fit-cover'
                           />
@@ -172,8 +181,10 @@ const DashboardHeader: React.FC = () => {
                               {/* Three Dot Dropdown End */}
                             </div>
                             <div className='d-flex align-items-center tw-gap-2 tw-mt-2'>
-                              <img
-                                src='assets/images/icon/google-drive.png'
+                              <Image
+                                width={14}
+                                height={14}
+                                src='/assets/images/icon/google-drive.png'
                                 alt='Image'
                               />
                               <div className='d-flex align-items-center gap-2'>
@@ -205,8 +216,10 @@ const DashboardHeader: React.FC = () => {
                           </div>
                         </div>
                         <div className='d-flex align-items-start tw-gap-1'>
-                          <img
-                            src='assets/images/icon/notification-img2.png'
+                          <Image
+                            width={48}
+                            height={48}
+                            src='/assets/images/icon/notification-img2.png'
                             alt='Image'
                             className='tw-w-12 tw-h-12 rounded-circle object-fit-cover'
                           />
@@ -244,8 +257,10 @@ const DashboardHeader: React.FC = () => {
                   aria-expanded='false'
                 >
                   <span className='position-relative tw-w-15 tw-h-15 flex-shrink-0'>
-                    <img
-                      src='assets/images/thumbs/my-profile-img1.png'
+                    <Image
+                      width={60}
+                      height={60}
+                      src='/assets/images/thumbs/my-profile-img1.png'
                       alt='Image'
                       className=''
                     />
@@ -255,8 +270,10 @@ const DashboardHeader: React.FC = () => {
                   <div className='card border border-gray-100 tw-rounded-xl box-shadow-custom'>
                     <div className='card-body'>
                       <div className='d-flex align-items-center tw-gap-2 tw-mb-5 tw-pb-5 border-bottom border-gray-100'>
-                        <img
-                          src='assets/images/thumbs/my-profile-img1.png'
+                        <Image
+                          width={60}
+                          height={60}
+                          src='/assets/images/thumbs/my-profile-img1.png'
                           alt='Image'
                           className=' rounded-circle'
                         />
@@ -270,7 +287,7 @@ const DashboardHeader: React.FC = () => {
                       <ul className='tw-h-270-px overflow-y-auto scroll-sm pe-4'>
                         <li className='tw-mb-1'>
                           <Link
-                            to='/my-profile'
+                            href='/my-profile'
                             className='tw-py-3 tw-text-4 tw-px-5 hover-bg-gray-50 text-neutral-300 tw-rounded-lg d-flex align-items-center tw-gap-2 fw-semibold tw-text-4'
                           >
                             <span className='tw-text-2xl text-primary-600 d-flex'>
@@ -281,7 +298,7 @@ const DashboardHeader: React.FC = () => {
                         </li>
                         <li className='tw-mb-1'>
                           <Link
-                            to='/pricing-plan'
+                            href='/pricing-plan'
                             className='tw-py-3 tw-text-4 tw-px-5 hover-bg-gray-50 text-neutral-300 tw-rounded-lg d-flex align-items-center tw-gap-2 fw-semibold tw-text-4'
                           >
                             <span className='tw-text-2xl text-primary-600 d-flex'>
@@ -314,7 +331,7 @@ const DashboardHeader: React.FC = () => {
                         </li>
                         <li className='tw-pt-2 border-top border-gray-100'>
                           <Link
-                            to='/log-in'
+                            href='/log-in'
                             className='tw-py-3 tw-text-4 tw-px-5 hover-bg-danger-50 text-neutral-300 hover-text-danger-600 tw-duration-500 tw-rounded-md d-flex align-items-center tw-gap-2 fw-semibold tw-text-4'
                           >
                             <span className='tw-text-2xl text-danger-600 d-flex'>
@@ -329,31 +346,36 @@ const DashboardHeader: React.FC = () => {
                 </div>
               </div>
               {/* User Profile Start */}
-              {/* <button type="button">
-              <img src="assets/images/thumbs/my-profile-img1.png" alt="Image">
-          </button> */}
             </div>
           </div>
         </div>
       </div>
       <div className='tw-h-333-px bg-base-two-600 position-relative z-1'>
-        <img
-          src='assets/images/shape/my-profile-shape-1.png'
+        <Image
+          width={289}
+          height={247}
+          src='/assets/images/shape/my-profile-shape-1.png'
           alt='Image'
           className='position-absolute z-n1 tw-block-end-0 tw-start-0'
         />
-        <img
-          src='assets/images/shape/my-profile-shape-2.png'
+        <Image
+          width={289}
+          height={247}
+          src='/assets/images/shape/my-profile-shape-2.png'
           alt='Image'
           className='position-absolute z-n1 tw-block-end-0 tw-end-0'
         />
-        <img
-          src='assets/images/shape/circle-shape-img1.png'
+        <Image
+          width={55}
+          height={53}
+          src='/assets/images/shape/circle-shape-img1.png'
           alt='Image'
           className='position-absolute tw-start-100-px tw-block-start-100-px animation-rotation__two'
         />
-        <img
-          src='assets/images/shape/banner-two-shape5.png'
+        <Image
+          width={109}
+          height={62}
+          src='/assets/images/shape/banner-two-shape5.png'
           alt='Image'
           className='position-absolute tw-end-60-px tw-block-end-75-px animation-Updowm__two'
         />

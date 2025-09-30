@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -13,7 +14,12 @@ const HowItWorksTwo: React.FC = () => {
               data-aos='fade-up'
               data-aos-duration={600}
             >
-              <img src='assets/images/icon/star-icon2.png' alt='Image' />
+              <Image
+                width={27}
+                height={27}
+                src='/assets/images/icon/star-icon2.png'
+                alt='Image'
+              />
               <h5 className='fw-normal text-primary-600'>How it Works</h5>
             </div>
             <h2
@@ -49,8 +55,10 @@ const HowItWorksTwo: React.FC = () => {
         </div>
         <div className='row gy-4'>
           <div className='col-lg-5' data-aos='fade-up' data-aos-duration={600}>
-            <img
-              src='assets/images/thumbs/how-it-work-four-img1.png'
+            <Image
+              width={526}
+              height={504}
+              src='/assets/images/thumbs/how-it-work-four-img1.png'
               alt='Image'
               className='w-100 h-100'
             />

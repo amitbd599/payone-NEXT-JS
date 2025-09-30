@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type React from "react";
 import { Link } from "react-router-dom";
 
@@ -6,8 +7,10 @@ const Error: React.FC = () => {
     <section className='py-120 bg-neutral-10'>
       <div className='container'>
         <div className='max-w-610-px w-100 mx-auto'>
-          <img
-            src='assets/images/thumbs/go-to-back-img1.png'
+          <Image
+            width={586}
+            height={586}
+            src='/assets/images/thumbs/go-to-back-img1.png'
             alt='Image'
             className='tw-mb-15'
           />
@@ -16,8 +19,8 @@ const Error: React.FC = () => {
               Oops! Page Not Found{" "}
             </h2>
             <p className='fw-normal tw-text-lg text-dark-500 tw-mb-10'>
-              Sorry, we couldn't find the page you where looking for. We suggest
-              that you return to homepage.
+              Sorry, we couldn&apos;t find the page you where looking for. We
+              suggest that you return to homepage.
             </p>
             <div className='position-relative z-1 max-w-202-px w-100 mx-auto'>
               <Link

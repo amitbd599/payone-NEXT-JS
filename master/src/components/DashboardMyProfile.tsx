@@ -1,3 +1,5 @@
+"use client";
+import Image from "next/image";
 import type React from "react";
 
 const DashboardMyProfile: React.FC = () => {
@@ -12,7 +14,6 @@ const DashboardMyProfile: React.FC = () => {
     const postcode = formData.get("postcode");
     const country = formData.get("country");
 
-
     // Production-safe: mark as intentionally unused
     void firstName;
     void lastName;
@@ -25,7 +26,6 @@ const DashboardMyProfile: React.FC = () => {
   return (
     <div className='flex-grow-1 position-relative z-1'>
       <div className='bg-white tw-px-10 rounded-3 tw-py-8 w-100 tw-mb-6'>
-
         <div className='row gy-4'>
           <div className='col-lg-6'>
             <div className='bg-neutral-10 tw-pt-11 rounded-3 w-100 h-100'>
@@ -375,32 +375,40 @@ const DashboardMyProfile: React.FC = () => {
               <div className='row gy-4'>
                 <div className='col-xl-4 col-lg-6'>
                   <span>
-                    <img
-                      src='assets/images/thumbs/payment-methods-img1.png'
+                    <Image
+                      width={280}
+                      height={176}
+                      src='/assets/images/thumbs/payment-methods-img1.png'
                       alt='Image'
                     />
                   </span>
                 </div>
                 <div className='col-xl-4 col-lg-6'>
                   <span>
-                    <img
-                      src='assets/images/thumbs/payment-methods-img2.png'
+                    <Image
+                      width={280}
+                      height={176}
+                      src='/assets/images/thumbs/payment-methods-img2.png'
                       alt='Image'
                     />
                   </span>
                 </div>
                 <div className='col-xl-4 col-lg-6'>
                   <span>
-                    <img
-                      src='assets/images/thumbs/payment-methods-img3.png'
+                    <Image
+                      width={280}
+                      height={176}
+                      src='/assets/images/thumbs/payment-methods-img3.png'
                       alt='Image'
                     />
                   </span>
                 </div>
                 <div className='col-xl-4 col-lg-6'>
                   <span>
-                    <img
-                      src='assets/images/thumbs/payment-methods-img4.png'
+                    <Image
+                      width={280}
+                      height={176}
+                      src='/assets/images/thumbs/payment-methods-img4.png'
                       alt='Image'
                     />
                   </span>
@@ -426,7 +434,6 @@ const DashboardMyProfile: React.FC = () => {
             tabIndex={0}
           >
             <div className='bg-white tw-rounded-xl w-100 tw-px-15 tw-py-15 h-100'>
-
               <div className='tw-mb-15'>
                 <h4 className='fw-normal text-dark-600 tw-mb-3'>
                   Notifications
@@ -511,7 +518,7 @@ const DashboardMyProfile: React.FC = () => {
                       type='checkbox'
                       role='switch'
                       id='switchCheck_1'
-                 defaultChecked={false}
+                      defaultChecked={false}
                     />
                   </div>
                 </div>
@@ -521,7 +528,8 @@ const DashboardMyProfile: React.FC = () => {
                       Have a problem with a payment
                     </span>
                     <p className='fw-medium tw-text-4 text-dark-500'>
-                      Notify me via email if there's an issue with a payment.
+                      Notify me via email if there&apos;s an issue with a
+                      payment.
                     </p>
                   </div>
                   <div className='form-check form-switch'>
@@ -548,7 +556,7 @@ const DashboardMyProfile: React.FC = () => {
                       type='checkbox'
                       role='switch'
                       id='switchCheck_3'
-                   defaultChecked={false}
+                      defaultChecked={false}
                     />
                   </div>
                 </div>

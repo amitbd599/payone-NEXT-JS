@@ -95,7 +95,7 @@ const DashboardNotifications: React.FC = () => {
               Have a problem with a payment
             </span>
             <p className='fw-medium tw-text-4 text-dark-500'>
-              Notify me via email if there's an issue with a payment.
+              Notify me via email if there&apos;s an issue with a payment.
             </p>
           </div>
           <div className='form-check form-switch'>

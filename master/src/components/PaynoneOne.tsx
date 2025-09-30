@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type React from "react";
 
 const PaynoneOne: React.FC = () => {
@@ -47,8 +48,10 @@ const PaynoneOne: React.FC = () => {
               data-aos-duration={800}
             >
               <div className='max-w-246 text-center justify-content-center align-items-center mx-auto'>
-                <img
-                  src='assets/images/icon/payone-img2.png'
+                <Image
+                  width={78}
+                  height={78}
+                  src='/assets/images/icon/payone-img2.png'
                   alt='Image'
                   className='tw-text-80-px tw-mb-8'
                 />
@@ -69,8 +72,10 @@ const PaynoneOne: React.FC = () => {
               data-aos-duration={800}
             >
               <div className='max-w-246 text-center justify-content-center align-items-center mx-auto'>
-                <img
-                  src='assets/images/icon/payone-img1.png'
+                <Image
+                  width={80}
+                  height={80}
+                  src='/assets/images/icon/payone-img1.png'
                   alt='Image'
                   className='tw-text-80-px tw-mb-8'
                 />
@@ -108,8 +113,10 @@ const PaynoneOne: React.FC = () => {
               data-aos-duration={800}
             >
               <div className='max-w-246 text-center justify-content-center align-items-center mx-auto'>
-                <img
-                  src='assets/images/icon/payone-img3.png'
+                <Image
+                  width={80}
+                  height={80}
+                  src='/assets/images/icon/payone-img3.png'
                   alt='Image'
                   className='tw-text-80-px tw-mb-8'
                 />

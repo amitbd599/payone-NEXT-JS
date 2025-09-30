@@ -19,10 +19,10 @@ const HeaderTwo: React.FC = () => {
     {
       label: "BLOG",
       children: [
-        { label: "Blog Details", to: "/blog-details" },
         { label: "Blog Grid", to: "/blog-grid" },
         { label: "Blog List", to: "/blog-list" },
         { label: "Blog Standard", to: "/blog-standard" },
+        { label: "Blog Details", to: "/blog-details" },
       ],
     },
     {

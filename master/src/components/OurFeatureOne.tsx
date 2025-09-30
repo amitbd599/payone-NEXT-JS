@@ -51,7 +51,9 @@ const OurFeatureOne: React.FC = () => {
                 >
                   <span className='tw-w-72px tw-h-72-px border-base-two-600 d-flex align-items-center justify-content-center rounded-3 tw-mb-6'>
                     <span className='w-15 h-15 bg-base-two-10 rounded-3 d-flex align-items-center justify-content-center'>
-                      <img
+                      <Image
+                        width={40}
+                        height={40}
                         src='/assets/images/icon/our-feature-icon1.png'
                         alt='Image'
                       />
@@ -72,7 +74,9 @@ const OurFeatureOne: React.FC = () => {
                 >
                   <span className='tw-w-72px tw-h-72-px border-base-two-600 d-flex align-items-center justify-content-center rounded-3 tw-mb-6'>
                     <span className='w-15 h-15 bg-base-two-10 rounded-3 d-flex align-items-center justify-content-center'>
-                      <img
+                      <Image
+                        width={40}
+                        height={40}
                         src='/assets/images/icon/our-feature-icon2.png'
                         alt='Image'
                       />
@@ -89,7 +93,9 @@ const OurFeatureOne: React.FC = () => {
                 <div className='' data-aos='fade-up' data-aos-duration={1200}>
                   <span className='tw-w-72px tw-h-72-px border-base-two-600 d-flex align-items-center justify-content-center rounded-3 tw-mb-6'>
                     <span className='w-15 h-15 bg-base-two-10 rounded-3 d-flex align-items-center justify-content-center'>
-                      <img
+                      <Image
+                        width={40}
+                        height={40}
                         src='/assets/images/icon/our-feature-icon3.png'
                         alt='Image'
                       />
@@ -108,7 +114,9 @@ const OurFeatureOne: React.FC = () => {
             <div className='col-lg-7'>
               <div className='position-relative'>
                 <div>
-                  <img
+                  <Image
+                    width={746}
+                    height={705}
                     src='/assets/images/thumbs/our-feature-img1.png'
                     alt='Image'
                     data-aos='zoom-in'
@@ -121,7 +129,9 @@ const OurFeatureOne: React.FC = () => {
                   data-aos-duration={1000}
                 >
                   <div className='our-feature-card-three max-w-219 bg-warning-500 rounded-3 tw-px-6 tw-py-5 d-flex align-items-center tw-gap-4 position-absolute inset-inline-start-0 inset-block-start-0'>
-                    <img
+                    <Image
+                      width={54}
+                      height={54}
                       src='/assets/images/shape/our-feature-shape1.png'
                       alt='Image'
                       data-aos-duration={800}

@@ -1,6 +1,8 @@
+"use client";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import type { ReactNode } from "react";
-import { Link, useLocation } from "react-router-dom";
 
 interface DashboardProfileProps {
   children: ReactNode;
@@ -9,7 +11,7 @@ interface DashboardProfileProps {
 const DashboardProfileSection: React.FC<DashboardProfileProps> = ({
   children,
 }) => {
-  const { pathname } = useLocation();
+  const pathname = usePathname();
 
   const [active, setActive] = useState(false);
 
@@ -80,7 +82,7 @@ const DashboardProfileSection: React.FC<DashboardProfileProps> = ({
                   }`}
                 >
                   <Link
-                    to='/dashboard'
+                    href='/dashboard'
                     className='header-nav-submenu__link fw-normal tw-text-lg text-dark-600 d-flex align-items-center tw-gap-2 hover-text-white bg-neutral-10 tw-px-3 tw-py-3 rounded-3 hover-bg-base-two-600 tw-duration-400'
                   >
                     <span className='tw-text-6'>
@@ -95,7 +97,7 @@ const DashboardProfileSection: React.FC<DashboardProfileProps> = ({
                   } `}
                 >
                   <Link
-                    to='/transactions'
+                    href='/transactions'
                     className='header-nav-submenu__link fw-normal tw-text-lg text-dark-600 d-flex align-items-center tw-gap-2 hover-text-white bg-neutral-10 tw-px-3 tw-py-3 rounded-3 hover-bg-base-two-600 tw-duration-400'
                   >
                     <span className='tw-text-6'>
@@ -110,7 +112,7 @@ const DashboardProfileSection: React.FC<DashboardProfileProps> = ({
                   } `}
                 >
                   <Link
-                    to='/send-money'
+                    href='/send-money'
                     className='header-nav-submenu__link fw-normal tw-text-lg text-dark-600 d-flex align-items-center tw-gap-2 hover-text-white bg-neutral-10 tw-px-3 tw-py-3 rounded-3 hover-bg-base-two-600 tw-duration-400'
                   >
                     <span className='tw-text-6'>
@@ -125,7 +127,7 @@ const DashboardProfileSection: React.FC<DashboardProfileProps> = ({
                   } `}
                 >
                   <Link
-                    to='/request-money'
+                    href='/request-money'
                     className='header-nav-submenu__link fw-normal tw-text-lg text-dark-600 d-flex align-items-center tw-gap-2 hover-text-white bg-neutral-10 tw-px-3 tw-py-3 rounded-3 hover-bg-base-two-600 tw-duration-400'
                   >
                     <span className='tw-text-6'>
@@ -140,7 +142,7 @@ const DashboardProfileSection: React.FC<DashboardProfileProps> = ({
                   } `}
                 >
                   <Link
-                    to='/deposit-money'
+                    href='/deposit-money'
                     className='header-nav-submenu__link fw-normal tw-text-lg text-dark-600 d-flex align-items-center tw-gap-2 hover-text-white bg-neutral-10 tw-px-3 tw-py-3 rounded-3 hover-bg-base-two-600 tw-duration-400'
                   >
                     <span className='tw-text-6'>
@@ -155,7 +157,7 @@ const DashboardProfileSection: React.FC<DashboardProfileProps> = ({
                   } `}
                 >
                   <Link
-                    to='/withdraw-money'
+                    href='/withdraw-money'
                     className='header-nav-submenu__link fw-normal tw-text-lg text-dark-600 d-flex align-items-center tw-gap-2 hover-text-white bg-neutral-10 tw-px-3 tw-py-3 rounded-3 hover-bg-base-two-600 tw-duration-400'
                   >
                     <span className='tw-text-6'>
@@ -170,7 +172,7 @@ const DashboardProfileSection: React.FC<DashboardProfileProps> = ({
                   } `}
                 >
                   <Link
-                    to='/notifications'
+                    href='/notifications'
                     className='header-nav-submenu__link fw-normal tw-text-lg text-dark-600 d-flex align-items-center tw-gap-2 hover-text-white bg-neutral-10 tw-px-3 tw-py-3 rounded-3 hover-bg-base-two-600 tw-duration-400'
                   >
                     <span className='tw-text-6'>
@@ -186,7 +188,7 @@ const DashboardProfileSection: React.FC<DashboardProfileProps> = ({
                   } `}
                 >
                   <Link
-                    to='/my-profile'
+                    href='/my-profile'
                     className='header-nav-submenu__link fw-normal tw-text-lg text-dark-600 d-flex align-items-center tw-gap-2 hover-text-white bg-neutral-10 tw-px-3 tw-py-3 rounded-3 hover-bg-base-two-600 tw-duration-400'
                   >
                     <span className='tw-text-6'>
@@ -197,7 +199,7 @@ const DashboardProfileSection: React.FC<DashboardProfileProps> = ({
                 </li>
                 <li className='header-nav-submenu__item'>
                   <Link
-                    to='/log-in'
+                    href='/log-in'
                     className='header-nav-submenu__link fw-normal tw-text-lg text-dark-600 d-flex align-items-center tw-gap-2 hover-text-white bg-neutral-10 tw-px-3 tw-py-3 rounded-3 hover-bg-base-two-600 tw-duration-400'
                   >
                     <span className='tw-text-6'>
