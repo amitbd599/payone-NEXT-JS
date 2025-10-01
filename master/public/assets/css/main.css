@@ -10832,4 +10832,8 @@ button.show {
   margin-top: 10px;
 }
 
+.popup-overlay {
+  background-color: #00000098;
+}
+
 /*# sourceMappingURL=main.css.map */

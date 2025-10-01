@@ -1,8 +1,9 @@
 "use client";
 import CounterView from "@/helper/CounterView";
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import type React from "react";
-import Popup from "reactjs-popup";
+const Popup = dynamic(() => import("reactjs-popup"), { ssr: false });
 
 const JoinSectionOne: React.FC = () => {
   return (

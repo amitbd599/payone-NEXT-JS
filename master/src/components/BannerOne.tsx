@@ -1,11 +1,11 @@
 "use client";
-import Popup from "reactjs-popup";
 
-import Marquee from "react-fast-marquee";
 import type React from "react";
+import dynamic from "next/dynamic";
+import Marquee from "react-fast-marquee";
 import Image from "next/image";
 import CounterView from "@/helper/CounterView";
-
+const Popup = dynamic(() => import("reactjs-popup"), { ssr: false });
 const BannerOne: React.FC = () => {
   return (
     <>

@@ -95,7 +95,7 @@ const HeaderOne: React.FC = () => {
   return (
     <>
       <div className='overlay'></div>
-      <div className={`side-overlay ${mobileMenu && "active"}`}></div>
+      <div className={`side-overlay ${mobileMenu ? "active" : ""}`}></div>
       <header
         className={`header bg-base-two-600 transition-all ${
           scroll ? "fixed-header" : ""
@@ -207,7 +207,7 @@ const HeaderOne: React.FC = () => {
 
       <div
         className={`mobile-menu d-lg-none d-block scroll-sm position-fixed bg-base-two-600 tw-w-300-px tw-h-screen overflow-y-auto tw-p-6 tw-z-999 tw--translate-x-full tw-pb-68 ${
-          mobileMenu && "active"
+          mobileMenu ? "active" : ""
         }`}
       >
         <button

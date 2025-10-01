@@ -1,10 +1,12 @@
 "use client";
-import Popup from "reactjs-popup";
 
 import type React from "react";
 import Link from "next/link";
 import CounterView from "@/helper/CounterView";
 import Image from "next/image";
+import dynamic from "next/dynamic";
+
+const Popup = dynamic(() => import("reactjs-popup"), { ssr: false });
 
 const OurFeaturesTwo: React.FC = () => {
   return (
