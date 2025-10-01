@@ -1,11 +1,9 @@
-// import "bootstrap/dist/js/bootstrap.js";
-// import PhosphorIconsLoader from "../helper/PhosphorIconsLoader";
-// import RouteScrollToTop from "../helper/RouteScrollToTop";
 import { Wendy_One, Zen_Maru_Gothic } from "next/font/google";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./globals.css";
 import BootstrapInit from "@/helper/BootstrapInit";
+import RouteScrollToTop from "@/helper/RouteScrollToTop";
 
 const wendyOne = Wendy_One({
   subsets: ["latin"],
@@ -45,9 +43,7 @@ export default function RootLayout({
     >
       <body suppressHydrationWarning={true}>
         <BootstrapInit />
-        {/* <RouteScrollToTop /> */}
-        {/* <PhosphorIconsLoader /> */}
-
+        <RouteScrollToTop />
         {children}
       </body>
     </html>

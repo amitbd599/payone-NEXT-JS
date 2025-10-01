@@ -1,12 +1,13 @@
+"use client";
+import { usePathname } from "next/navigation";
 import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
 
 const RouteScrollToTop: React.FC = () => {
-  const location = useLocation();
+  const pathname = usePathname();
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [location]);
+  }, [pathname]);
 
   useEffect(() => {
     const progressPath = document.querySelector<SVGPathElement>(

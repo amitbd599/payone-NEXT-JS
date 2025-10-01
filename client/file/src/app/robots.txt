@@ -1,0 +1,10 @@
+export default function robots() {
+  return {
+    rules: {
+      userAgent: '*',
+      allow: '/',
+      disallow: '/private/',
+    },
+    sitemap: 'https://nextjs.payone.wowtheme7.com/sitemap.xml',
+  }
+}
