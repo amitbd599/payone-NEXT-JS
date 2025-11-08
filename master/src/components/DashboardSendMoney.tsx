@@ -1,28 +1,8 @@
-"use client";
 import Image from "next/image";
-import CountryDropdown from "../helper/CountryDropdown";
+import SendMoneyForm from "./client_form/SendMoneyForm";
+import SendMoneyConfirmations from "./client_form/SendMoneyConfirmations";
 
 const DashboardSendMoney: React.FC = () => {
-  const handleSubmitPersonalDetails = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault(); // Prevent page reload
-    const formData = new FormData(e.currentTarget);
-    const address = formData.get("address");
-    const send_amount = formData.get("send_amount");
-    const recipient_amount = formData.get("recipient_amount");
-
-    // Production-safe: mark as intentionally unused
-    void address;
-    void send_amount;
-    void recipient_amount;
-  };
-  const handleSubmitConfirmations = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault(); // Prevent page reload
-    const formData = new FormData(e.currentTarget);
-    const description = formData.get("description");
-
-    // Production-safe: mark as intentionally unused
-    void description;
-  };
   return (
     <div className='flex-grow-1 position-relative z-1'>
       <div className='bg-white tw-px-10 rounded-3 tw-py-8 w-100 tw-mb-6'>
@@ -171,94 +151,9 @@ const DashboardSendMoney: React.FC = () => {
                   Personal Details
                 </span>
                 <span className='bg-base-two-10 w-100 tw-h-px tw-mb-6 tw-mt-6' />
-                <form onSubmit={handleSubmitPersonalDetails}>
-                  <div className='tw-mb-6'>
-                    <div className='tw-mb-4'>
-                      <label
-                        htmlFor='Recipient'
-                        className='fw-normal tw-text-4 text-dark-600 tw-mb-3'
-                      >
-                        Recipient*
-                      </label>
-                      <input
-                        name='address'
-                        type='text'
-                        id='Recipient'
-                        placeholder='Your Address'
-                        className='fw-normal tw-text-4 text-dark-500 tw-py-3 tw-ps-4 tw-ps-1 border-neutral-05 border rounded-3 w-100 focus-visible-border-main-600'
-                      />
-                    </div>
 
-                    <div className='t-mb-4'>
-                      <label
-                        htmlFor='amount'
-                        className='fw-normal tw-text-4 text-dark-600 tw-mb-2'
-                      >
-                        You Send*
-                      </label>
-                      <div className='position-relative'>
-                        <input
-                          name='send_amount'
-                          placeholder='2.00.000'
-                          id='amount'
-                          className='tw-px-3 tw-py-3 w-100 fw-normal tw-text-4 text-dark-600 rounded-3 border-neutral-05 border focus-visible-border-main-600'
-                        />
-
-                        {/* CountryDropdown */}
-                        <CountryDropdown />
-                      </div>
-                    </div>
-                    <div className='t-mb-4'>
-                      <label
-                        htmlFor='Gets'
-                        className='fw-normal tw-text-4 text-dark-600 tw-mb-2'
-                      >
-                        Recipient Gets*
-                      </label>
-                      <div className='position-relative'>
-                        <input
-                          name='recipient_amount'
-                          placeholder='2.00.000'
-                          id='Gets'
-                          className='tw-px-3 tw-py-3 w-100 fw-normal tw-text-4 text-dark-600 rounded-3 border-neutral-05 border focus-visible-border-main-600'
-                        />
-                        {/* CountryDropdown */}
-                        <CountryDropdown />
-                      </div>
-                    </div>
-
-                    <p className='fw-normal tw-text-4 text-dark-500 text-center'>
-                      The current exchange rate is
-                      <span className='text-dark-700 fw-medium'>
-                        1 USD = 1.42030 AUD
-                      </span>
-                    </p>
-                  </div>
-                  <div className='d-flex align-items-center justify-content-between tw-gap-3 flex-wrap border-neutral-50  border-start-0 border-end-0 tw-py-4 tw-mb-6'>
-                    <span className='fw-normal tw-text-4 text-dark-500'>
-                      Total Fees
-                    </span>
-                    <span className='fw-semibold tw-text-4 text-dark-600'>
-                      7.21 USD
-                    </span>
-                  </div>
-                  <div className='d-flex align-items-center justify-content-between tw-gap-3 flex-wrap tw-mb-6'>
-                    <span className='fw-semibold tw-text-4 text-dark-600'>
-                      Total To Pay
-                    </span>
-                    <span className='fw-semibold tw-text-4 text-dark-600'>
-                      1,000.00 USD
-                    </span>
-                  </div>
-                  <div className='position-relative w-100 z-1 h-100'>
-                    <button
-                      type='submit'
-                      className='send-details-button text-center fw-semibold tw-text-lg text-white bg-base-two-600 rounded-3 border-two-px-solid w-100 tw-py-3'
-                    >
-                      COUNTINUE
-                    </button>
-                  </div>{" "}
-                </form>
+                {/* SendMoneyForm */}
+                <SendMoneyForm />
               </div>
             </div>
           </div>
@@ -284,58 +179,9 @@ const DashboardSendMoney: React.FC = () => {
                   Payment Description
                 </span>
                 <span className='bg-base-two-10 w-100 tw-h-px tw-mb-6 tw-mt-6' />
-                <form onSubmit={handleSubmitConfirmations}>
-                  <div className='tw-mb-6'>
-                    <div className='tw-mb-4'>
-                      <span className='fw-normal tw-text-4 text-dark-600 tw-mb-3'>
-                        Description*
-                      </span>
-                      <textarea
-                        name='description'
-                        placeholder='Payment Description'
-                        className='fw-normal tw-text-4 text-dark-500 tw-py-3 tw-ps-4 tw-pe-1 border-neutral-05 border rounded-3 w-100 focus-visible-border-main-600 tw-h-100-px'
-                        defaultValue={""}
-                      />
-                    </div>
-                  </div>
-                  <span className='border-neutral-50  border-start-0 border-end-0 tw-py-4 tw-mb-6 fw-semibold tw-text-lg text-dark-600 w-100 text-center'>
-                    Confirm Details
-                  </span>
-                  <div className='border-neutral-50  border-start-0 border-end-0 tw-py-4 tw-mb-6'>
-                    <div className='d-flex align-items-center justify-content-between tw-gap-3 flex-wrap tw-mb-4'>
-                      <span className='fw-normal tw-text-4 text-dark-500'>
-                        Send Amount
-                      </span>
-                      <span className='fw-semibold tw-text-4 text-dark-600'>
-                        1,000.00 USD
-                      </span>
-                    </div>
-                    <div className='d-flex align-items-center justify-content-between tw-gap-3 flex-wrap '>
-                      <span className='fw-normal tw-text-4 text-dark-500'>
-                        Total Fees
-                      </span>
-                      <span className='fw-semibold tw-text-4 text-dark-600'>
-                        2.34 USD
-                      </span>
-                    </div>
-                  </div>
-                  <div className='d-flex align-items-center justify-content-between tw-gap-3 flex-wrap tw-mb-6'>
-                    <span className='fw-semibold tw-text-4 text-dark-600'>
-                      Total To Pay
-                    </span>
-                    <span className='fw-semibold tw-text-4 text-dark-600'>
-                      1,000.00 USD
-                    </span>
-                  </div>
-                  <div className='position-relative w-100 z-1 h-100'>
-                    <button
-                      type='submit'
-                      className='send-details-button text-center fw-semibold tw-text-lg text-white bg-base-two-600 rounded-3 border-two-px-solid w-100 tw-py-3'
-                    >
-                      SEND MONEY
-                    </button>
-                  </div>
-                </form>
+
+                {/* SendMoneyConfirmations */}
+                <SendMoneyConfirmations />
               </div>
             </div>
           </div>

@@ -1,6 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 
 const HowItWorksTwo: React.FC = () => {
   const [active, setActive] = useState<number>(1);
@@ -45,7 +45,7 @@ const HowItWorksTwo: React.FC = () => {
               data-aos-duration={1000}
             >
               <Link
-                to='/log-in'
+                href='/log-in'
                 className='how-it-work-four__link text-dark-700 fw-semibold tw-text-lg bg-main-600 text-center tw-py-205 rounded-3 border-two-px-solid hover-text-dark-600 w-100'
               >
                 OPEN A FREE ACCOUNT
@@ -93,7 +93,7 @@ const HowItWorksTwo: React.FC = () => {
                     payments. Easy and secure sign-up process awaits.
                   </p>
                   <Link
-                    to='/about-us'
+                    href='/about-us'
                     className='fw-semibold tw-text-4 text-white bg-dark-600  tw-px-6 tw-py-3 tw-rounded-md w-100 text-center '
                   >
                     LEARN MORE
@@ -128,7 +128,7 @@ const HowItWorksTwo: React.FC = () => {
                     payments. Easy and secure sign-up process awaits.
                   </p>
                   <Link
-                    to='/about-us'
+                    href='/about-us'
                     className='fw-semibold tw-text-4 text-white bg-dark-600  tw-px-6 tw-py-3 tw-rounded-md w-100 text-center '
                   >
                     LEARN MORE
@@ -165,7 +165,7 @@ const HowItWorksTwo: React.FC = () => {
                     payments. Easy and secure sign-up process awaits.
                   </p>
                   <Link
-                    to='/about-us'
+                    href='/about-us'
                     className='fw-semibold tw-text-4 text-white bg-dark-600  tw-px-6 tw-py-3 tw-rounded-md w-100 text-center '
                   >
                     LEARN MORE
@@ -200,7 +200,7 @@ const HowItWorksTwo: React.FC = () => {
                     payments. Easy and secure sign-up process awaits.
                   </p>
                   <Link
-                    to='/about-us'
+                    href='/about-us'
                     className='fw-semibold tw-text-4 text-white bg-dark-600  tw-px-6 tw-py-3 tw-rounded-md w-100 text-center '
                   >
                     LEARN MORE
@@ -235,7 +235,7 @@ const HowItWorksTwo: React.FC = () => {
                     payments. Easy and secure sign-up process awaits.
                   </p>
                   <Link
-                    to='/about-us'
+                    href='/about-us'
                     className='fw-semibold tw-text-4 text-white bg-dark-600  tw-px-6 tw-py-3 tw-rounded-md w-100 text-center '
                   >
                     LEARN MORE
