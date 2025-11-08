@@ -1,4 +1,3 @@
-import type React from "react";
 import Marquee from "react-fast-marquee";
 import Image from "next/image";
 import CounterView from "@/helper/CounterView";

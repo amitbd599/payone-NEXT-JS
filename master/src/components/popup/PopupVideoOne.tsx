@@ -3,7 +3,7 @@
 import dynamic from "next/dynamic";
 
 const Popup = dynamic(() => import("reactjs-popup"), { ssr: false });
-const PopupVideoOne = () => {
+const PopupVideoOne: React.FC = () => {
   return (
     <Popup
       trigger={

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import type React from "react";
+
 import LoginForm from "./client_form/LoginForm";
 
 const LoginInInner: React.FC = () => {

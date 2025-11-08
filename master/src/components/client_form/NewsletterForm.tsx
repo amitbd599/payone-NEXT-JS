@@ -1,11 +1,11 @@
+"use client";
 const NewsletterForm: React.FC = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault(); // Prevent page reload
     const formData = new FormData(e.currentTarget);
     const email = formData.get("email");
 
-    // Production-safe: mark as intentionally unused
-    void email;
+    const data = { email };
   };
   return (
     <form onSubmit={handleSubmit} className='tw-mb-8 position-relative w-100'>

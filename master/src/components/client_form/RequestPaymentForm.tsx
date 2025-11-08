@@ -1,3 +1,4 @@
+"use client";
 import CountryDropdown from "@/helper/CountryDropdown";
 
 const RequestPaymentForm: React.FC = () => {
@@ -9,11 +10,7 @@ const RequestPaymentForm: React.FC = () => {
     const country = formData.get("country");
     const amount = formData.get("amount");
 
-    // Production-safe: mark as intentionally unused
-    void name;
-    void email;
-    void country;
-    void amount;
+    const data = { name, email, country, amount };
   };
   return (
     <form onSubmit={handleSubmit} className='tw-mb-6'>

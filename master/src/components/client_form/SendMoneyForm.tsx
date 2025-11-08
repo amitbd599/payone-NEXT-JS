@@ -1,3 +1,4 @@
+"use client";
 import CountryDropdown from "@/helper/CountryDropdown";
 
 const SendMoneyForm: React.FC = () => {
@@ -8,10 +9,7 @@ const SendMoneyForm: React.FC = () => {
     const send_amount = formData.get("send_amount");
     const recipient_amount = formData.get("recipient_amount");
 
-    // Production-safe: mark as intentionally unused
-    void address;
-    void send_amount;
-    void recipient_amount;
+    const data = { address, send_amount, recipient_amount };
   };
   return (
     <form onSubmit={handleSubmitPersonalDetails}>

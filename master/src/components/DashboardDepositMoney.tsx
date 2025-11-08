@@ -1,4 +1,3 @@
-import type React from "react";
 import Image from "next/image";
 import SubmitPayerOne from "./client_form/SubmitPayerOne";
 import SubmitPayerTwo from "./client_form/SubmitPayerTwo";

@@ -1,6 +1,5 @@
 import CounterView from "@/helper/CounterView";
 import Image from "next/image";
-import type React from "react";
 
 const OurFeatureOne: React.FC = () => {
   return (

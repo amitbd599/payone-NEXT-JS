@@ -1,29 +1,9 @@
-"use client";
 import Image from "next/image";
-import type React from "react";
+
+import ServicesDetailsForm from "./client_form/ServicesDetailsForm";
+import ServicesDetailsContactForm from "./client_form/ServicesDetailsContactForm";
 
 const ServicesDetailsInner: React.FC = () => {
-  const handleSubmitSearch = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault(); // Prevent page reload
-    const formData = new FormData(e.currentTarget);
-    const search = formData.get("search");
-
-    // Production-safe: mark as intentionally unused
-    void search;
-  };
-  const handleSubmitContact = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault(); // Prevent page reload
-    const formData = new FormData(e.currentTarget);
-    const name = formData.get("name");
-    const email = formData.get("email");
-    const message = formData.get("message");
-
-    // Production-safe: mark as intentionally unused
-    void name;
-    void email;
-    void message;
-  };
-
   return (
     <section className='py-140 bg-neutral-10 '>
       <div className='container'>
@@ -292,20 +272,8 @@ const ServicesDetailsInner: React.FC = () => {
                 <span className='bg-base-two-600 tw-w-1 tw-h-7' />
                 <h4 className='fw-normal text-dark-600 cursor-big'>Search</h4>
               </div>
-              <form onSubmit={handleSubmitSearch} className='position-relative'>
-                <input
-                  name='search'
-                  type='text'
-                  placeholder='Search'
-                  className='bg-base-two-10 tw-py-305 tw-px-3 tw-rounded-xl w-100 text-dark-500 border-neutral-10 border focus-visible-border-main-600'
-                />
-                <button
-                  type='submit'
-                  className='tw-text-xl tw-w-8 tw-h-8 tw-rounded-md text-white bg-base-two-600 position-absolute tw-end-0 top-50 translate-middle-y tw-me-205'
-                >
-                  <i className='ph ph-magnifying-glass' />
-                </button>
-              </form>
+              {/* ServicesDetailsForm */}
+              <ServicesDetailsForm />
             </div>
             <div
               className='bg-white tw-px-6 tw-py-6 tw-rounded-md tw-mb-6'
@@ -406,32 +374,8 @@ const ServicesDetailsInner: React.FC = () => {
                 </h4>
               </div>
               <div>
-                <form onSubmit={handleSubmitContact} className=''>
-                  <input
-                    name='name'
-                    type='text'
-                    placeholder='Name'
-                    className='tw-px-4 tw-py-3 text-dark-600 tw-text-4 bg-neutral-10 tw-rounded-md w-100 border-0 focus-visible-border-main-600 tw-mb-4'
-                  />
-                  <input
-                    name='email'
-                    type='text'
-                    placeholder='Email'
-                    className='tw-px-4 tw-py-3 text-dark-600 tw-text-4 bg-neutral-10 tw-rounded-md w-100 border-0 focus-visible-border-main-600 tw-mb-4'
-                  />
-                  <textarea
-                    name='message'
-                    placeholder='Your Message'
-                    className='tw-px-4 tw-py-3 text-dark-600 tw-text-4 bg-neutral-10 tw-rounded-md w-100 border-0 focus-visible-border-main-600 tw-h-120-px'
-                    defaultValue={""}
-                  />
-                  <button
-                    type='submit'
-                    className='w-100 tw-px-4 tw-py-3 bg-base-two-600 tw-rounded-md text-white fw-normal tw-text-4 tw-mt-4'
-                  >
-                    Contact Us
-                  </button>
-                </form>
+                {/* ServicesDetailsContactForm */}
+                <ServicesDetailsContactForm />
               </div>
             </div>
           </div>

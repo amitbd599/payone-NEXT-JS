@@ -1,3 +1,4 @@
+"use client";
 const SubmitPayerTwo: React.FC = () => {
   const handleSubmitPayer = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault(); // Prevent page reload

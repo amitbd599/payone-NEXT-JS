@@ -1,3 +1,4 @@
+"use client";
 import CountryDropdown from "@/helper/CountryDropdown";
 
 const SubmitPayerOne: React.FC = () => {

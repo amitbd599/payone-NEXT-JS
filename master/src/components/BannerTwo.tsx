@@ -1,5 +1,5 @@
 "use client";
-import type React from "react";
+
 import CountryDropdown from "../helper/CountryDropdown";
 import Image from "next/image";
 import Link from "next/link";

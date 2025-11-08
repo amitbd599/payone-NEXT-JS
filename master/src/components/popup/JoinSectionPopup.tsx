@@ -1,3 +1,4 @@
+"use client";
 import dynamic from "next/dynamic";
 
 const Popup = dynamic(() => import("reactjs-popup"), { ssr: false });

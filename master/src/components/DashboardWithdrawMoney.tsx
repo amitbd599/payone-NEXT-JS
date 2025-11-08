@@ -1,4 +1,3 @@
-import type React from "react";
 import Image from "next/image";
 import WithdrawMoney from "./client_form/WithdrawMoney";
 

@@ -1,3 +1,5 @@
+"use client";
+
 const ContactForm: React.FC = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault(); // Prevent page reload

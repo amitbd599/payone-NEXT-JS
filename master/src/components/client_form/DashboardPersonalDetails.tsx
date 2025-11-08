@@ -1,3 +1,5 @@
+"use client";
+
 import CountryDropdown from "@/helper/CountryDropdown";
 
 const DashboardPersonalDetails: React.FC = () => {
@@ -10,12 +12,7 @@ const DashboardPersonalDetails: React.FC = () => {
     const description = formData.get("description");
     const date = formData.get("date");
 
-    // Production-safe: mark as intentionally unused
-    void name;
-    void email;
-    void country;
-    void description;
-    void date;
+    const data = { name, email, country, description, date };
   };
   return (
     <form onSubmit={handleSubmitPersonalDetails} className=''>

@@ -1,4 +1,3 @@
-import type React from "react";
 import CountryDropdown from "../helper/CountryDropdown";
 import RequestPaymentForm from "./client_form/RequestPaymentForm";
 import RequestPaymentFormTwo from "./client_form/RequestPaymentFormTwo";

@@ -1,5 +1,4 @@
 import Link from "next/link";
-import type React from "react";
 
 const TopHeaderOne: React.FC = () => {
   return (

@@ -1,4 +1,3 @@
-import type React from "react";
 import Link from "next/link";
 import CounterView from "@/helper/CounterView";
 import Image from "next/image";

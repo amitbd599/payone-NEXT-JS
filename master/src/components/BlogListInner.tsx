@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import type React from "react";
+
 import BlogSearchOne from "./client_form/BlogSearchOne";
 
 const BlogListInner: React.FC = () => {

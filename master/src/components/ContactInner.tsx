@@ -1,5 +1,5 @@
 import Image from "next/image";
-import type React from "react";
+
 import ContactForm from "./client_form/ContactForm";
 
 const ContactInner: React.FC = () => {

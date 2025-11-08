@@ -1,10 +1,7 @@
-import type React from "react";
-
 const DashboardTransactions: React.FC = () => {
   return (
     <div className='flex-grow-1 position-relative z-1'>
       <div className='bg-white tw-px-10 rounded-3 tw-py-8 w-100 tw-mb-6'>
-
         <div className='row gy-4'>
           <div className='col-lg-6'>
             <div className='bg-neutral-10 tw-pt-11 rounded-3 w-100 h-100'>

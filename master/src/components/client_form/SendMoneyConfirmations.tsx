@@ -1,11 +1,10 @@
+"use client";
 const SendMoneyConfirmations: React.FC = () => {
   const handleSubmitConfirmations = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault(); // Prevent page reload
     const formData = new FormData(e.currentTarget);
     const description = formData.get("description");
-
-    // Production-safe: mark as intentionally unused
-    void description;
+    const data = { description };
   };
   return (
     <form onSubmit={handleSubmitConfirmations}>

@@ -2,15 +2,16 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const LoginForm: React.FC = () => {
+const SignUpForm: React.FC = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault(); // Prevent page reload
     const formData = new FormData(e.currentTarget);
     const email = formData.get("email");
+    const firstName = formData.get("firstName");
     const password = formData.get("password");
-    const rememberMe = formData.get("rememberMe");
+    const terms = formData.get("terms");
 
-    const data = { email, password, rememberMe };
+    const data = { email, firstName, password, terms };
   };
   return (
     <form onSubmit={handleSubmit}>
@@ -29,10 +30,25 @@ const LoginForm: React.FC = () => {
         </span>
       </a>
       <div className='tw-mb-6 flex-wrap border-before position-relative text-center z-1'>
-        <span className='fw-semibold text-dark-500 tw-text-4 bg-white tw-px-4'>
+        <span className='fw-normal text-dark-500 tw-text-4 bg-white tw-px-4'>
           Or sign up with
         </span>
         <span className='position-absolute w-100 border-bottom border-neutral-50 tw-start-0 top-50 translate-middle-y z-n1' />
+      </div>
+      <div className='tw-mb-6'>
+        <label
+          htmlFor='name'
+          className='fw-semibold tw-text-4 text-primary-50 tw-mb-3'
+        >
+          First Name*
+        </label>
+        <input
+          name='firstName'
+          type='text'
+          id='name'
+          placeholder='Your Name'
+          className='fw-semibold tw-text-4 text-dark-500 tw-px-4 tw-py-3 border-neutral-05 border rounded-3 w-100 focus-visible-border-main-600'
+        />
       </div>
       <div className='tw-mb-6'>
         <label
@@ -73,7 +89,7 @@ const LoginForm: React.FC = () => {
       <div className='d-flex align-items-center justify-content-between tw-gap-3 flex-wrap tw-mb-8'>
         <div className='form-check'>
           <input
-            name='rememberMe'
+            name='terms'
             className='form-check-input'
             type='checkbox'
             id='defaultCheck1'
@@ -82,31 +98,24 @@ const LoginForm: React.FC = () => {
             className='form-check-label fw-semibold'
             htmlFor='defaultCheck1'
           >
-            Remember me
+            I agree with this terms and conditions
           </label>
         </div>
-        <a
-          href='#'
-          className='fw-semibold tw-text-4 text-primary-600 hover-underline'
-        >
-          Forgot Password?
-        </a>
       </div>
       <button
         type='submit'
         className='text-white bg-base-two-600 w-100 tw-py-3 rounded-3 text-center tw-mb-3'
       >
-        Sign In
+        Sign Up
       </button>
       <span className='fw-semibold tw-text-4 text-primary-50 text-center justify-content-center d-flex'>
         Don&apos;t have an account?
-        <Link href='/sign-up' className='fw-semibold text-primary-600'>
-          {" "}
-          Sign up
+        <Link href='/log-in' className='fw-semibold text-primary-600'>
+          &nbsp;Log In
         </Link>
       </span>
     </form>
   );
 };
 
-export default LoginForm;
+export default SignUpForm;

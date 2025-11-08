@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import type React from "react";
+
 import DashboardProfileForm from "./client_form/DashboardProfileForm";
 
 const DashboardMyProfile: React.FC = () => {

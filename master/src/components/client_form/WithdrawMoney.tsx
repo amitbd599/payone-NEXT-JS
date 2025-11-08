@@ -1,3 +1,4 @@
+"use client";
 import CountryDropdown from "@/helper/CountryDropdown";
 
 const WithdrawMoney: React.FC = () => {
@@ -5,9 +6,7 @@ const WithdrawMoney: React.FC = () => {
     e.preventDefault(); // Prevent page reload
     const formData = new FormData(e.currentTarget);
     const amount = formData.get("amount");
-
-    // Production-safe: mark as intentionally unused
-    void amount;
+    const data = { amount };
   };
   return (
     <form onSubmit={handleSubmitPayerDetails}>

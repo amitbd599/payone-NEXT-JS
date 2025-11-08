@@ -1,6 +1,6 @@
 import CounterView from "@/helper/CounterView";
 import Image from "next/image";
-import type React from "react";
+
 import JoinSectionPopup from "./popup/JoinSectionPopup";
 
 const JoinSectionOne: React.FC = () => {
