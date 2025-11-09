@@ -1,5 +1,3 @@
-import type React from "react";
-
 const TopHeaderTwo: React.FC = () => {
   return (
     <div className='bg-warning-500 py-3 z-1'>

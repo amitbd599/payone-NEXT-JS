@@ -1,5 +1,4 @@
 import Image from "next/image";
-import type React from "react";
 
 const PaymentSolutionOne: React.FC = () => {
   return (

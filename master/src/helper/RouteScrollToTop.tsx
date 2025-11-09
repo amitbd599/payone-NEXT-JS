@@ -1,19 +1,21 @@
 "use client";
 import { usePathname } from "next/navigation";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 const RouteScrollToTop: React.FC = () => {
   const pathname = usePathname();
+  const progressWrapRef = useRef<HTMLButtonElement | null>(null);
+  const progressPathRef = useRef<SVGPathElement | null>(null);
 
+  // Scroll to top on route change
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
 
   useEffect(() => {
-    const progressPath = document.querySelector<SVGPathElement>(
-      ".progress-wrap path"
-    );
-    if (!progressPath) return;
+    const progressPath = progressPathRef.current;
+    const wrap = progressWrapRef.current;
+    if (!progressPath || !wrap) return;
 
     const pathLength = progressPath.getTotalLength();
 
@@ -32,39 +34,35 @@ const RouteScrollToTop: React.FC = () => {
       progressPath.style.strokeDashoffset = `${progress}`;
     };
 
-    updateProgress();
-    window.addEventListener("scroll", updateProgress);
-
     const handleScroll = () => {
-      const wrap = document.querySelector<HTMLButtonElement>(".progress-wrap");
-      if (!wrap) return;
-
       if (window.scrollY > 50) {
         wrap.classList.add("active-progress");
       } else {
         wrap.classList.remove("active-progress");
       }
+      updateProgress();
     };
-
-    window.addEventListener("scroll", handleScroll);
 
     const handleClick = (event: MouseEvent) => {
       event.preventDefault();
       window.scrollTo({ top: 0, behavior: "smooth" });
     };
 
-    const wrap = document.querySelector<HTMLButtonElement>(".progress-wrap");
-    wrap?.addEventListener("click", handleClick);
+    window.addEventListener("scroll", handleScroll);
+    wrap.addEventListener("click", handleClick);
+
+    // Initialize once
+    updateProgress();
 
     return () => {
-      window.removeEventListener("scroll", updateProgress);
       window.removeEventListener("scroll", handleScroll);
-      wrap?.removeEventListener("click", handleClick);
+      wrap.removeEventListener("click", handleClick);
     };
   }, []);
 
   return (
     <button
+      ref={progressWrapRef}
       className='progress-wrap'
       aria-label='scroll indicator'
       title='back to top'
@@ -76,7 +74,10 @@ const RouteScrollToTop: React.FC = () => {
         height='100%'
         viewBox='-1 -1 102 102'
       >
-        <path d='M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98' />
+        <path
+          ref={progressPathRef}
+          d='M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98'
+        />
       </svg>
     </button>
   );

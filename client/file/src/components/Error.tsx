@@ -1,6 +1,5 @@
 import Image from "next/image";
-import type React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const Error: React.FC = () => {
   return (
@@ -24,7 +23,7 @@ const Error: React.FC = () => {
             </p>
             <div className='position-relative z-1 max-w-202-px w-100 mx-auto'>
               <Link
-                to='/contact-us'
+                href='/contact-us'
                 className='go-back-link tw-px-5 tw-py-3 bg-main-600 tw-rounded-md border-two-px-solid text-dark-700 fw-semibold tw-text-lg '
               >
                 GO BACK TO HOME

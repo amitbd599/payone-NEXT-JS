@@ -1,5 +1,3 @@
-import type React from "react";
-
 const DashboardProfileCompleteness: React.FC = () => {
   return (
     <div className='flex-grow-1 position-relative z-1'>

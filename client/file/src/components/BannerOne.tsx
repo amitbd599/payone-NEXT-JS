@@ -1,11 +1,8 @@
-"use client";
-
-import type React from "react";
-import dynamic from "next/dynamic";
 import Marquee from "react-fast-marquee";
 import Image from "next/image";
 import CounterView from "@/helper/CounterView";
-const Popup = dynamic(() => import("reactjs-popup"), { ssr: false });
+import PopupVideoOne from "@/components/popup/PopupVideoOne";
+
 const BannerOne: React.FC = () => {
   return (
     <>
@@ -88,26 +85,8 @@ const BannerOne: React.FC = () => {
                         WATCH VIDEO
                       </span>
                       <div className='position-relative'>
-                        <Popup
-                          trigger={
-                            <span className='play-button bg-light-animation tw-w-13 tw-h-13 d-inline-flex justify-content-center align-items-center bg-white text-base-two-600 hover-text-base-two-600 rounded-circle tw-text-xl position-absolute tw-start-50 tw--translate-middle top-50 z-1'>
-                              <i className='ph-fill ph-play' />
-                            </span>
-                          }
-                          modal
-                        >
-                          <div>
-                            <iframe
-                              width='560'
-                              height='315'
-                              src='https://www.youtube.com/embed/_qZI6i21jB4?si=B3DKJleTi_2wA48l'
-                              title='YouTube video player'
-                              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-                              referrerPolicy='strict-origin-when-cross-origin'
-                              allowFullScreen
-                            ></iframe>
-                          </div>
-                        </Popup>
+                        {/* PopupVideoOne */}
+                        <PopupVideoOne />
                       </div>
                     </div>
                   </div>

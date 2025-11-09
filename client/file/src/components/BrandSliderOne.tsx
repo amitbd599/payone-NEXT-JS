@@ -1,5 +1,5 @@
 import Image from "next/image";
-import type React from "react";
+
 import Marquee from "react-fast-marquee";
 
 const BrandSliderOne: React.FC = () => {

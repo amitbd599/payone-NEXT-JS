@@ -1,7 +1,6 @@
 import CounterView from "@/helper/CounterView";
 import Image from "next/image";
 import Link from "next/link";
-import type React from "react";
 
 const BannerFour: React.FC = () => {
   return (

@@ -16,21 +16,22 @@ const CountryDropdown: React.FC = () => {
     { label: "PRANCE", flag: "/assets/images/flag/prance.png" },
   ];
 
-  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [isOpen, setIsOpen] = useState(false);
   const [selected, setSelected] = useState<Option>(options[0]);
   const dropdownRef = useRef<HTMLDivElement | null>(null);
 
-  const toggleDropdown = () => {
-    setIsOpen((prev) => !prev);
-  };
+  // ✅ Toggle dropdown safely
+  const toggleDropdown = () => setIsOpen((prev) => !prev);
 
   const handleSelect = (option: Option) => {
     setSelected(option);
     setIsOpen(false);
   };
 
-  // Click outside to close dropdown
+  // ✅ React-safe outside click handler
   useEffect(() => {
+    if (!isOpen) return;
+
     const handleClickOutside = (event: MouseEvent) => {
       if (
         dropdownRef.current &&
@@ -40,9 +41,10 @@ const CountryDropdown: React.FC = () => {
       }
     };
 
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
+    // ✅ Attach only when open
+    window.addEventListener("mousedown", handleClickOutside);
+    return () => window.removeEventListener("mousedown", handleClickOutside);
+  }, [isOpen]);
 
   return (
     <div className='select-dropdown-wrapper tw-ms-2 tw-ml-2' ref={dropdownRef}>
@@ -72,7 +74,6 @@ const CountryDropdown: React.FC = () => {
           <i className='ph-bold ph-caret-down' />
         </span>
       </button>
-
       <ul
         className={`select-dropdown bg-white tw-p-2 tw-rounded-md position-absolute top-100 tw-end-0 tw-z-99 min-w-max tw-mt-2 tw-duration-200 tw-max-h-400-px overflow-y-auto shadow ${
           isOpen ? "" : "invisible opacity-0"

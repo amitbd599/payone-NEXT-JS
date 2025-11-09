@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import FooterFourSubscribe from "./client_form/FooterFourSubscribe";
 
 const FooterFour: React.FC = () => {
   return (
@@ -155,22 +156,10 @@ const FooterFour: React.FC = () => {
                 <h4 className='fw-normal text-white tw-mb-10 cursor-big'>
                   Subscribe Now
                 </h4>
-                <form
-                  action='#'
-                  className='d-flex align-items-center tw-gap-3 tw-mb-15'
-                >
-                  <input
-                    type='email'
-                    placeholder='Your Email'
-                    className='text-neutral-05 tw-px-4 tw-py-305 bg-transparent border-dark-500 border tw-rounded-xl w-100 focus-visible-border-main-600'
-                  />
-                  <button
-                    type='submit'
-                    className='tw-w-13 tw-h-13 bg-main-600 tw-rounded-xl text-dark-600 tw-text-2xl d-flex align-items-center justify-content-center flex-shrink-0'
-                  >
-                    <i className='ph ph-paper-plane-tilt' />
-                  </button>
-                </form>
+
+                {/* FooterFourSubscribe */}
+                <FooterFourSubscribe />
+
                 <ul className='d-flex align-items-center tw-gap-5'>
                   <li>
                     <a href='https://www.facebook.com'>

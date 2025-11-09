@@ -1,5 +1,3 @@
-import type React from "react";
-
 const DashboardNotifications: React.FC = () => {
   return (
     <div className='bg-white tw-rounded-xl w-100 tw-px-15 tw-py-15 h-100 position-relative z-1'>

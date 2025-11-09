@@ -1,29 +1,9 @@
-"use client";
-import type React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import BlogDetailsSearch from "./client_form/BlogDetailsSearch";
+import BlogDetailsReviewForm from "./client_form/BlogDetailsReviewForm";
 
 const BlogDetailsInner: React.FC = () => {
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault(); // Prevent page reload
-    const formData = new FormData(e.currentTarget);
-    const name = formData.get("name");
-    const email = formData.get("email");
-    const message = formData.get("message");
-
-    // Production-safe: mark as intentionally unused
-    void name;
-    void email;
-    void message;
-  };
-  const handleSubmit_2 = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault(); // Prevent page reload
-    const formData = new FormData(e.currentTarget);
-    const name = formData.get("name");
-
-    // Production-safe: mark as intentionally unused
-    void name;
-  };
   return (
     <section className='py-140 bg-neutral-10 z-1 overflow-hidden'>
       <div className='container'>
@@ -358,69 +338,8 @@ const BlogDetailsInner: React.FC = () => {
                 >
                   Submit Your Reviews
                 </h5>
-                <form onSubmit={handleSubmit} className='tw-mb-8'>
-                  <div className='row gy-4'>
-                    <div className='col-lg-6'>
-                      <div data-aos='fade-up' data-aos-duration={800}>
-                        <label
-                          htmlFor='name'
-                          className='fw-normal tw-text-lg text-dark-600 tw-mb-3'
-                        >
-                          Your Name*
-                        </label>
-                        <input
-                          name='name'
-                          type='text'
-                          id='name'
-                          placeholder='Enter your name'
-                          className='fw-normal tw-text-4 text-dark-500 tw-px-4 tw-py-4 bg-white rounded-pill w-100 border-neutral-50 border focus-visible-border-main-600'
-                        />
-                      </div>
-                    </div>
-                    <div className='col-lg-6'>
-                      <div data-aos='fade-up' data-aos-duration={1000}>
-                        <label
-                          htmlFor='email'
-                          className='fw-normal tw-text-lg text-dark-600 tw-mb-3'
-                        >
-                          Email Address*
-                        </label>
-                        <input
-                          name='email'
-                          type='text'
-                          id='email'
-                          placeholder='Enter email address'
-                          className='fw-normal tw-text-4 text-dark-500 tw-px-4 tw-py-4 bg-white rounded-pill w-100 border-neutral-50 border focus-visible-border-main-600'
-                        />
-                      </div>
-                    </div>
-                    <div className='col-12'>
-                      <label
-                        htmlFor='message'
-                        className='fw-normal tw-text-lg text-dark-600 tw-mb-3'
-                      >
-                        Write your comment *
-                      </label>
-                      <textarea
-                        name='message'
-                        placeholder='Write your comment'
-                        id='message'
-                        className='tw-px-6 tw-py-4 w-100 border-neutral-50 border tw-rounded-xl tw-h-200-px focus-visible-border-main-600'
-                        defaultValue={""}
-                      />
-                    </div>
-                    <div className='col-12'>
-                      <button
-                        type='submit'
-                        className='tw-px-5 tw-py-4 rounded-pill bg-base-two-600 text-white w-100 fw-semibold tw-text-lg '
-                        data-aos='fade-up'
-                        data-aos-duration={800}
-                      >
-                        Submit Review
-                      </button>
-                    </div>
-                  </div>
-                </form>
+                {/* BlogDetailsReviewForm */}
+                <BlogDetailsReviewForm />
               </div>
             </div>
           </div>
@@ -434,20 +353,8 @@ const BlogDetailsInner: React.FC = () => {
                 <span className='bg-base-two-600 tw-w-1 tw-h-7' />
                 <h4 className='fw-normal text-dark-600 cursor-big'>Search</h4>
               </div>
-              <form onSubmit={handleSubmit_2} className='position-relative'>
-                <input
-                  name='name'
-                  type='text'
-                  placeholder='Search'
-                  className='bg-base-two-10 tw-py-305 tw-px-3 tw-rounded-xl w-100 text-dark-500 border-neutral-10 border focus-visible-border-main-600'
-                />
-                <button
-                  type='submit'
-                  className='tw-text-xl tw-w-8 tw-h-8 tw-rounded-md text-white bg-base-two-600 position-absolute tw-end-0 top-50 translate-middle-y tw-me-205'
-                >
-                  <i className='ph ph-magnifying-glass' />
-                </button>
-              </form>
+              {/* BlogDetailsSearch */}
+              <BlogDetailsSearch />
             </div>
             <div
               className='bg-white tw-px-6 tw-py-6 tw-rounded-md tw-mb-6'

@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "./globals.css";
 import BootstrapInit from "@/helper/BootstrapInit";
 import RouteScrollToTop from "@/helper/RouteScrollToTop";
+import ErrorBoundary from "@/helper/ErrorBoundary";
 
 const wendyOne = Wendy_One({
   subsets: ["latin"],
@@ -42,8 +43,10 @@ export default function RootLayout({
       className={`${wendyOne.variable} ${zenMaruGothic.variable}`}
     >
       <body suppressHydrationWarning={true}>
-        <BootstrapInit />
-        <RouteScrollToTop />
+        <ErrorBoundary>
+          <BootstrapInit />
+          <RouteScrollToTop />
+        </ErrorBoundary>
 
         {children}
       </body>
