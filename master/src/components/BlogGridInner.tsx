@@ -1,8 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-
-import BlogSearchOne from "./client_form/BlogSearchOne";
-
 const BlogGridInner: React.FC = () => {
   return (
     <section className='py-140 bg-neutral-10 z-1 overflow-hidden'>
@@ -255,8 +252,17 @@ const BlogGridInner: React.FC = () => {
                 <h4 className='fw-normal text-dark-600 cursor-big'>Search</h4>
               </div>
 
-              {/* BlogSearchOne */}
-              <BlogSearchOne />
+              <div className='position-relative'>
+                <input
+                  name='search'
+                  type='text'
+                  placeholder='Search'
+                  className='bg-base-two-10 tw-py-305 tw-px-3 tw-rounded-xl w-100 text-dark-500 border-neutral-10 border focus-visible-border-main-600'
+                />
+                <button className='tw-text-xl tw-w-8 tw-h-8 tw-rounded-md text-white bg-base-two-600 position-absolute tw-end-0 top-50 translate-middle-y tw-me-205'>
+                  <i className='ph ph-magnifying-glass' />
+                </button>
+              </div>
             </div>
             <div
               className='bg-white tw-px-6 tw-py-6 tw-rounded-md tw-mb-6'

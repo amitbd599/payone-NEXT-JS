@@ -2,7 +2,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import DashboardSearch from "./client_form/DashboardSearch";
 
 const DashboardHeader: React.FC = () => {
   const [scroll, setScroll] = useState<boolean>(false);
@@ -41,8 +40,17 @@ const DashboardHeader: React.FC = () => {
                 />
               </Link>
 
-              {/* DashboardSearch */}
-              <DashboardSearch />
+              <div className='position-relative max-w-664px w-100 d-lg-block d-none '>
+                <input
+                  name='search'
+                  type='text'
+                  placeholder='Search'
+                  className='tw-pe-10 tw-ps-6 tw-py-4 bg-neutral-10 w-100 focus-visible-border-main-600 border-0 tw-text-4 text-dark-500 fw-normal rounded-pill'
+                />
+                <button className='tw-text-6 text-dark-600 position-absolute tw-end-1 tw-block-start-50 top-50 translate-middle'>
+                  <i className='ph ph-magnifying-glass' />
+                </button>
+              </div>
             </div>
             <div className='d-flex align-items-center tw-gap-6 '>
               <select className='fw-semibold tw-text-4 text-dark-600 border-0 focus-border-none d-sm-block d-none'>
