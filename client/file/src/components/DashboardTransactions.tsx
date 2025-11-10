@@ -1,5 +1,3 @@
-import DashboardTransactionsForm from "./client_form/DashboardTransactionsForm";
-
 const DashboardTransactions: React.FC = () => {
   return (
     <div className='flex-grow-1 position-relative z-1'>
@@ -71,8 +69,13 @@ const DashboardTransactions: React.FC = () => {
       <div className='bg-white tw-px-8 tw-py-8 rounded-3 tw-mb-6'>
         <h4 className='fw-normal text-dark-600'>Transactions</h4>
         <div>
-          {/* DashboardTransactionsForm */}
-          <DashboardTransactionsForm />
+          <div>
+            <input
+              name='date'
+              type='date'
+              className='tw-px-3 tw-py-3 bg-neutral-10 rounded-3 border-0 max-w-500-px w-100 fw-normal tw-text-lg text-dark-600'
+            />
+          </div>
         </div>
       </div>
       <div className='bg-white tw-px-8 tw-py-8 rounded-3'>
